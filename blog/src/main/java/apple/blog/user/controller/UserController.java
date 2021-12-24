@@ -1,5 +1,9 @@
 package apple.blog.user.controller;
 
+import apple.blog.grade.service.GradeService;
+import apple.blog.sns.service.SnsService;
+import apple.blog.snsList.service.SnsListService;
+import apple.blog.user.dto.IUser;
 import apple.blog.user.model.User;
 import apple.blog.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +18,25 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private SnsListService snsListService;
+
+    @Autowired
+    private GradeService gradeService;
+
     @PostMapping("/add")
-    public User add(@RequestBody User user) {
-        return userService.addUser(user);
+    public User add(@RequestBody IUser iUser) {
+        return userService.addUser(
+                new User(
+                        iUser.getUserId(),
+                        iUser.getPassword(),
+                        iUser.getUserName(),
+                        iUser.getLocation(),
+                        iUser.getProfileImg(),
+                        snsListService.getSnsList(iUser.getSnsListId()).get(),
+                        gradeService.getGrade(iUser.getGrade()).get()
+                )
+        );
     }
 
     @GetMapping("/getAll")
