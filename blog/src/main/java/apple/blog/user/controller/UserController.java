@@ -1,7 +1,6 @@
 package apple.blog.user.controller;
 
 import apple.blog.grade.service.GradeService;
-import apple.blog.sns.service.SnsService;
 import apple.blog.snsList.service.SnsListService;
 import apple.blog.user.dto.IUser;
 import apple.blog.user.model.User;
@@ -33,7 +32,6 @@ public class UserController {
                         iUser.getUserName(),
                         iUser.getLocation(),
                         iUser.getProfileImg(),
-                        snsListService.getSnsList(iUser.getSnsListId()).get(),
                         gradeService.getGrade(iUser.getGrade()).get()
                 )
         );

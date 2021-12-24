@@ -20,9 +20,6 @@ public class User {
     private String location;
     private String profileImg;
     @ManyToOne
-    @JoinColumn(name = "sns_id")
-    private SnsList snsList;
-    @ManyToOne
     @JoinColumn(name = "grade_id")
     private Grade grade;
 
@@ -30,18 +27,13 @@ public class User {
         return grade;
     }
 
-    public SnsList getSnsList() {
-        return snsList;
-    }
-
     @Builder
-    public User(String userId, String password, String userName, String location, String profileImg, SnsList snsList, Grade grade) {
+    public User(String userId, String password, String userName, String location, String profileImg, Grade grade) {
         this.userId = userId;
         this.password = password;
         this.userName = userName;
         this.location = location;
         this.profileImg = profileImg;
-        this.snsList = snsList;
         this.grade = grade;
     }
 }

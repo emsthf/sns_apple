@@ -6,4 +6,5 @@ import lombok.Data;
 public class ISnsList {
     private Long id;
     private Long snsId;
+    private Long userId;
 }

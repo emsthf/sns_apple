@@ -1,7 +1,5 @@
 package apple.blog.snsList.service;
 
-import apple.blog.sns.model.Sns;
-import apple.blog.sns.service.SnsService;
 import apple.blog.snsList.model.SnsList;
 import apple.blog.snsList.repository.SnsListRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,5 +21,15 @@ public class SnsListServiceImpl implements SnsListService {
     @Override
     public Optional<SnsList> getSnsList(Long id) {
         return Optional.ofNullable(snsListRepository.findById(id)).get();
+    }
+
+    @Override
+    public SnsList addSnsList(SnsList snsList) {
+        return snsListRepository.save(snsList);
+    }
+
+    @Override
+    public void delSnsList(Long id) {
+        snsListRepository.deleteById(id);
     }
 }
