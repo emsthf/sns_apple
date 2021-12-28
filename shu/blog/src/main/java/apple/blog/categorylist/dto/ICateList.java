@@ -1,10 +1,6 @@
-package apple.blog.categorylist.dto;
+package apple.blog.categoryList.dto;
 
-import apple.blog.category.model.Category;
-import apple.blog.post.model.Post;
 import lombok.Data;
-
-import java.io.PipedOutputStream;
 
 @Data
 public class ICateList {

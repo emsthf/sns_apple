@@ -1,16 +1,19 @@
-package apple.blog.categorylist.model;
+package apple.blog.categoryList.model;
 
 import apple.blog.category.model.Category;
 import apple.blog.post.model.Post;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.math.BigInteger;
 
+@Data
+@NoArgsConstructor
 @Entity
 public class CateList {
-
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
     @JoinColumn(name = "category_id")
@@ -25,5 +28,11 @@ public class CateList {
 
     public Category getCategory() {
         return category;
+    }
+
+    @Builder
+    public CateList(Category category, Post post) {
+        this.category = category;
+        this.post = post;
     }
 }

@@ -1,8 +1,7 @@
-package apple.blog.categorylist.repository;
+package apple.blog.categoryList.repository;
 
-import apple.blog.category.model.Category;
-import apple.blog.categorylist.model.CateList;
+import apple.blog.categoryList.model.CateList;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CateListRepository extends JpaRepository<Category, Long> {
+public interface CateListRepository extends JpaRepository<CateList, Long> {
 }
