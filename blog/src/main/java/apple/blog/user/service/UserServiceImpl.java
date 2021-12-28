@@ -5,6 +5,7 @@ import apple.blog.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,5 +32,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public void delUser(Long id) {
         userRepository.deleteById(id);
+    }
+
+    @Override
+    public User updateUser(HttpServletRequest request) {
+        return null;
     }
 }

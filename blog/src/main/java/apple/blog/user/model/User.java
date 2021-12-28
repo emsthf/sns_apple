@@ -1,5 +1,6 @@
 package apple.blog.user.model;
 
+import apple.blog.base.UtilTimeSetter;
 import apple.blog.grade.medel.Grade;
 import apple.blog.snsList.model.SnsList;
 import lombok.*;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @Entity
-public class User {
+public class User extends UtilTimeSetter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
