@@ -2,6 +2,7 @@ package apple.blog.post.model;
 
 import apple.blog.base.UtilTimeSetter;
 import apple.blog.user.model.User;
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -13,9 +14,18 @@ public class Post extends UtilTimeSetter {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    private String categoryId;
     private int view;
     private String titleImg;
     private String content;
     private Long authorId;
+
+    @Builder
+
+    public Post(String title, int view, String titleImg, String content, Long authorId) {
+        this.title = title;
+        this.view = view;
+        this.titleImg = titleImg;
+        this.content = content;
+        this.authorId = authorId;
+    }
 }
