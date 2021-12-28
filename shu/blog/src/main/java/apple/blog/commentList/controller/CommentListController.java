@@ -26,7 +26,7 @@ public class CommentListController {
     public CommentList add(@RequestBody ICommentList iCommentList) {
         return commentListService.addCommentList(
                 new CommentList(
-                        postService.getPost(iCommentList.getPostId()).get(),
+                        postService.getPostById(iCommentList.getPostId()).get(),
                         commentService.getComment(iCommentList.getCommentId()).get()
                 )
         );

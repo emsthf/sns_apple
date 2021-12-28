@@ -12,7 +12,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 public class Comment extends UtilTimeSetter {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

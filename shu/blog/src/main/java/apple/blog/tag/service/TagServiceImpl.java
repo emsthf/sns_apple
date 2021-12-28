@@ -2,20 +2,23 @@ package apple.blog.tag.service;
 
 import apple.blog.tag.model.Tag;
 import apple.blog.tag.repository.TagRepository;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
+@Slf4j
+@RequiredArgsConstructor
 public class TagServiceImpl implements TagService{
 
-    @Autowired
-    private TagRepository tagRepository;
+    private final TagRepository tagRepository;
 
     @Override
     public Tag addTag(Tag tag) {
+        log.info("");
         return tagRepository.save(tag);
     }
 

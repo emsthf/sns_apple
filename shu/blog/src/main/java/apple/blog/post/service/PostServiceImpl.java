@@ -1,21 +1,33 @@
 package apple.blog.post.service;
 
+
+import apple.blog.commentList.service.CommentListService;
+import apple.blog.post.dto.IPost;
 import apple.blog.post.model.Post;
 import apple.blog.post.repository.PostRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import apple.blog.user.repository.UserRepository;
+import apple.blog.user.service.UserService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
+@Slf4j
+@RequiredArgsConstructor
 public class PostServiceImpl implements PostService{
-    @Autowired
-    private PostRepository postRepository;
+
+    private final PostRepository postRepository;
 
     @Override
-    public Post addPost(Post post) {
-        return postRepository.save(post);
+    public Post addPost(IPost iPost) {
+        log.info("");
+        return postRepository.save(
+                Post.builder()
+                        .title(iPost.getTitle())
+                        .view(iPost.getView())
+                        .build()
+        );
     }
 
     @Override
@@ -24,8 +36,8 @@ public class PostServiceImpl implements PostService{
     }
 
     @Override
-    public Optional<Post> getPost(Long id) {
-        return Optional.ofNullable(postRepository.findById(id)).get();
+    public Optional<Post> getPostById(Long id) {
+        return Optional.ofNullable(postRepository.findById(id).get());
     }
 
     @Override

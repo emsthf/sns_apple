@@ -7,29 +7,31 @@ import apple.blog.tag.service.TagService;
 import apple.blog.tagList.dto.ITagList;
 import apple.blog.tagList.model.TagList;
 import apple.blog.tagList.service.TagListService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/tagList")
 public class TagListController {
 
-    @Autowired
-    private TagListService tagListService;
-    @Autowired
-    private TagService tagService;
-    @Autowired
-    private PostService postService;
 
-    @PostMapping("/add")
+    private final TagListService tagListService;
+
+    private final TagService tagService;
+
+    private final PostService postService;
+
+    @PostMapping("/tag/add")
     public TagList add(@RequestBody ITagList iTagList){
         Long inputTId = iTagList.getTagId();
         Tag inputTag = tagService.getTag(inputTId).get();
         Long inputPId = iTagList.getPostId();
-        Post inputPost = postService.getPost(inputPId).get();
+        Post inputPost = postService.getPostById(inputPId).get();
 
         TagList inputTagList = new TagList(
                 inputTag,
@@ -37,11 +39,14 @@ public class TagListController {
         );
         return tagListService.addTagList(inputTagList);
     }
-    @GetMapping("/getAll")
+
+
+    @GetMapping("/tag/getAll")
     public List<TagList> getAll(){
         return tagListService.getAllTagList();
     }
-    @GetMapping("/get/{id}")
+
+    @GetMapping("/tag/get/{id}")
     public Optional<TagList> get(@PathVariable("id") Long id){
         return tagListService.getTagList(id);
     }
