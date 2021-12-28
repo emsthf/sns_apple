@@ -13,7 +13,6 @@ public class Post extends UtilTimeSetter {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    private String categoryId;
     private int view;
     private String titleImg;
     private String content;

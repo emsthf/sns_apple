@@ -1,12 +1,12 @@
-package apple.blog.taglist.controller;
+package apple.blog.tagList.controller;
 
 import apple.blog.post.model.Post;
 import apple.blog.post.service.PostService;
 import apple.blog.tag.model.Tag;
 import apple.blog.tag.service.TagService;
-import apple.blog.taglist.dto.ITagList;
-import apple.blog.taglist.model.TagList;
-import apple.blog.taglist.service.TagListService;
+import apple.blog.tagList.dto.ITagList;
+import apple.blog.tagList.model.TagList;
+import apple.blog.tagList.service.TagListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

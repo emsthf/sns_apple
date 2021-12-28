@@ -1,7 +1,6 @@
-package apple.blog.taglist.service;
+package apple.blog.tagList.service;
 
-import apple.blog.tag.model.Tag;
-import apple.blog.taglist.model.TagList;
+import apple.blog.tagList.model.TagList;
 
 import java.util.List;
 import java.util.Optional;

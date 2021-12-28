@@ -1,7 +1,7 @@
-package apple.blog.taglist.service;
+package apple.blog.tagList.service;
 
-import apple.blog.taglist.model.TagList;
-import apple.blog.taglist.repository.TagListRepository;
+import apple.blog.tagList.model.TagList;
+import apple.blog.tagList.repository.TagListRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
