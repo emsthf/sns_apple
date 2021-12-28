@@ -22,4 +22,9 @@ public class CateListServiceImpl implements CateListService {
     public Optional<CateList> getCateList(Long id) {
         return Optional.ofNullable(cateListRepository.findById(id)).get();
     }
+
+    @Override
+    public CateList addCateList(CateList cateList) {
+        return cateListRepository.save(cateList);
+    }
 }

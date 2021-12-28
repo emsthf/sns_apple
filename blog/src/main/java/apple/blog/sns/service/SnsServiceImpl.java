@@ -26,7 +26,7 @@ public class SnsServiceImpl implements SnsService {
 
     @Override
     public Optional<Sns> getSns(Long id) {
-        return Optional.ofNullable(snsRepository.findById(id)).get();
+        return Optional.ofNullable(snsRepository.findById(id).get());
     }
 
     @Override
