@@ -5,23 +5,23 @@ import apple.blog.snsList.service.SnsListService;
 import apple.blog.user.dto.IUser;
 import apple.blog.user.model.User;
 import apple.blog.user.service.UserService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/user")
 public class UserController {
-    @Autowired
-    private UserService userService;
 
-    @Autowired
-    private SnsListService snsListService;
+    private final UserService userService;
 
-    @Autowired
-    private GradeService gradeService;
+    private final SnsListService snsListService;
+
+    private final GradeService gradeService;
 
     @PostMapping("/add")
     public User add(@RequestBody IUser iUser) {
@@ -32,7 +32,7 @@ public class UserController {
                         iUser.getUserName(),
                         iUser.getLocation(),
                         iUser.getProfileImg(),
-                        gradeService.getGrade(iUser.getGrade()).get()
+                        gradeService.getGrade(iUser.getGradeid()).get()
                 )
         );
     }

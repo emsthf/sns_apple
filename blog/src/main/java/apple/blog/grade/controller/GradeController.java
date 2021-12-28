@@ -2,16 +2,17 @@ package apple.blog.grade.controller;
 
 import apple.blog.grade.medel.Grade;
 import apple.blog.grade.service.GradeService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/grade")
 public class GradeController {
-    @Autowired
-    private GradeService gradeService;
+
+    private final GradeService gradeService;
 
     @PostMapping("/add")
     public Grade add(@RequestBody Grade grade) {

@@ -4,19 +4,19 @@ import apple.blog.comment.dto.IComment;
 import apple.blog.comment.model.Comment;
 import apple.blog.comment.service.CommentService;
 import apple.blog.user.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/comment")
 public class CommentController {
-    @Autowired
-    private CommentService commentService;
 
-    @Autowired
-    private UserService userService;
+    private final CommentService commentService;
+
+    private final UserService userService;
 
     @PostMapping("/add")
     public Comment add(@RequestBody IComment iComment) {

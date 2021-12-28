@@ -12,6 +12,5 @@ public class IUser {
     private String userName;
     private String location;
     private String profileImg;
-    private Long snsListId;
-    private Long grade;
+    private Long gradeid;
 }
