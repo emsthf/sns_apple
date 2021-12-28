@@ -8,6 +8,6 @@ import java.util.Optional;
 public interface RecommentService {
     Recomment addRecomment(Recomment recomment);
     List<Recomment> getAllRecomment();
-    Optional<Recomment> getRecomment(Long id);
+    Optional<Recomment> getRecommentById(Long id);
     void delRecomment(Long id);
 }

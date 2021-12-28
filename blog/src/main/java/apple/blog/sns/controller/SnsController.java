@@ -2,18 +2,18 @@ package apple.blog.sns.controller;
 
 import apple.blog.sns.model.Sns;
 import apple.blog.sns.service.SnsService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/sns")
 public class SnsController {
 
-    @Autowired
-    private SnsService snsService;
+    private final SnsService snsService;
 
     @PostMapping("/add")
     public Sns add(@RequestBody Sns sns) {
@@ -27,7 +27,7 @@ public class SnsController {
 
     @GetMapping("/get/{id}")
     public Optional<Sns> get(@PathVariable("id") Long id) {
-        return snsService.getSns(id);
+        return snsService.getSnsById(id);
     }
 
     @DeleteMapping("/del/{id}")

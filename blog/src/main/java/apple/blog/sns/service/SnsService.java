@@ -8,6 +8,6 @@ import java.util.Optional;
 public interface SnsService {
     Sns addSns(Sns sns);
     List<Sns> getAllSns();
-    Optional<Sns> getSns(Long id);
+    Optional<Sns> getSnsById(Long id);
     void delSns(Long id);
 }

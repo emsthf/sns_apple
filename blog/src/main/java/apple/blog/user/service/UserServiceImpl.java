@@ -4,7 +4,6 @@ import apple.blog.user.model.User;
 import apple.blog.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
@@ -31,14 +30,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<User> getUser(Long id) {
-        log.info("get user {}.", id);
+    public Optional<User> getUserById(Long id) {
+        log.info("get User by id {}.", id);
         return Optional.ofNullable(userRepository.findById(id).get());
     }
 
     @Override
     public void delUser(Long id) {
-        log.info("delete user {}.", id);
+        log.info("delete User {}.", id);
         userRepository.deleteById(id);
     }
 

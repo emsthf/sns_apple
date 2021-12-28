@@ -8,5 +8,5 @@ import java.util.Optional;
 public interface TagListService {
     TagList addTagList(TagList tagList);
     List<TagList> getAllTagList();
-    Optional<TagList> getTagList(Long id);
+    Optional<TagList> getTagListById(Long id);
 }

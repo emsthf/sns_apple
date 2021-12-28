@@ -2,34 +2,41 @@ package apple.blog.recomment.service;
 
 import apple.blog.recomment.model.Recomment;
 import apple.blog.recomment.repository.RecommentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Slf4j
+@RequiredArgsConstructor
 @Service
 public class RecommentServiceImpl implements RecommentService {
-    @Autowired
-    private RecommentRepository recommentRepository;
+
+    private final RecommentRepository recommentRepository;
 
     @Override
     public Recomment addRecomment(Recomment recomment) {
+        log.info("save Recomment.");
         return recommentRepository.save(recomment);
     }
 
     @Override
     public List<Recomment> getAllRecomment() {
+        log.info("get all Recomment.");
         return recommentRepository.findAll();
     }
 
     @Override
-    public Optional<Recomment> getRecomment(Long id) {
+    public Optional<Recomment> getRecommentById(Long id) {
+        log.info("get Recomment by id {}.", id);
         return Optional.ofNullable(recommentRepository.findById(id)).get();
     }
 
     @Override
     public void delRecomment(Long id) {
+        log.info("delete Recomment by id {}.", id);
         recommentRepository.deleteById(id);
     }
 }

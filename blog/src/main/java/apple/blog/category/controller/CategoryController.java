@@ -2,17 +2,18 @@ package apple.blog.category.controller;
 
 import apple.blog.category.model.Category;
 import apple.blog.category.service.CategoryService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/category")
 public class CategoryController {
-    @Autowired
-    private CategoryService categoryService;
+
+    private final CategoryService categoryService;
 
     @PostMapping("/add")
     public Category add(@RequestBody Category category){
@@ -26,6 +27,6 @@ public class CategoryController {
 
     @GetMapping("/get/{id}")
     public Optional<Category> get(@PathVariable("id")Long id) {
-        return categoryService.getCategory(id);
+        return categoryService.getCategoryById(id);
     }
 }

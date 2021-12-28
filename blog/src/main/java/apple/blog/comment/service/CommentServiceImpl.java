@@ -4,7 +4,6 @@ import apple.blog.comment.model.Comment;
 import apple.blog.comment.repository.CommentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,25 +18,31 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     public Comment addComment(Comment comment) {
-        log.info("save comment.");
+        log.info("save Comment.");
         return commentRepository.save(comment);
     }
 
     @Override
     public List<Comment> getAllComment() {
-        log.info("get all comment");
+        log.info("get all Comment");
         return commentRepository.findAll();
     }
 
     @Override
-    public Optional<Comment> getComment(Long id) {
-        log.info("get comment {}.", id);
+    public Optional<Comment> getCommentById(Long id) {
+        log.info("get Comment by id {}.", id);
         return Optional.ofNullable(commentRepository.findById(id).get());
     }
 
     @Override
+    public List<Comment> getCommentByUserId(Long id) {
+        log.info("get Comment by User id {}.", id);
+        return commentRepository.findAllByUserId(id);
+    }
+
+    @Override
     public void delComment(Long id) {
-        log.info("delete comment {}.", id);
+        log.info("delete Comment by id {}.", id);
         commentRepository.deleteById(id);
     }
 }

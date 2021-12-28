@@ -23,7 +23,7 @@ public class CommentController {
         return commentService.addComment(
                 new Comment(
                         iComment.getComment(),
-                        userService.getUser(iComment.getUserId()).get()
+                        userService.getUserById(iComment.getUserId()).get()
                 )
         );
     }
@@ -35,7 +35,12 @@ public class CommentController {
 
     @GetMapping("/get/{id}")
     public Comment get(@PathVariable("id") Long id) {
-        return commentService.getComment(id).get();
+        return commentService.getCommentById(id).get();
+    }
+
+    @GetMapping("/getCommentByUserId/{}")
+    public List<Comment> getCommentById(@PathVariable("id") Long id) {
+        return commentService.getCommentByUserId(id);
     }
 
     @DeleteMapping("/del/{id}")

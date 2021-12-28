@@ -8,6 +8,6 @@ import java.util.Optional;
 public interface CommentListService {
     CommentList addCommentList(CommentList commentList);
     List<CommentList> getAllCommentList();
-    Optional<CommentList> getCommentList(Long id);
+    Optional<CommentList> getCommentListById(Long id);
     void delCommentList(Long id);
 }

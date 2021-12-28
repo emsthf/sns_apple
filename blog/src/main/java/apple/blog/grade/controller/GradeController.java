@@ -26,7 +26,7 @@ public class GradeController {
 
     @GetMapping("/get/{id}")
     public Grade get(@PathVariable("id") Long id) {
-        return gradeService.getGrade(id).get();
+        return gradeService.getGradeById(id).get();
     }
 
     @DeleteMapping("/del/{id}")

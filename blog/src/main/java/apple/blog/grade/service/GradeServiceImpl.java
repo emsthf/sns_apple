@@ -18,18 +18,19 @@ public class GradeServiceImpl implements GradeService {
 
     @Override
     public Grade addGrade(Grade grade) {
-        log.info("save grade.");
+        log.info("save Grade.");
         return gradeRepository.save(grade);
     }
 
     @Override
     public List<Grade> getAllGrade() {
-        log.info("get all grade.");
+        log.info("get all Grade.");
         return gradeRepository.findAll();
     }
 
     @Override
-    public Optional<Grade> getGrade(Long id) {
+    public Optional<Grade> getGradeById(Long id) {
+        log.info("get Grade by id {}", id);
         return Optional.ofNullable(gradeRepository.findById(id)).get();
     }
 

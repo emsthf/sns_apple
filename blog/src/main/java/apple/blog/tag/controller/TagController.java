@@ -3,18 +3,18 @@ package apple.blog.tag.controller;
 
 import apple.blog.tag.model.Tag;
 import apple.blog.tag.service.TagService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/tag")
 public class TagController {
 
-    @Autowired
-    private TagService tagService;
+    private  final TagService tagService;
 
     @PostMapping("/add")
     public Tag add(@RequestBody Tag tag){
@@ -28,7 +28,7 @@ public class TagController {
 
     @GetMapping("/get/{id}")
     public Optional<Tag> get(@PathVariable("id") Long id){
-        return tagService.getTag(id);
+        return tagService.getTagById(id);
     }
 
     @DeleteMapping("/del/{id}")

@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface UserService {
     User addUser(User user);
     List<User> getALlUser();
-    Optional<User> getUser(Long id);
+    Optional<User> getUserById(Long id);
     void delUser(Long id);
     User updateUser(HttpServletRequest request);   // 수정 추상 메소드
 }

@@ -6,7 +6,6 @@ import apple.blog.user.dto.IUser;
 import apple.blog.user.model.User;
 import apple.blog.user.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,9 +17,7 @@ import java.util.Optional;
 public class UserController {
 
     private final UserService userService;
-
     private final SnsListService snsListService;
-
     private final GradeService gradeService;
 
     @PostMapping("/add")
@@ -32,7 +29,7 @@ public class UserController {
                         iUser.getUserName(),
                         iUser.getLocation(),
                         iUser.getProfileImg(),
-                        gradeService.getGrade(iUser.getGradeid()).get()
+                        gradeService.getGradeById(iUser.getGradeid()).get()
                 )
         );
     }
@@ -44,7 +41,7 @@ public class UserController {
 
     @GetMapping("/get/{id}")
     public Optional<User> get(@PathVariable("id") Long id) {
-        return userService.getUser(id);
+        return userService.getUserById(id);
     }
 
     @DeleteMapping("/del/{id}")

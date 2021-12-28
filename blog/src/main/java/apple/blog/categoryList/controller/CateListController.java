@@ -2,17 +2,17 @@ package apple.blog.categoryList.controller;
 
 import apple.blog.categoryList.model.CateList;
 import apple.blog.categoryList.service.CateListService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/cateList")
 public class CateListController {
-    @Autowired
-    private CateListService cateListService;
+
+    private final CateListService cateListService;
 
     @GetMapping("/getAll")
     public List<CateList> getAll() {
@@ -21,7 +21,7 @@ public class CateListController {
 
     @GetMapping("/get/{id}")
     public CateList get(@PathVariable("id") Long id) {
-        return cateListService.getCateList(id).get();
+        return cateListService.getCateListById(id).get();
     }
 
     @PostMapping("/add")

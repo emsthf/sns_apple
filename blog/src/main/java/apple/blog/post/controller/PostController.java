@@ -2,17 +2,18 @@ package apple.blog.post.controller;
 
 import apple.blog.post.model.Post;
 import apple.blog.post.service.PostService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/post")
 public class PostController {
-    @Autowired
-    private PostService postService;
+
+    private final PostService postService;
 
     @PostMapping("/add")
     public Post add(@RequestBody Post post) {
@@ -26,7 +27,12 @@ public class PostController {
 
     @GetMapping("/get/{id}")
     public Optional<Post> get(@PathVariable("id") Long id) {
-        return postService.getPost(id);
+        return postService.getPostById(id);
+    }
+
+    @GetMapping("/getPostByAuthId/{id}")
+    public List<Post> getPostByAuthId(@PathVariable("id") Long id) {
+        return postService.getPostByAuthId(id);
     }
 
     @DeleteMapping("/del/{id}")

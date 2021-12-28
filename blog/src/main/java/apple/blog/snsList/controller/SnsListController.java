@@ -5,24 +5,20 @@ import apple.blog.snsList.dto.ISnsList;
 import apple.blog.snsList.model.SnsList;
 import apple.blog.snsList.service.SnsListService;
 import apple.blog.user.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
+@RequiredArgsConstructor
 @RestController
-@CrossOrigin
 @RequestMapping("/snsList")
 public class SnsListController {
-    @Autowired
-    private SnsListService snsListService;
 
-    @Autowired
-    private SnsService snsService;
-
-    @Autowired
-    private UserService userService;
+    private final SnsListService snsListService;
+    private final SnsService snsService;
+    private final UserService userService;
 
     @GetMapping("/getAll")
     public List<SnsList> getAll() {
@@ -31,15 +27,15 @@ public class SnsListController {
 
     @GetMapping("/get/{id}")
     public Optional<SnsList> get(@PathVariable("id") Long id) {
-        return snsListService.getSnsList(id);
+        return snsListService.getSnsListById(id);
     }
 
     @PostMapping("/add")
     public SnsList add(@RequestBody ISnsList iSnsList) {
         return snsListService.addSnsList(
                 new SnsList(
-                        snsService.getSns(iSnsList.getSnsId()).get(),
-                        userService.getUser(iSnsList.getUserId()).get()
+                        snsService.getSnsById(iSnsList.getSnsId()).get(),
+                        userService.getUserById(iSnsList.getUserId()).get()
                 )
         );
     }
