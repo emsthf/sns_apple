@@ -1,4 +1,4 @@
-package apple.blog.taglist.dto;
+package apple.blog.tagList.dto;
 
 import lombok.Data;
 

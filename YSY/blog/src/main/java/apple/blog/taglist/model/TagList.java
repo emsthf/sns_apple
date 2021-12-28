@@ -1,4 +1,4 @@
-package apple.blog.taglist.model;
+package apple.blog.tagList.model;
 
 import apple.blog.post.model.Post;
 import apple.blog.tag.model.Tag;
