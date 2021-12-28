@@ -12,5 +12,6 @@ public interface PostService {
     Post addPost(IPost iPost);
     List<Post> getAllPost();
     Optional<Post> getPostById(Long id);
+    List<Post> getPostByAuthId(Long id);
     void delPost(Long id);
 }

@@ -26,7 +26,7 @@ public class TagListController {
 
     private final PostService postService;
 
-    @PostMapping("/tag/add")
+    @PostMapping("/add")
     public TagList add(@RequestBody ITagList iTagList){
         Long inputTId = iTagList.getTagId();
         Tag inputTag = tagService.getTag(inputTId).get();
@@ -41,12 +41,12 @@ public class TagListController {
     }
 
 
-    @GetMapping("/tag/getAll")
+    @GetMapping("/getAll")
     public List<TagList> getAll(){
         return tagListService.getAllTagList();
     }
 
-    @GetMapping("/tag/get/{id}")
+    @GetMapping("/get/{id}")
     public Optional<TagList> get(@PathVariable("id") Long id){
         return tagListService.getTagList(id);
     }

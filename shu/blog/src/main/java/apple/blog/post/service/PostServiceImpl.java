@@ -9,10 +9,12 @@ import apple.blog.user.repository.UserRepository;
 import apple.blog.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 @Slf4j
 @RequiredArgsConstructor
 public class PostServiceImpl implements PostService{
@@ -43,5 +45,10 @@ public class PostServiceImpl implements PostService{
     @Override
     public void delPost(Long id) {
 
+    }
+
+    @Override
+    public List<Post> getPostByAuthId(Long id) {
+        return postRepository.findAllByUserId(id);
     }
 }

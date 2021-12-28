@@ -28,12 +28,4 @@ public class TagList {
         this.tag = tag;
         this.post = post;
     }
-
-    public Post getPost() {
-        return post;
-    }
-
-    public Tag getTag() {
-        return tag;
-    }
 }

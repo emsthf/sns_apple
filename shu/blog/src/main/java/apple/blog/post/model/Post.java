@@ -4,10 +4,12 @@ import apple.blog.base.UtilTimeSetter;
 import apple.blog.user.model.User;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Data
+@NoArgsConstructor
 @Entity
 public class Post extends UtilTimeSetter {
 
@@ -20,7 +22,6 @@ public class Post extends UtilTimeSetter {
     private Long authorId;
 
     @Builder
-
     public Post(String title, int view, String titleImg, String content, Long authorId) {
         this.title = title;
         this.view = view;

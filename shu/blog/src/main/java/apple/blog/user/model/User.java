@@ -24,10 +24,6 @@ public class User extends UtilTimeSetter {
     @JoinColumn(name = "grade_id")
     private Grade grade;
 
-    public Grade getGrade() {
-        return grade;
-    }
-
     @Builder
     public User(String userId, String password, String userName, String location, String profileImg, Grade grade) {
         this.userId = userId;

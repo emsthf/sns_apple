@@ -17,22 +17,22 @@ public class TagController {
 
     private final TagService tagService;
 
-    @PostMapping("/tag/add")
+    @PostMapping("/add")
     public Tag addTag(@RequestBody Tag tag){
         return tagService.addTag(tag);
     }
 
-    @GetMapping("/tag/getAll")
+    @GetMapping("/getAll")
     public List<Tag> getAll(){
         return tagService.getAllTag();
     }
 
-    @GetMapping("/tag/get/{id}")
+    @GetMapping("/get/{id}")
     public Optional<Tag> get(@PathVariable("id") Long id){
         return tagService.getTag(id);
     }
 
-    @DeleteMapping("/tag/del/{id}")
+    @DeleteMapping("/del/{id}")
     public void del(@PathVariable Long id){
         tagService.delTag(id);
     }
