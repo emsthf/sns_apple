@@ -1,7 +1,9 @@
 package apple.blog.post.service;
 
+import apple.blog.post.dto.IPostDto;
 import apple.blog.post.model.Post;
 import apple.blog.post.repository.PostRepository;
+import apple.blog.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -15,11 +17,19 @@ import java.util.Optional;
 public class PostServiceImpl implements PostService{
 
     private final PostRepository postRepository;
+    private final UserService userService;
 
     @Override
-    public Post addPost(Post post) {
+    public Post addPost(IPostDto iPostDto) {
         log.info("add Post.");
-        return postRepository.save(post);
+
+        return postRepository.save(Post.builder()
+                .content(iPostDto.getContent())
+                .title(iPostDto.getTitle())
+                .titleImg(iPostDto.getTitleImg())
+                .user(userService.getUserById(iPostDto.getUserId()).get())
+                .view(0)
+                .build());
     }
 
     @Override
@@ -33,6 +43,11 @@ public class PostServiceImpl implements PostService{
         log.info("get Post by Id {}.", id);
         return Optional.ofNullable(postRepository.findById(id)).get();
     }
+
+//    @Override
+//    public List<Post> getPostByAuthId(Long id) {
+//        return postRepository.findAllByUserId(id);
+//    }
 
     @Override
     public void delPost(Long id) {
