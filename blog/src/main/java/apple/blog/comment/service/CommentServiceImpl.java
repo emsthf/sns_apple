@@ -1,7 +1,9 @@
 package apple.blog.comment.service;
 
+import apple.blog.comment.dto.ICommentDto;
 import apple.blog.comment.model.Comment;
 import apple.blog.comment.repository.CommentRepository;
+import apple.blog.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -15,11 +17,16 @@ import java.util.Optional;
 public class CommentServiceImpl implements CommentService {
 
     private final CommentRepository commentRepository;
+    private final UserService userService;
 
     @Override
-    public Comment addComment(Comment comment) {
+    public Comment addComment(ICommentDto iCommentDto) {
         log.info("add Comment.");
-        return commentRepository.save(comment);
+        return commentRepository.save(Comment.builder()
+                .comment(iCommentDto.getComment())
+                .user(userService.getUserById(iCommentDto.getUserId()).get())
+                .build()
+        );
     }
 
     @Override
@@ -32,6 +39,11 @@ public class CommentServiceImpl implements CommentService {
     public Optional<Comment> getCommentById(Long id) {
         log.info("get Comment by id {}.", id);
         return Optional.ofNullable(commentRepository.findById(id).get());
+    }
+
+    @Override
+    public List<Comment> getCommentByUserId(Long id) {
+        return commentRepository.findAllByUserId(id);
     }
 
     @Override

@@ -10,6 +10,6 @@ public interface PostService {
     Post addPost(IPostDto iPostDtopost);
     List<Post> getAllPost();
     Optional<Post> getPostById(Long id);
-//    List<Post> getPostByAuthId(Long id);
+    List<Post> getPostByAuthId(Long id);
     void delPost(Long id);
 }

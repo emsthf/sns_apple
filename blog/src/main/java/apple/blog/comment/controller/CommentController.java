@@ -1,9 +1,8 @@
 package apple.blog.comment.controller;
 
-import apple.blog.comment.dto.IComment;
+import apple.blog.comment.dto.ICommentDto;
 import apple.blog.comment.model.Comment;
 import apple.blog.comment.service.CommentService;
-import apple.blog.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,16 +14,10 @@ import java.util.List;
 public class CommentController {
 
     private final CommentService commentService;
-    private final UserService userService;
 
     @PostMapping("/add")
-    public Comment add(@RequestBody IComment iComment) {
-        return commentService.addComment(
-                new Comment(
-                        iComment.getComment(),
-                        userService.getUserById(iComment.getUserId()).get()
-                )
-        );
+    public Comment add(@RequestBody ICommentDto iCommentDto) {
+        return commentService.addComment(iCommentDto);
     }
 
     @GetMapping("/getAll")
@@ -35,6 +28,11 @@ public class CommentController {
     @GetMapping("/get/{id}")
     public Comment get(@PathVariable("id") Long id) {
         return commentService.getCommentById(id).get();
+    }
+
+    @GetMapping("/getUserId/{id}")
+    public List<Comment> getCommentByUserId(@PathVariable("id") Long id) {
+        return commentService.getCommentByUserId(id);
     }
 
     @DeleteMapping("/del/{id}")

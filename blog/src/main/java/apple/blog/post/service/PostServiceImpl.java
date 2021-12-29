@@ -29,7 +29,8 @@ public class PostServiceImpl implements PostService{
                 .titleImg(iPostDto.getTitleImg())
                 .user(userService.getUserById(iPostDto.getUserId()).get())
                 .view(0)
-                .build());
+                .build()
+        );
     }
 
     @Override
@@ -44,10 +45,10 @@ public class PostServiceImpl implements PostService{
         return Optional.ofNullable(postRepository.findById(id)).get();
     }
 
-//    @Override
-//    public List<Post> getPostByAuthId(Long id) {
-//        return postRepository.findAllByUserId(id);
-//    }
+    @Override
+    public List<Post> getPostByAuthId(Long id) {
+        return postRepository.findAllByUserId(id);
+    }
 
     @Override
     public void delPost(Long id) {

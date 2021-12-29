@@ -3,7 +3,6 @@ package apple.blog.grade.controller;
 import apple.blog.grade.medel.Grade;
 import apple.blog.grade.service.GradeService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
