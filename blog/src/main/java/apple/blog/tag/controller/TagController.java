@@ -1,6 +1,5 @@
 package apple.blog.tag.controller;
 
-
 import apple.blog.tag.model.Tag;
 import apple.blog.tag.service.TagService;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +13,7 @@ import java.util.Optional;
 @RequestMapping("/tag")
 public class TagController {
 
-    private  final TagService tagService;
+    private final TagService tagService;
 
     @PostMapping("/add")
     public Tag add(@RequestBody Tag tag){

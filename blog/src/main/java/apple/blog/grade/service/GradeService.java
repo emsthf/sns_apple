@@ -8,6 +8,6 @@ import java.util.Optional;
 public interface GradeService {
     Grade addGrade(Grade grade);
     List<Grade> getAllGrade();
-    Optional<Grade> getGradeById(Long id);
+    Optional<Grade> getGrade(Long id);
     void delGrade(Long id);
 }

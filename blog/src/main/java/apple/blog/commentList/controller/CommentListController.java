@@ -6,6 +6,7 @@ import apple.blog.commentList.model.CommentList;
 import apple.blog.commentList.service.CommentListService;
 import apple.blog.post.service.PostService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

@@ -15,7 +15,6 @@ import java.util.List;
 public class CommentController {
 
     private final CommentService commentService;
-
     private final UserService userService;
 
     @PostMapping("/add")
@@ -36,11 +35,6 @@ public class CommentController {
     @GetMapping("/get/{id}")
     public Comment get(@PathVariable("id") Long id) {
         return commentService.getCommentById(id).get();
-    }
-
-    @GetMapping("/getCommentByUserId/{}")
-    public List<Comment> getCommentById(@PathVariable("id") Long id) {
-        return commentService.getCommentByUserId(id);
     }
 
     @DeleteMapping("/del/{id}")

@@ -18,7 +18,7 @@ public class SnsServiceImpl implements SnsService {
 
     @Override
     public Sns addSns(Sns sns) {
-        log.info("save Sns.");
+        log.info("add Sns.");
         return snsRepository.save(sns);
     }
 
@@ -30,13 +30,13 @@ public class SnsServiceImpl implements SnsService {
 
     @Override
     public Optional<Sns> getSnsById(Long id) {
-        log.info("get Sns by id {}.", id);
+        log.info("get Sns by Id {}.", id);
         return Optional.ofNullable(snsRepository.findById(id).get());
     }
 
     @Override
     public void delSns(Long id) {
-        log.info("delete Sns by id {}.", id);
+        log.info("delete Sns by Id {}.", id);
         snsRepository.deleteById(id);
     }
 }

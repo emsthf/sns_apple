@@ -9,6 +9,5 @@ public interface CommentService {
     Comment addComment(Comment comment);
     List<Comment> getAllComment();
     Optional<Comment> getCommentById(Long id);
-    List<Comment> getCommentByUserId(Long id);
     void delComment(Long id);
 }

@@ -18,13 +18,13 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     public Comment addComment(Comment comment) {
-        log.info("save Comment.");
+        log.info("add Comment.");
         return commentRepository.save(comment);
     }
 
     @Override
     public List<Comment> getAllComment() {
-        log.info("get all Comment");
+        log.info("get all Comments.");
         return commentRepository.findAll();
     }
 
@@ -35,14 +35,8 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    public List<Comment> getCommentByUserId(Long id) {
-        log.info("get Comment by User id {}.", id);
-        return commentRepository.findAllByUserId(id);
-    }
-
-    @Override
     public void delComment(Long id) {
-        log.info("delete Comment by id {}.", id);
+        log.info("delete Comment by Id {}.", id);
         commentRepository.deleteById(id);
     }
 }

@@ -29,14 +29,14 @@ public class UserController {
                         iUser.getUserName(),
                         iUser.getLocation(),
                         iUser.getProfileImg(),
-                        gradeService.getGradeById(iUser.getGradeid()).get()
+                        gradeService.getGrade(iUser.getGrade()).get()
                 )
         );
     }
 
     @GetMapping("/getAll")
     public List<User> getAll() {
-        return userService.getALlUser();
+        return userService.getAllUser();
     }
 
     @GetMapping("/get/{id}")

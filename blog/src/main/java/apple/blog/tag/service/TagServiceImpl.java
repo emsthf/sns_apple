@@ -18,25 +18,25 @@ public class TagServiceImpl implements TagService{
 
     @Override
     public Tag addTag(Tag tag) {
-        log.info("save Tag.");
+        log.info("add Tag.");
         return tagRepository.save(tag);
     }
 
     @Override
     public List<Tag> getAllTag() {
-        log.info("get all Tag.");
+        log.info("get all Tags.");
         return tagRepository.findAll();
     }
 
     @Override
     public Optional<Tag> getTagById(Long id) {
-        log.info("get Tag by id {}.", id);
+        log.info("get Tag by Id {}.", id);
         return Optional.ofNullable(tagRepository.findById(id).get());
     }
 
     @Override
     public void delTag(Long id) {
-        log.info("delete Tag by id {}.", id);
+        log.info("delete Tag by Id {}.", id);
         tagRepository.deleteById(id);
     }
 }

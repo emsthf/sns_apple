@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@RequiredArgsConstructor
 @Slf4j
+@RequiredArgsConstructor
 @Service
 public class GradeServiceImpl implements GradeService {
 
@@ -29,14 +29,14 @@ public class GradeServiceImpl implements GradeService {
     }
 
     @Override
-    public Optional<Grade> getGradeById(Long id) {
-        log.info("get Grade by id {}", id);
+    public Optional<Grade> getGrade(Long id) {
+        log.info("get Grade by Id {}.", id);
         return Optional.ofNullable(gradeRepository.findById(id)).get();
     }
 
     @Override
     public void delGrade(Long id) {
-        log.info("delete grade.");
+        log.info("delete Grade by Id {}.", id);
         gradeRepository.deleteById(id);
     }
 }

@@ -30,11 +30,6 @@ public class PostController {
         return postService.getPostById(id);
     }
 
-    @GetMapping("/getPostByAuthId/{id}")
-    public List<Post> getPostByAuthId(@PathVariable("id") Long id) {
-        return postService.getPostByAuthId(id);
-    }
-
     @DeleteMapping("/del/{id}")
     public void del(@PathVariable("id") Long id) {
         postService.delPost(id);

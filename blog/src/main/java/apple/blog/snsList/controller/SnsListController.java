@@ -6,6 +6,7 @@ import apple.blog.snsList.model.SnsList;
 import apple.blog.snsList.service.SnsListService;
 import apple.blog.user.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @RestController
+@CrossOrigin
 @RequestMapping("/snsList")
 public class SnsListController {
 

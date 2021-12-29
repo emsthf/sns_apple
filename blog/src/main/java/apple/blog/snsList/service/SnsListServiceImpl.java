@@ -24,19 +24,19 @@ public class SnsListServiceImpl implements SnsListService {
 
     @Override
     public Optional<SnsList> getSnsListById(Long id) {
-        log.info("get Sns List by id {}.", id);
+        log.info("get Sns List By Id {}.", id);
         return Optional.ofNullable(snsListRepository.findById(id)).get();
     }
 
     @Override
     public SnsList addSnsList(SnsList snsList) {
-        log.info("save Sns List.");
+        log.info("add Sns List.");
         return snsListRepository.save(snsList);
     }
 
     @Override
     public void delSnsList(Long id) {
-        log.info("delete Sns List.");
+        log.info("delete Sns List by id {}.", id);
         snsListRepository.deleteById(id);
     }
 }

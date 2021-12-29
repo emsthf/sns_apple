@@ -22,14 +22,6 @@ public class CateList {
     @JoinColumn(name = "post_id")
     private Post post;
 
-    public Post getPost() {
-        return post;
-    }
-
-    public Category getCategory() {
-        return category;
-    }
-
     @Builder
     public CateList(Category category, Post post) {
         this.category = category;

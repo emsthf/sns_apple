@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@RequiredArgsConstructor
 @Slf4j
+@RequiredArgsConstructor
 @Service
 public class CateListServiceImpl implements CateListService {
 
@@ -18,19 +18,19 @@ public class CateListServiceImpl implements CateListService {
 
     @Override
     public List<CateList> getAllCateList() {
-        log.info("get all Category List.");
+        log.info("get all CateList.");
         return cateListRepository.findAll();
     }
 
     @Override
     public Optional<CateList> getCateListById(Long id) {
-        log.info("get Category List by id {}.", id);
+        log.info("get CateList by Id {}.", id);
         return Optional.ofNullable(cateListRepository.findById(id)).get();
     }
 
     @Override
     public CateList addCateList(CateList cateList) {
-        log.info("save Category List.");
+        log.info("add CateList.");
         return cateListRepository.save(cateList);
     }
 }

@@ -39,7 +39,6 @@ public class TagListController {
     public List<TagList> getAll(){
         return tagListService.getAllTagList();
     }
-
     @GetMapping("/get/{id}")
     public Optional<TagList> get(@PathVariable("id") Long id){
         return tagListService.getTagListById(id);

@@ -2,7 +2,6 @@ package apple.blog.user.model;
 
 import apple.blog.base.UtilTimeSetter;
 import apple.blog.grade.medel.Grade;
-import apple.blog.snsList.model.SnsList;
 import lombok.*;
 
 import javax.persistence.*;
@@ -23,10 +22,6 @@ public class User extends UtilTimeSetter {
     @ManyToOne
     @JoinColumn(name = "grade_id")
     private Grade grade;
-
-    public Grade getGrade() {
-        return grade;
-    }
 
     @Builder
     public User(String userId, String password, String userName, String location, String profileImg, Grade grade) {

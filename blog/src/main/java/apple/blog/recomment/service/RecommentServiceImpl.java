@@ -18,25 +18,25 @@ public class RecommentServiceImpl implements RecommentService {
 
     @Override
     public Recomment addRecomment(Recomment recomment) {
-        log.info("save Recomment.");
+        log.info("add Recomment.");
         return recommentRepository.save(recomment);
     }
 
     @Override
     public List<Recomment> getAllRecomment() {
-        log.info("get all Recomment.");
+        log.info("get all Recomments.");
         return recommentRepository.findAll();
     }
 
     @Override
     public Optional<Recomment> getRecommentById(Long id) {
-        log.info("get Recomment by id {}.", id);
+        log.info("get Recomment by Id {}.", id);
         return Optional.ofNullable(recommentRepository.findById(id)).get();
     }
 
     @Override
     public void delRecomment(Long id) {
-        log.info("delete Recomment by id {}.", id);
+        log.info("delete Recomment by Id {}.", id);
         recommentRepository.deleteById(id);
     }
 }

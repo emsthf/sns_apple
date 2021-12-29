@@ -22,6 +22,14 @@ public class SnsList {
     @JoinColumn(name = "user_id")
     private User user;
 
+    public User getUser() {
+        return user;
+    }
+
+    public Sns getSns() {
+        return sns;
+    }
+
     @Builder
     public SnsList(Sns sns, User user) {
         this.sns = sns;

@@ -26,7 +26,12 @@ public class CategoryController {
     }
 
     @GetMapping("/get/{id}")
-    public Optional<Category> get(@PathVariable("id")Long id) {
+    public Optional<Category> get(@PathVariable("id") Long id) {
         return categoryService.getCategoryById(id);
+    }
+
+    @DeleteMapping("/del/{id}")
+    public void delCategory(@PathVariable("id") Long id) {
+        categoryService.delCategory(id);
     }
 }

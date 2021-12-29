@@ -4,6 +4,7 @@ import apple.blog.tagList.model.TagList;
 import apple.blog.tagList.repository.TagListRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public class TagListServiceImpl implements TagListService{
 
     @Override
     public TagList addTagList(TagList tagList) {
-        log.info("save Tag List.");
+        log.info("add Tag List.");
         return tagListRepository.save(tagList);
     }
 
@@ -30,7 +31,7 @@ public class TagListServiceImpl implements TagListService{
 
     @Override
     public Optional<TagList> getTagListById(Long id) {
-        log.info("get Tag List by id {}.", id);
+        log.info("get Tag List by Id {}.", id);
         return Optional.ofNullable(tagListRepository.findById(id).get());
     }
 }

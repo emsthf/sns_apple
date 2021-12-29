@@ -3,6 +3,7 @@ package apple.blog.grade.controller;
 import apple.blog.grade.medel.Grade;
 import apple.blog.grade.service.GradeService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,7 +27,7 @@ public class GradeController {
 
     @GetMapping("/get/{id}")
     public Grade get(@PathVariable("id") Long id) {
-        return gradeService.getGradeById(id).get();
+        return gradeService.getGrade(id).get();
     }
 
     @DeleteMapping("/del/{id}")

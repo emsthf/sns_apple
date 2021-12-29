@@ -24,20 +24,20 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> getALlUser() {
+    public List<User> getAllUser() {
         log.info("get all User.");
         return userRepository.findAll();
     }
 
     @Override
     public Optional<User> getUserById(Long id) {
-        log.info("get User by id {}.", id);
+        log.info("get User by Id {}.", id);
         return Optional.ofNullable(userRepository.findById(id).get());
     }
 
     @Override
     public void delUser(Long id) {
-        log.info("delete User {}.", id);
+        log.info("delete User by Id {}.", id);
         userRepository.deleteById(id);
     }
 

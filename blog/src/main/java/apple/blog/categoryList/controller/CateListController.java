@@ -1,8 +1,12 @@
 package apple.blog.categoryList.controller;
 
+import apple.blog.category.service.CategoryService;
+import apple.blog.categoryList.dto.ICateList;
 import apple.blog.categoryList.model.CateList;
 import apple.blog.categoryList.service.CateListService;
+import apple.blog.post.service.PostService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,6 +17,8 @@ import java.util.List;
 public class CateListController {
 
     private final CateListService cateListService;
+    private final PostService postService;
+    private final CategoryService categoryService;
 
     @GetMapping("/getAll")
     public List<CateList> getAll() {
@@ -25,7 +31,12 @@ public class CateListController {
     }
 
     @PostMapping("/add")
-    public CateList addCateList(@RequestBody CateList cateList) {
-        return cateListService.addCateList(cateList);
+    public CateList addCateList(@RequestBody ICateList iCateList) {
+        return cateListService.addCateList(
+                new CateList(
+                        categoryService.getCategoryById(iCateList.getCategoryId()).get(),
+                        postService.getPostById(iCateList.getPostId()).get()
+                )
+        );
     }
 }

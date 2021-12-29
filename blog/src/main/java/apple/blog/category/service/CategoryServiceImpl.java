@@ -18,7 +18,7 @@ public class CategoryServiceImpl implements CategoryService{
 
     @Override
     public Category addCategory(Category category) {
-        log.info("save Category.");
+        log.info("add Category.");
         return categoryRepository.save(category);
     }
 
@@ -30,7 +30,13 @@ public class CategoryServiceImpl implements CategoryService{
 
     @Override
     public Optional<Category> getCategoryById(Long id) {
-        log.info("get Category by id {}.", id);
-        return Optional.ofNullable(categoryRepository.findById(id)).get();
+        log.info("get Category by Id {}.", id);
+        return Optional.ofNullable(categoryRepository.findById(id).get());
+    }
+
+    @Override
+    public void delCategory(Long id) {
+        log.info("delete Category by id {}.", id);
+        categoryRepository.deleteById(id);
     }
 }

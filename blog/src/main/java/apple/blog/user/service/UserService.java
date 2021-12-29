@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public interface UserService {
     User addUser(User user);
-    List<User> getALlUser();
+    List<User> getAllUser();
     Optional<User> getUserById(Long id);
     void delUser(Long id);
     User updateUser(HttpServletRequest request);   // 수정 추상 메소드
