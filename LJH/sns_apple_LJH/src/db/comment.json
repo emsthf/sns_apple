@@ -1,0 +1,207 @@
+{
+    "comment" :[
+        { 
+            "id" :1,
+            "userId" :1,
+            "postid" :1,
+            "update"  :"Nov 9, 2021",
+            "profilePicture" : "user/user001.jpg",
+            "username" : "Dominic",
+            "text" : "코로나가 빨리 종식되어야 할텐데요.초보 블린이에게 답방은 힘이 됩니다. 감사합니다"  
+        },
+
+        {  
+            "id" :2,
+            "userId" :2,
+            "postid" :1,
+            "update"  :"JUN 19, 2021",
+            "profilePicture" : "user/user002.jpg",
+            "username" : "minw",
+            "text" : "ㅎㅎ 여행 가시는 분들한테 유용한 포스팅이 될 거 같아요 !! 시차부터 환율 물가 등 렌트까지!!! 아이슬란드 오로라 저도 봐야할텐데 ㅋㅋㅋㅋㅋ 콩콩!!"  
+        },
+
+        {
+            "id" :3,
+            "userId" :3,
+            "postid" :2,
+            "update"  :"JUN 18, 2021",
+            "profilePicture" : "user/user003.jpg",
+            "username" : "woo",
+            "text" : "10월달에 비행기표 예약해 뒀는데 정말 기대 되요^^ 덕분에 유용한 정보 얻어갑니다~"
+          },
+       { 
+            "id" :4,
+            "userId" :4,
+            "postid" :2,
+            "update"  :"November 24, 2021",
+            "profilePicture" : "user/user004.jpg",
+            "username" : "park",
+            "text" : "여기한번 가보고싶었는데 언젠가실물로보는 날이왔음좋겠어요ㅜㅜ" 
+         },
+       { 
+            "id" :5,
+            "userId" :5,
+            "postid" :3,
+            "update"  :"October 02 2021",
+            "profilePicture" : "user/user005.jpg",
+            "username" : "joo",
+            "text" : "언젠가 가보고싶네요. 유용한 정보 감사합니다."
+        },
+
+        { 
+            "id" :6,
+            "userId" :6,
+            "postid" :3,
+            "update"  :"October 11 2021",
+            "profilePicture" : "user/user006.jpg",
+            "username" : "young",
+            "text" : "오 글 너무 잘써주셔서 참고가 잘되었어요 감사합니당 👍" 
+         },
+
+       { 
+            "id" :7,
+            "userId" :7,
+            "postid" :4,
+            "update"  :"November 16 2021",
+            "profilePicture" : "user/user007.jpg",
+            "username" : "lee",
+            "text" : " 여행을 갔었었는데... 3년전즘.. 마지막 여행이네요. 그뒤로 바빠 못나갔죠. ^^ 글 읽으며 추억도 생각나고~ 그림같이 멋진 사진에 잘 감상하고 갑니다. ^^~"  
+        },
+
+        { 
+            "id" :8,
+            "userId" :8,
+            "postid" :4,
+            "update"  :"November 18 2021",
+            "profilePicture" : "user/user008.jpg",
+            "username" : "soo",
+            "text" : "10월달에 비행기표 예약해 뒀는데 정말 기대 되요^^ 덕분에 유용한 정보 얻어갑니다~"
+        },
+ 
+       { 
+            "id" :9,
+            "userId" :9,
+            "postid" :5,
+            "update"  :"November 06 2021",
+            "profilePicture" : "user/user009.jpg",
+            "username" : "mando",
+            "text" :  "언젠가 가보고싶네요. 유용한 정보 감사합니다."
+        },
+
+        { 
+
+            "id" :10,
+            "userId" :10,
+            "postid" :5,
+            "update"  :"October 11 2021",
+            "profilePicture" : "user/user010.jpg",
+            "username" : "Mr",
+            "text" : "오 글 너무 잘써주셔서 참고가 잘되었어요 감사합니당 👍" 
+         },
+
+        {
+            "id" :11,
+            "userId" :11,
+            "postid" :6,
+            "update"  :"January 25,2021",
+            "profilePicture" : "user/user011.jpg",
+            "username" : "moosh",
+            "text" : "여기한번 가보고싶었는데 언젠가실물로보는 날이왔음좋겠어요ㅜㅜ" 
+        },
+
+        { 
+            "id" :12,
+            "userId" :12,
+            "postid" :6,
+            "update"  :"March 02,2021",
+            "profilePicture" : "user/user012.jpg",
+            "username" : "Dominic",
+            "text" : "언젠가 가보고싶네요. 유용한 정보 감사합니다."
+        
+        },
+
+        { 
+            "id" :13,
+            "userId" :1,
+            "postid" :7,
+            "update"  :"october 16,2021",
+            "profilePicture" : "user/user001.jpg",
+            "username" : "kim",
+            "text" : "코로나가 빨리 종식되어야 할텐데요.초보 블린이에게 답방은 힘이 됩니다. 감사합니다"
+        },
+
+        { 
+            "id" :14,
+            "userId" :2,
+            "postid" :7,
+            "update"  :"November 05,2021",
+            "profilePicture" : "user/user002.jpg",
+            "username" : "you",
+            "text" : "Cinque Terre the Truly Paradise On Earth" 
+        },
+
+        { 
+            "id" :15,
+            "userId" :3,
+            "postid" :8,
+            "update"  :"August 25,2021",
+            "profilePicture" : "user/user003.jpg",
+            "username" : "java",
+            "text" : "Cinque Terre the Truly Paradise On Earth" 
+        },
+
+        { 
+            "id" :16,
+            "userId" :4,
+            "postid" :8,
+            "update"  :"March  22,2021",
+            "profilePicture" : "user/user004.jpg",
+            "username" : "Hate",
+            "text" : "Cinque Terre the Truly Paradise On Earth" 
+        },
+
+        {   
+            "id" :17,
+            "userId" :5,
+            "postid" :9,
+            "update"  :"January 25,2021",
+            "profilePicture" : "user/user005.jpg",
+            "username" : "like",
+            "text" : "Cinque Terre the Truly Paradise On Earth" 
+        },
+
+        { 
+                
+            "id" :18,
+            "userId" :6,
+            "postid" :9,
+            "update"  :"May 22,2021",
+            "profilePicture" : "user/user006.jpg",
+            "username" : "jar",
+            "text" : "Cinque Terre the Truly Paradise On Earth" 
+        },
+
+        { 
+            "id" :19,
+            "userId" :7,
+            "postid" :10,
+            "update"  :"April 05,2021",
+            "profilePicture" : "user/user007.jpg",
+            "username" : "bread",
+            "text" : "Cinque Terre the Truly Paradise On Earth"
+        },
+
+        { 
+            "id" :20,
+            "userId" :8,
+            "postid" :10,
+            "update"  :"January 01,2021",
+            "profilePicture" : "user/user008.jpg",
+            "username" : "ho",
+            "text" : "Cinque Terre the Truly Paradise On Earth"
+        }
+
+
+    ]
+
+}
