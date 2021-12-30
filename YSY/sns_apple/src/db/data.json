@@ -1,0 +1,2196 @@
+{
+    "post": [
+        {
+            "id" : 1,
+            "postTitle" : " 남해 금산 보리암",
+            "categoryId" : 1 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 1,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#TrevelTips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Geumsan"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Namhae"
+                }
+            ],
+            "titleImage" : "./img/post/travel/travel.01.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "강화도 보문사, 낙산사 홍련암과 더불어 우리나라 3대 기도처의 하나인 보리암을 찾아가는 길이다. 한적한 고속도로를 달리는 밤하늘에 달은 넘어가고 별무리가 반짝인다. 바쁘다며 무심코 지나친 지난 시간들이 쌓여 초롱초롱한 별무리가 눈에 생경하다. 흔들흔들 남해대교를 건너서 미륵불이 도왔다는 미조항에 다가드는지 짭조름한 바다 향속에 비릿한 멸치냄새가 베어난다. 남해 금산은 해발 704m로 한려해상국립공원 중 유일한 산악공원이며 온통 기암괴석들로 뒤덮여 38경의 절경을 이루고 있다. 신라 때 원효대사가 보광사를 짓고 보광산이라 불렀는데 후일 금산으로 개칭 되었다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "김영수",
+                    "text" : " 9월에  갔었는데 정말 놀랐어. 보리암이 제일 좋았어요. 사진도  너무 예쁘게 나오구요."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "오현정",
+                    "text" : "여기한번 가보고싶었는데 언젠가실물로보는 날이왔음좋겠어요ㅜㅜ"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "두번째 방문인데 갈때마다 좋네요. 다음엔 가족들과 같이 와야겠네요!"
+                }
+            ]
+        },
+       
+   
+        {
+            "id" : 2,
+            "postTitle" : "사이판, 한국인 격리 폐지, 도착 즉시 여행사 투어 가능",
+            "categoryId" : 1 ,       
+            "created" : "2021.05.20",
+            "updated" : "2021.05.20",
+            "userId" : 2,
+            "view" : 9,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#TrevelTips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Asia"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Saipan"
+                }
+            ],
+            "titleImage" : "./img/post/travel/travel.02.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "사이판 당국은 기존의 격리포함 사이판 패키지 예약자들의 불편을 최소화하기 위해 백신접종 한국인 여행자를 위한 5박의 호텔 투숙비용 지원을 2021년 12월 31일 출발자까지 유지하기로 결정했다. 여기에는 5일간의 호텔 조식 비용 지원도 포함된다. 이로써 12월 31일 이내에 출발하는 패키지의 기존 예약자라면 사이판 도착 직후 의무격리가 없어진 후에도, 사이판 및 이웃 섬(티니안, 로타) 여행을 즐기는 최소 7일 중 5일은 북마리아나 정부의 숙박 및 조식 지원 혜택을 누리게 되었다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "GHADA ARABI",
+                    "text" : "코로나로 인해 우리의 일상생활이 참 많이 변화된 것 같습니다. 그동안 코로나로 인해 자영업자들도 많이 힘들고 자유롭게 여행을 할 수 없는 상황으로 각 나라마다 여행객이 감소하여 많은 어려움을 겪었습니다. 코로나가 하루빨리 진정되고 예전처럼 자유롭게 여행할 수 있는 날이 오기를 기대합니다."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "JACK",
+                    "text" : "그런들 아직 지방출발편이 없습니다."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "NATALIE LESLIE",
+                    "text" : "위드 코로나 실시로 많은 나라들의 여행이 가능해지는 시기가 온 것 같습니다."
+                }
+            ]
+        },
+       
+   
+        {
+            "id" : 3,
+            "postTitle" : "호주도 문 열었다. 12월부터 한국인 무격리 입국 허용",
+            "categoryId" : 1 ,       
+            "created" : "2021.04.19",
+            "updated" : "2021.04.19",
+            "userId" : 3,
+            "view" : 7,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#TrevelTips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Oceania."
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Australia"
+                }
+            ],
+            "titleImage" : "./img/post/travel/travel.03.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "오랜 기간 국경을 봉쇄했던 호주가 문을 열었다. 스콧 모리슨 호주 총리는 22일 기자회견을 열어 백신 접종을 완료한 한국과 일본 여행객에 한해 12월부터 호주 일부 지역을 자가격리 없이 입국할 수 있는 '여행안전권역(트래블 버블)'을 시행한다고 발표했다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ALANNA MILES",
+                    "text" : "백신 안 맞아서 못 가네 ㅠ"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "YONA",
+                    "text" : "와우, 우리나라 겨울일텐 호주는 여름나라던데 이제 일주일 정도만 참으면 따뜻한 호주 갈 수 있겠네요. 기사 감사해요!"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "ANDREW",
+                    "text" : "우왕 언젠가 호주에 꼭 한번 가보고 싶다는 생각이 있었는데 드디어 호주에 입국이 가능해 지다니 정말 기쁘네요 코로나로 인해 일상이 많이 달라지고 변했지만 2년 전 일상으로 돌아가는 날이 얼마 안 남았다고 생각해요 좋은 기사 감사드립니다"
+                }
+            ]
+        },
+        {
+            "id" : 4,
+            "postTitle" : "‘제주해비치아트페스티벌’ 개막",
+            "categoryId" : 1 ,       
+            "created" : "2021.07.01",
+            "updated" : "2021.07.01",
+            "userId" : 5,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#TrevelTips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Korea"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Jeju"
+                }
+            ],
+            "titleImage" : "./img/post/travel/travel.04.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "전국 문예회관과 예술단체 관계자들이 교류하는 ‘제14회 제주해비치아트페스티벌’이 22일 개막했다. 제주도와 한국문화예술회관연합회가 공동 주최하고 문화체육관광부, 한국문화예술위원회, 현대자동차그룹이 후원하는 이 행사는 개막식을 시작으로 오는 25일까지 서귀포시 표선면 소재 해비치호텔&리조트 제주에서 진행된다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ERKI",
+                    "text" : "제주도의 아름다운 해변에서 즐길 수 있는 페스티벌이라니 정말 가보고 싶네요"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "코로나 시기에 맞춰서 백신 패스를 소지한 사람들만 입장을 시킨다는 부분이 방역수칙을 잘 지키는 모범이 되는 것 같다고 생각이 들어요"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "정말 가보고 싶네요"
+                }
+            ]
+        },
+        {
+            "id" : 5,
+            "postTitle" : "사계절 관광지 경주, 그 말 실감나네요",
+            "categoryId" : 1 ,       
+            "created" : "2021.11.22",
+            "updated" : "2021.11.22",
+            "userId" : 5,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#TrevelTips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Korea"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Gyeongju"
+                }
+            ],
+            "titleImage" : "./img/post/travel/travel.05.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "'경주를 경주답게 해주는 최고의 유적'이라 할 고분(古墳) 스물세 개가 높낮이를 달리 하며 진기한 풍광을 만드는 대릉원. 그 정취를 만끽하며 걸을 수 있는 대릉원 돌담길.천마총과 황남대총, 미추왕릉은 물론, 철마다 피어나는 갖가지 꽃들과 떨어지는 낙엽이 어우러져 최고의 포토존을 만들어내는 이곳은 누구도 부정할 수 없는 '서라벌 최고 관광지' 중 하나다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "민우",
+                    "text" : "신라 수도 경주"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "정열",
+                    "text" : "시내 전역이 매력있는 유적지이죠"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "시그마",
+                    "text" : "외국 여행객도 상당히 오는 곳이기도 하네요"
+                }
+            ]
+        },
+        {
+            "id" : 6,
+            "postTitle" : "굶주림과 체력 고갈…나는 두려움에 정복당했다",
+            "categoryId" : 1 ,       
+            "created" : "2021.11.22",
+            "updated" : "2021.11.22",
+            "userId" : 6,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#TrevelTips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Mountain"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Jirisan Mountain"
+                }
+            ],
+            "titleImage" : "./img/post/travel/travel.06.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "산악부에 들어온 지 반 년. 한 학기 동안 열심히 활동했지만, 멀티피치(등반 루트가 길어 2개 이상의 ‘피치’로 나눠 각 피치당 마련된 확보지점을 거쳐 등반하는 방식)와 인수봉은 모두 처음이었다. 설렘 반, 긴장 반으로 쿵쾅거리는 심장을 부여잡고 어프로치를 시작했다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ERKI",
+                    "text" : "긴장 반, 기대 반으로 오르면서 수고 많았습니다.등반실력이 빨리 일취월장 해서 선등 서시기 바랍니다."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "모험이죠~ 청년들의 도전에 찬사를 보냅니다^^"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "고소공포증이 있어서 저런거 하면 기절함... ㅋ"
+                }
+            ]
+        },
+        {
+            "id" : 7,
+            "postTitle" : "[Scene 산티아고] 숨은 기적 찾기",
+            "categoryId" : 1 ,       
+            "created" : "2021.11.22",
+            "updated" : "2021.11.22",
+            "userId" : 1,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#TrevelTips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Santiago"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#South America"
+                }
+            ],
+            "titleImage" : "./img/post/travel/travel.07.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "‘여왕의 다리 마을’의 그 유명한 ‘여왕의 다리’입니다. 강을 건너다가 잘못 되는 경우가 많았던 예전엔 순례자를 위한 다리 건설이 최고의 자선이었답니다. 이 다리는 아름다운 이야기가 전해 옵니다. 다리의 경당에 모셔진 성모자상에 작은 새가 매일 찾아와 부리로 강물을 떠와서 성모님과 아기 예수의 얼굴을 씻고 날개로 닦아 주었다고 합니다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ERKI",
+                    "text" : "사진이 정말 예쁘네요"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "산티아고 도착 전 여권을 잃어버려서 하 정말 마지막이 정신없었던 기억이 나네요 ㅠㅠ"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "산티아고 대성당에 도착한 후 휴식도 취하고 피로를 풀 수 있는 괜찮은 여행지 소개 좀 해주세요."
+                }
+            ]
+        },
+        {
+            "id" : 8,
+            "postTitle" : "위드코로나에 차박·카크닉, 어떻게 즐기면 좋을까",
+            "categoryId" : 1 ,       
+            "created" : "2021.11.22",
+            "updated" : "2021.11.22",
+            "userId" : 2,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#TrevelTips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Car camping"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Korea"
+                }
+            ],
+            "titleImage" : "./img/post/travel/travel.08.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "코로나19로 비대면 안전여행에 대한 관심이 사회적으로 높아지면서 D.I.T(Drive In & Thru)여행이 새로운 흐름으로 떠올랐다. D.I.T.여행은 자동차를 타고 외부와의 접촉을 최소화하며 차박, 카크닉(자동차 피크닉), 공연 관람, 식음 등의 활동을 즐기는 여행이다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ERKI",
+                    "text" : "즐기는건 좋지만 쓰레기봉투 챙겨가서 쓰레기는 꼭꼭 자기집으로 가지고 갑시다~ 하루만 사는 인생이 아닌 미래를 보고 아름다운 자연 다함께 아껴서 써요"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "쓰레기 문제만 잘해결한다면, 참 좋은 취미죠!!!"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "주민들 피해 안가게...잘 사용하세요..특히 쓰레기...당신이 쓰레기가 될 수 있습니다."
+                }
+            ]
+        },
+        {
+            "id" : 9,
+            "postTitle" : " 늦가을 정취 듬뿍… 진안 모래재",
+            "categoryId" : 1 ,       
+            "created" : "2021.11.22",
+            "updated" : "2021.11.22",
+            "userId" : 3,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#TrevelTips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Korea"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Jin An"
+                }
+            ],
+            "titleImage" : "./img/post/travel/travel.09.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "전북 진안군 부귀면과 완주군 소양면을 잇는 고갯길이 모래재다. 1970년대 분주했던 길은 97년 새로운 국도에게 역할을 넘겨주며 한적한 길로 바뀌었다. 느리게 달리거나 천천히 걸으며 늦가을의 정취를 느끼기에 좋은 곳이다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ERKI",
+                    "text" : "정말 많은 사람들이 방문할 만큼 아름답네요"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "가을의 풍경이 잘 느껴지는 사진입니다"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "잘봤어요!"
+                }
+            ]
+        },
+        {
+            "id" : 10,
+            "postTitle" : "용이 누워있는 전설이 깃든 '와룡산'",
+            "categoryId" : 1 ,       
+            "created" : "2021.11.22",
+            "updated" : "2021.11.22",
+            "userId" : 2,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#TrevelTips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Korea"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Waryongsan Mountain"
+                }
+            ],
+            "titleImage" : "./img/post/travel/travel.10.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "대구 와룡산은 서구와 달서구, 달성군에 걸쳐 있는 해발 300m의 그리 높지 않은 산으로 가볍게 산책하듯이 찾을 수 있는 곳이다. 산의 가운데가 움푹 패여 들어가 있어 말발굽 형상을 하고 있다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ERKI",
+                    "text" : "최근에 자주 가보지 못했던 곳이네요"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "사진으로라도 볼 수 있게 해주셔서 감사의 말씀 드립니다"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "조만간 시간 내서 꼭 가봐야겠네요"
+                }
+            ]
+        },
+       
+   
+        {
+            "id" : 11,
+            "postTitle" : "와인 약어 한방에 정리",
+            "categoryId" : 2 ,       
+            "created" : "2021.11.24",
+            "updated" : "2021.11.24",
+            "userId" : 4,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Recipe"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#wine"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Abbreviation"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Fall"
+                }
+            ],
+            "titleImage" : "./img/post/lifestyle/wine/lifestyle.01.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/lifestyle/wine01.jpg" },
+                { "id" : 2, "imageUrl" : "post/lifestyle/wine02.jpg" },
+                { "id" : 3, "imageUrl" : "post/lifestyle/wine03.jpg" },
+                { "id" : 4, "imageUrl" : "post/lifestyle/wine04.jpg" },
+                { "id" : 5, "imageUrl" : "post/lifestyle/wine05.jpg" }
+            ],
+            "text" : "단풍이 예쁘게 물이 든다 싶더니 어느새 코끝이 시린 겨울이 와버렸네요. 지난 1년 동안 와인을 즐기고 사랑하는 고객 수가 무려 30%나 더 늘었다는 거 알고 계시나요? 홈술이 대표적인 음주 트렌드로 자리 잡으면서, ‘와인’은 대세 중에 대세로 등극했죠. 와인을 즐기는 숫자가 늘어났다는 건 그만큼 와인의 멋과 맛을 함께 나눌 친구가 많아졌다는 거겠죠? 정말 와인의 전성기가 바로 지금이 아닌가 싶습니다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "JAMIE ",
+                    "text" : "와인에 대한 상식이 늘었어요!"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "SANDY",
+                    "text" : "와인 양주장에 가보고 싶네요"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "DOMONIQUE",
+                    "text" : "어디 가서 아는 척할 수 있겠네요"
+                }
+            ]
+        },
+  
+        {
+            "id" : 12,
+            "postTitle" : "귀여운 아파트 인테리어",
+            "categoryId" : 2 ,       
+            "created" : "2020.3.24",
+            "updated" : "2020.3.24",
+            "userId" : 5,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Door"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Centsational Style"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Young House"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Old Brand New"
+                }
+            ],
+            "titleImage" : "./img/post/lifestyle/interior/lifestyle.02.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/interior/interior.01.jpg" },
+                { "id" : 2, "imageUrl" : "post/interior/interior.02.jpg" },
+                { "id" : 3, "imageUrl" : "post/interior/interior.03.jpg" },
+                { "id" : 4, "imageUrl" : "post/interior/interior.04.jpg" },
+                { "id" : 5, "imageUrl" : "post/interior/interior.05.jpg" }
+            ],
+            "text" : "아파트 인테리어 중에서 가장 고민되는것 중 하나가 전체적인 베이사의 컬로톤이 아닌가 싶어요. 보통은 올 화이트, 그레이, 블랙 등 무채섹 계열로 많이 하며 심플해야 질리지 않는 그런 고정관념이 크죠. 이번 아파트 인테리어는 파스텔 톤의 조화가 잘 어우러져 참고하셔서 방 꾸밀 때 혹은 색감 조합하실때 참고하시면 좋을 거 같습니다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "크린파파",
+                    "text" :  "잘 보고 갑니다 ~"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "박정수",
+                    "text" : "내가 좋아하는 컬러다"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "김현지",
+                    "text" : "인테리어 정말 예쁘네요"
+                }
+            ]
+        },
+  
+        {
+            "id" : 13,
+            "postTitle" : "고객의 뇌 건강을 돕기 위해 마인드 다이어트를 사용하는 방법",
+            "categoryId" : 2 ,       
+            "created" : "2021.10.16",
+            "updated" : "2021.10.16",
+            "userId" : 6,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#health"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#workout"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#gym"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#diet"
+                }
+            ],
+            "titleImage" : "./img/post/lifestyle/workout/workout.08.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/workout/01.jpg" },
+                { "id" : 2, "imageUrl" : "post/workout/02.jpg" },
+                { "id" : 3, "imageUrl" : "post/workout/03.jpg" },
+                { "id" : 4, "imageUrl" : "post/workout/04.jpg" },
+                { "id" : 5, "imageUrl" : "post/workout/05.jpg" }
+            ],
+            "text" : "2주에 한 번씩 가장 좋은 운동법을 홍보하는 새로운 연구가 있는 것 같습니다. 그리고 실제로 어떻게 하는가는 당신의 목표에 달려있다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "Dominic",
+                    "text" : "운동 과학자 제프리 M에게 물어봤습니다. C.S.C.S.의 윌러드슨은 이스턴 일리노이 대학의 운동학과 스포츠학 부교수로 이러한 원리를 포함하는 운동을 설계했다."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "Gordon",
+                    "text" : "윌러슨 박사는 이틀에 한 번에서 세 번 정도 서킷을 반복할 것을 권한다."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "Joshua",
+                    "text" : "매일 운동하는건 힘들어"
+                }
+            ]
+        },  {
+            "id" : 14,
+            "postTitle" : "영천와인 국제 품평회에서 또다시 인정",
+            "categoryId" : 2 ,       
+            "created" : "2021.10.27",
+            "updated" : "2021.10.27",
+            "userId" : 4,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Recipe"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Wine"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Yeongcheon."
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Berlin"
+                }
+            ],
+            "titleImage" : "./img/post/lifestyle/wine/wine06.png",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/lifestyle/wine01.jpg" },
+                { "id" : 2, "imageUrl" : "post/lifestyle/wine02.jpg" },
+                { "id" : 3, "imageUrl" : "post/lifestyle/wine03.jpg" },
+                { "id" : 4, "imageUrl" : "post/lifestyle/wine04.jpg" },
+                { "id" : 5, "imageUrl" : "post/lifestyle/wine05.jpg" }
+            ],
+            "text" : "영천와인이 국제와인품평회에서 또 다시 품질을 인정받았다. 최근 독일의 수도 베를린에서 열린 ‘베를린와인트로피’ 하계대회에서 영천의 오계리 와이너리의 화이트 와인이 은상을 받았다. 국제와인품평회 중에서 최대 규모를 자랑하는 베를린와인트로피는 세계 5대 국제 와인 품평회 중 하나로 꼽힌다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "JAMIE ",
+                    "text" : "국제 와인 품평회에서 인정 받다니 대단하네요"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "SANDY",
+                    "text" : "마셔보고 싶네요"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "DOMONIQUE",
+                    "text" : "맛있겠다"
+                }
+            ]
+        },
+        {
+            "id" : 15,
+            "postTitle" : "'다양한 와인이 한 자리에!'",
+            "categoryId" : 2 ,       
+            "created" : "2021.11.04",
+            "updated" : "2021.11.04",
+            "userId" : 4,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Recipe"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Wine"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Market"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Seoul"
+                }
+            ],
+            "titleImage" : "./img/post/lifestyle/wine/wine07.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/lifestyle/wine01.jpg" },
+                { "id" : 2, "imageUrl" : "post/lifestyle/wine02.jpg" },
+                { "id" : 3, "imageUrl" : "post/lifestyle/wine03.jpg" },
+                { "id" : 4, "imageUrl" : "post/lifestyle/wine04.jpg" },
+                { "id" : 5, "imageUrl" : "post/lifestyle/wine05.jpg" }
+            ],
+            "text" : "서울 등촌동 홈플러스 강서점에서 모델이 와인 장터 행사 상품을 소개하고 있다. 홈플러스는 11월 17일까지 와인장터를 열고 다양한 와인을 선보인다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "JAMIE ",
+                    "text" : "좋네요"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "SANDY",
+                    "text" : "맛있겠네요"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "DOMONIQUE",
+                    "text" : "ed ones around a table is always reason to celebrate."
+                }
+            ]
+        },
+        {
+            "id" : 16,
+            "postTitle" : "김종국 “진절머리 난다, 운동 적당히 할걸”…로이더 의혹 자책",
+            "categoryId" : 2 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 4,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Kim Jong-kook"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Work Out"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Korea"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Roider"
+                }
+            ],
+            "titleImage" : "./img/post/lifestyle/workout/workout.06.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/lifestyle/wine01.jpg" },
+                { "id" : 2, "imageUrl" : "post/lifestyle/wine02.jpg" },
+                { "id" : 3, "imageUrl" : "post/lifestyle/wine03.jpg" },
+                { "id" : 4, "imageUrl" : "post/lifestyle/wine04.jpg" },
+                { "id" : 5, "imageUrl" : "post/lifestyle/wine05.jpg" }
+            ],
+            "text" : "김종국은 25일 자신의 유튜브 채널에 “GYM(짐)종국 비긴즈...”라는 제목의 영상을 게재했다. 그는 영상 설명란을 통해 “도핑 검사가 늦어져서 결과 나오는 대로 영상으로 마무리하도록 하겠다. 현재 상황을 떠나서 믿어주시고 응원해 주신 많은 분들과의 약속이니까. 나도 진절머리가 난다. 공인으로서 겪을 수 있을 다양한 사고(?)를 멀리하기 위한 세심한 노력을 하면서 살아왔지만 이번 일은 정말 저도 예상할 수가 없었다”며 최근 불거진 로이더 의혹에 대한 심경을 전했다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "JAMIE ",
+                    "text" : "약물검사를 왜 하는지 모르겠네,"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "SANDY",
+                    "text" : "도핑을 해도 시간이 지나면 약물은 몸에서 다 빠져나가는데. 허리 디스크로 군대도 못간 사람이 이런 몸을 만들었다고 하니 도핑을 의심할 수도 있지"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "DOMONIQUE",
+                    "text" : "그저 운동만 하고 집에만 있더라도 이렇게 문제될 수도 있구나."
+                }
+            ]
+        },
+        {
+            "id" : 17,
+            "postTitle" : "'컬러테리어'에 꽂힌 가구·인테리어 업계",
+            "categoryId" : 2 ,       
+            "created" : "2021.11.25",
+            "updated" : "2021.11.25",
+            "userId" : 4,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Furniture"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Interior"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Color"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Korea"
+                }
+            ],
+            "titleImage" : "./img/post/lifestyle/interior/lifestyle.04.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/lifestyle/wine01.jpg" },
+                { "id" : 2, "imageUrl" : "post/lifestyle/wine02.jpg" },
+                { "id" : 3, "imageUrl" : "post/lifestyle/wine03.jpg" },
+                { "id" : 4, "imageUrl" : "post/lifestyle/wine04.jpg" },
+                { "id" : 5, "imageUrl" : "post/lifestyle/wine05.jpg" }
+            ],
+            "text" : "컬러테리어'가 인테리어 시장의 새로운 트렌드로 떠오르고 있다. 컬러테리어란 ‘컬러’와 ‘인테리어’의 합성어로 여러 가지 색상을 활용한 인테리어 방식이다. 인테리어에도 개성을 담는 MZ세대(밀레니얼+Z세대)를 중심으로 확산하고 있다. 업계는 다채로운 색상의 제품을 선보이면서 코로나19 사태 이후 인테리어 시장의 '큰 손'으로 떠오른 MZ 세대 공략에 나섰다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "JAMIE ",
+                    "text" : "사전 예약 후 매장에 방문하면 패널, 테이프, 보더 등 매트리스를 구성하는 요소의 색상을 원하는 대로 조합할 수 있다."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "SANDY",
+                    "text" : "패널은 7가지, 테이프와 보더는 5가지 컬러를 제공한다."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "DOMONIQUE",
+                    "text" : "스프링, 쿠션감, 사이즈까지 맞춤 제작이 가능하다. 선택이 끝나면 별도로 마련된 프라이빗 공간에서 최대 2시간 동안 실제로 취침해 볼 수도 있다."
+                }
+            ]
+        },
+        {
+            "id" : 18,
+            "postTitle" : "내 운동자세 확인하세요",
+            "categoryId" : 2 ,       
+            "created" : "May 22,2021",
+            "updated" : "May 22,2021",
+            "userId" : 4,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Work Out"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Pose"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Korea"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Goyang"
+                }
+            ],
+            "titleImage" : "./img/post/lifestyle/workout/workout.07.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/lifestyle/wine01.jpg" },
+                { "id" : 2, "imageUrl" : "post/lifestyle/wine02.jpg" },
+                { "id" : 3, "imageUrl" : "post/lifestyle/wine03.jpg" },
+                { "id" : 4, "imageUrl" : "post/lifestyle/wine04.jpg" },
+                { "id" : 5, "imageUrl" : "post/lifestyle/wine05.jpg" }
+            ],
+            "text" : "경기 고양시 킨텍스에서 열린 디지털 대전환 엑스포에서 한 시민이 스마트 미러를 바라보며 운동을 하고 있다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "JAMIE ",
+                    "text" : "신기하네요"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "SANDY",
+                    "text" : "기술이 벌써 저렇게 발전했다니"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "DOMONIQUE",
+                    "text" : "멋지다"
+                }
+            ]
+        },
+        {
+            "id" : 19,
+            "postTitle" : "노년에 운동 시작해도 치매 막는데 도움",
+            "categoryId" : 2 ,       
+            "created" : "2021.11.25",
+            "updated" : "2021.11.25",
+            "userId" : 4,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Old age"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Tips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Health"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Dementia"
+                }
+            ],
+            "titleImage" : "./img/post/lifestyle/workout/workout.08.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/lifestyle/wine01.jpg" },
+                { "id" : 2, "imageUrl" : "post/lifestyle/wine02.jpg" },
+                { "id" : 3, "imageUrl" : "post/lifestyle/wine03.jpg" },
+                { "id" : 4, "imageUrl" : "post/lifestyle/wine04.jpg" },
+                { "id" : 5, "imageUrl" : "post/lifestyle/wine05.jpg" }
+            ],
+            "text" : "나이가 들어서도 파워워킹이나 자전거타기 등 중강도의 운동을 꾸준히 하면 알츠하이머병 발생 위험을 줄일 수 있다는 연구 결과가 나왔다. 알츠하이머병은 치매를 일으키는 가장 흔한 퇴행성 뇌질환이다. 그동안 나온 여러 연구에 따르면, 중년 이후의 운동은 알츠하이머병으로 인한 치매의 발생 확률을 최대 40%까지 감소시킬 수 있다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "JAMIE ",
+                    "text" : "미국 캘리포니아대학교 샌프란시스코 캠퍼스 연구팀이 내놓은 이번 연구 결과에 의하면 노년에 운동을 하더라도 알츠하이머병을 예방하는데 큰 도움이 되는 것으로 나타났다."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "SANDY",
+                    "text" : "연구팀은 사후 장기 기증에 동의한 치매 없는 지원자들이 등록된 ‘러시 메모리 앤 에이징 프로젝트’에서 167명을 대상으로 연구를 진행했다."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "DOMONIQUE",
+                    "text" : "대상자들의 평균 연령은 90세였다. 대상자의 약 60%가 사망 무렵 알츠하이머병에 걸렸다."
+                }
+            ]
+        },
+        {
+            "id" : 20,
+            "postTitle" : "스웨덴의 자연과 동화 감성 담은 겨울 인테리어는?",
+            "categoryId" : 2 ,       
+            "created" : "2021.11.17",
+            "updated" : "2021.11.17",
+            "userId" : 4,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Nature"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Winter"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Europe"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Sweden"
+                }
+            ],
+            "titleImage" : "./img/post/lifestyle/interior/interior.06.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/lifestyle/wine01.jpg" },
+                { "id" : 2, "imageUrl" : "post/lifestyle/wine02.jpg" },
+                { "id" : 3, "imageUrl" : "post/lifestyle/wine03.jpg" },
+                { "id" : 4, "imageUrl" : "post/lifestyle/wine04.jpg" },
+                { "id" : 5, "imageUrl" : "post/lifestyle/wine05.jpg" }
+            ],
+            "text" : "홈퍼니싱 리테일 기업 이케아 코리아는 스웨덴의 자연과 동화에서 영감을 얻은 겨울 홈퍼니싱 아이디어를 소개한다. 스웨덴식 표현으로 포근함을 의미하는 'Mys(미스)'한 무드를 반영해 온기 가득한 집을 꾸미고, 반짝이는 크리스마스 기운을 불어넣는 것이 핵심이다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "JAMIE ",
+                    "text" : "온 가족이 한자리에 모여 못다 한 이야기를 나누거나 아이와 함께 동화책을 읽으며 오붓한 시간을 보낼 거실을 더욱 아늑하게 만들고 싶다면 따뜻한 패브릭 소재를 활용해 보자."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "SANDY",
+                    "text" : "크기가 넉넉해 편한 자세로 앉을 수 있는 그뢴리드 3인용 소파의 커버를 라이트 레드 같은 따뜻한 컬러로 교체하면 안락한 분위기를 쉽게 연출할 수 있다."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "DOMONIQUE",
+                    "text" : "울티스텔 담요는 100% 울 소재로 보온성이 좋으며, 화이트 태슬 장식이 있어 거실의 포인트가 된다."
+                }
+            ]
+        },
+       
+    
+        {
+            "id" : 21,
+            "postTitle" : "전염력 매우 강한 '코로나 변이' 또 등장…전세계 '초긴장'",
+            "categoryId" : 3 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 7,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#COVID"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Rest"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Infection"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Fever"
+                }
+            ],
+            "titleImage" : "./img/post/news/news.14.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "신종 코로나바이러스 감염증(코로나19) 델타 변이보다 더 전염력이 강할 수 있는 새로운 변이가 출현하면서 위드 코로나(단계적 일상회복)을 시행 중인 한국을 포함한 전 세계가 긴장하고 있다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "Julian Hoyak",
+                    "text" : "WHO도 책임이 더 크다."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "Dave Fineberg",
+                    "text" : "모든 국가는 중국에 피해보상 요구를 해야한다."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "Robert Turecki",
+                    "text" : "코로나가 빨리 끝났으면 좋겠다."
+                }
+            ]
+        },
+       
+   
+        {
+            "id" : 22,
+            "postTitle" : "＂답답한 교통정체 해소되나＂…서해안고속道 10차로로 확장",
+            "categoryId" : 3 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 8,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Traffic Jam"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Express highway"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Korea"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#West coast"
+                }
+            ],
+            "titleImage" : "./img/post/news/news.15.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "상습 정체로 악명 높은 서해안고속도로 서평택JCT~안산JCT 구간(약 34km)이 확장된다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "Frank Wiener",
+                    "text" : "고속도로도 구간단속 드럽게많이생겼더라 진짜 최악의정권이야"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "Cathy Kucher",
+                    "text" : "차선 늘린만큼 차선 감소구간에선 미어터지지.. 결국 막히는건 똑같아 늘릴생각만하지말고 다른방안도 있지않을까.. 늘리기만하면 답이나오나.. 결국 차선감소되는 구간에서 차들 몰리면서 결국 비깜키고 정체하고 뒷차들 속도내다가 못보면 대형사고나고 그게그거라고보는데.."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "Ryan Bradford",
+                    "text" : "전국적으로 단속카메라로 인한 문제도 많다고 봅니다. 특히 구간단속은 오히혀 차량 밀집으로 사고 위험성이 높아요. 1차로 2차로 제한속도 합리화로 더 빠르고 안전한 도로 교통 체계가 갖춰줬으면 합니다."
+                }
+            ]
+        },
+       
+  
+        {
+            "id" : 23,
+            "postTitle" : "'GTX-C노선' 수혜 지역 주택시장 온기...연말 신규 공급도 잇따라",
+            "categoryId" : 3 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 10,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#GTX"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Real estate"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Gyeonggi-do"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Apartment"
+                }
+            ],
+            "titleImage" : "./img/post/news/news.16.png",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "올해 막바지 GTX-C노선이 지나는 의정부를 비롯해 연장선 기대감이 높아진 평택, 오산, 화성 등지에서 연말까지 신규 주택공급도 이어진다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "Ibrahim Ali",
+                    "text" : "c노선 무슨 동네 마을버스도 아니고 다닥다닥 ㅋㅋㅋ"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "vladimir ducel",
+                    "text" : "GTX-C노선이 개통되면, 비교적 교통 접근성이 서울 핵심지역으로의 접근성이 더욱 편리해지는 만큼 해당 노선이 지나는 지역의 가치 상승이 예상된다"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "James Wolf",
+                    "text" : "서울보다 진입장벽이 낮아 이를 선점하려는 수요자들의 관심이 꾸준해 앞으로도 GTX-C노선이 지나가는 지역 부동산 시장은 꾸준히 활기를 이어갈 것으로 보인다"
+                }
+            ]
+        },
+        {
+            "id" : 24,
+            "postTitle" : "리튬·마그네슘 등 ‘中의존’ 심각…품귀땐 미래車·전지 ‘직격탄’",
+            "categoryId" : 3 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 1,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Electric vehicle"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Magnesium"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Europe"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#China"
+                }
+            ],
+            "titleImage" : "./img/post/news/news.17.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "‘요소수 사태’에 화들짝 놀란 정부가 수입 의존도가 높은 주요 품목 관리에 팔을 걷어붙였지만, 중국에 대한 수입 의존도가 너무 높아 글로벌 공급망에 취약하다는 점은 오래전부터 예고된 터라 초동 대처가 늦었다는 비판은 불가피할 전망이다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ERKI",
+                    "text" : "공급망을 여러 나라로 분산해야지요. 이번에 요소수 사태가 큰 교훈을 준 것 같네요."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "일본이랑 거의 비슷한데 요소수사태같은건 일본에서 안일어 났지 그게 한국과 일본의 차이"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "늦었지만... 후회할 때 시작하면 늦지 않는다는 말을 나는 좋아한다. 질타는 질타, 늦었더라도 필요한 건 해야 더 큰 화를 면할 수가 있으니... 회의를 열었다는 점, 좋다."
+                }
+            ]
+        },
+       
+   
+        {
+            "id" : 25,
+            "postTitle" : "눈 덮인 자작나무 보려면 영양군 죽파리로 가세요",
+            "categoryId" : 3 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 2,
+            "view" : 9,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#TrevelTips"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Winter"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Yeongyang-gun"
+                }
+            ],
+            "titleImage" : "./img/post/news/news.18.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "본격적인 겨울의 문턱이라는 소설(小雪)이 지나고, 중부 지방엔 벌써 눈이 내렸다는 뉴스가 들려왔다. 며칠 전부터 부쩍 차가워진 날씨 탓에 옷장 깊숙이 넣어뒀던 두꺼운 모직 코트나 패딩점퍼를 꺼내 입고 출근과 등교를 서두르는 이들이 많아졌다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "GHADA ARABI",
+                    "text" : "가보고 싶네요. 아름답기도 하고 문학의 뿌리가 깃든 곳 같기도 하네요."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "JACK",
+                    "text" : "오 벌써 어느곳은 눈이 소북히 내린 모양 .."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "NATALIE LESLIE",
+                    "text" : "주산지는 언제가도 절경입니다... 조그마한 저수지인데... 아름답습니다. 멋지네요..."
+                }
+            ]
+        },
+       
+   
+        {
+            "id" : 26,
+            "postTitle" : "가장 간편하게 요리 맛·색감 ‘업’...미네랄 풍부한 천일염이 딱이네",
+            "categoryId" : 3 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 3,
+            "view" : 7,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Food"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Salt"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Flavor"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Shinan"
+                }
+            ],
+            "titleImage" : "./img/post/news/news.19.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "천일염은 맛소금, 꽃소금 등의 정제염과 달리 인위적인 가공 단계를 거치지 않고 자연 그대로의 방식으로 얻는 소금이다. 바람과 햇빛으로 바닷물의 수분을 증발시키기 때문에 바닷물의 칼슘·마그네슘·칼륨 등 풍부한 미네랄이 그대로 스며든다.; however, he has impressed on loan at Nice and continues to enhance his reputation at Marseille; will he ever get a chance at Arsenal?",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ALANNA MILES",
+                    "text" : "시금치 등 나물을 데칠 때 천일염을 넣으면 녹색이 더욱 선명해져서 보기에도 산뜻한 나물을 만들 수 있다"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "YONA",
+                    "text" : "생선을 요리할 때에는 모양이 흐트러지기 쉬우나, 천일염을 푼 물에 30분 정도 담가놓으면 생선 단백질이 변성되면서 단단해지므로 모양이 유지되고 식감도 좋아진다"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "ANDREW",
+                    "text" : "천일염이라 하더라도 미네랄 함량은 다르다."
+                }
+            ]
+        },
+       
+   
+        {
+            "id" : 27,
+            "postTitle" : "미국, 주인과 함께 113개국 여행한 반려견 재입국 허용",
+            "categoryId" : 3 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 4,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Pet"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Travel"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#America"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Allowed"
+                }
+            ],
+            "titleImage" : "./img/post/news/news.20.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/lifestyle/wine01.jpg" },
+                { "id" : 2, "imageUrl" : "post/lifestyle/wine02.jpg" },
+                { "id" : 3, "imageUrl" : "post/lifestyle/wine03.jpg" },
+                { "id" : 4, "imageUrl" : "post/lifestyle/wine04.jpg" },
+                { "id" : 5, "imageUrl" : "post/lifestyle/wine05.jpg" }
+            ],
+            "text" : "미국 질병통제예방센터(CDC)가 지난 달 14일부터 금지해온 113개국으로부터의 반려견 재입국을 내년부터 허용할 계획이라고 미 뉴욕타임스(NYT)가 24일(현지시간) 보도했다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "JAMIE ",
+                    "text" : "이번 결정은 최근 CDC 홈페이지에 게재됐다."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "SANDY",
+                    "text" : "CDC는 규제를 풀게된 배경을 묻는 질문에 답하지 않았다."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "DOMONIQUE",
+                    "text" : "지난 해 한 해 동안 미국 전역에서 해외에서 반려동물을 입양하는 사례가 급증함에 따라 CDC가 가짜 또는 미흡한 광견병 접종증명이 있는 반려견의 수입을 금지한 사례가 450여건이라고 CDC가 밝혔다."
+                }
+            ]
+        },
+  
+        {
+            "id" : 28,
+            "postTitle" : "충전 단자 바꿨더니 1억에 팔린 그것…'C타입 아이폰' 진짜 나올 수도",
+            "categoryId" : 3 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 5,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Apple"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#iPhone"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Europe"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Type C"
+                }
+            ],
+            "titleImage" : "./img/post/news/news.21.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/interior/interior.01.jpg" },
+                { "id" : 2, "imageUrl" : "post/interior/interior.02.jpg" },
+                { "id" : 3, "imageUrl" : "post/interior/interior.03.jpg" },
+                { "id" : 4, "imageUrl" : "post/interior/interior.04.jpg" },
+                { "id" : 5, "imageUrl" : "post/interior/interior.05.jpg" }
+            ],
+            "text" : "유럽의 한 대학생이 제작해 경매가가 1억원까지 올라 화제가 된 'C타입 아이폰'이 실제로 출시될 수 있다는 전망이 나왔다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "Alison",
+                    "text" :  "삼성이 최고야"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "Dorothy",
+                    "text" : "예전에 5핀타입은 최악이었지...."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "Ella",
+                    "text" : "지금 단자 뺄거 같다는게 가장 유력한 루머 아니었나? 맥세이프 괜히 만든게 아닐텐데"
+                }
+            ]
+        },
+  
+        {
+            "id" : 29,
+            "postTitle" : "디즈니+ 흥행전선에 먹구름…넷플릭스 '지옥' 공개에 이용자 감소",
+            "categoryId" : 3 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 6,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Disney"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Netflix"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#OTT"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Big data"
+                }
+            ],
+            "titleImage" : "./img/post/news/news.22.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "post/workout/01.jpg" },
+                { "id" : 2, "imageUrl" : "post/workout/02.jpg" },
+                { "id" : 3, "imageUrl" : "post/workout/03.jpg" },
+                { "id" : 4, "imageUrl" : "post/workout/04.jpg" },
+                { "id" : 5, "imageUrl" : "post/workout/05.jpg" }
+            ],
+            "text" : "26일 모바일 빅데이터 플랫폼 기업 아이지에이웍스의 모바일인덱스에 따르면 디즈니+ 출시 첫날 일사용자수는 59만3천66명으로 확인됐다. 이후 13일 57만2천812명, 16일 44만4735명, 19일 41만9419명으로 꾸준히 감소세를 보이다, 21일엔 일사용자수는 39만9천426명를 기록했다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "Dominic",
+                    "text" : "디즈니는 애가 있으면 메리트가 있겠지만 애 없으면 딱히 메리트가 없긴 할듯"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "Gordon",
+                    "text" : "서로 안겹쳐서 같이보는데 만족함. 넷플이 볼게 많긴함. 디플에서는 마블시리즈랑 심슨만 보는중."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "Joshua",
+                    "text" : "디플나오면 넷플 망할것처럼 떠들더만 현실은 반대"
+                }
+            ]
+        },
+       
+    
+        {
+            "id" : 30,
+            "postTitle" : "14억 인도 인구 정점 달했나… 합계출산율 2.0명으로 ‘뚝’",
+            "categoryId" : 3 ,       
+            "created" : "2021.11.26",
+            "updated" : "2021.11.26",
+            "userId" : 2,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Population"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Baby"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Asia"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#India"
+                }
+            ],
+            "titleImage" : "./img/post/news/news.23.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "세계에서 두 번째로 인구수가 많은 인도의 합계출산율(가임여성 1명의 예상 평생 출산 자녀 수)이 2.0명으로 떨어진 것으로 나타났다. 또 인도에서 처음으로 남성보다 여성이 더 많은 것으로 조사돼 인도의 인구 팽창이 끝나가는 동시에 인도 사회가 큰 변화를 맞고 있다는 분석이 나온다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "Julian Hoyak",
+                    "text" : "출산율 2.0인 인도도 인구감소를 걱정하는데 출산율 0.82인 한국은 인구감소를 넘어 인구재앙이 되겠네."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "Dave Fineberg",
+                    "text" : "인디아는 남아선호 강해서 여아들을 길에 버리는데도 여자 인구가 남자 인구보다 많다는 것은 남자들이 미친듯이 죽어나간다는 소리자나 ㄷㄷ"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "Robert Turecki",
+                    "text" : "전세계 공통의 키워드 언감생심. 겪어보지도 않은걸 유튜브혹은 인터넷을 통해 대리경험해보고 그걸 사실인냥 지레 겁먹고 미리 포기해버리는 사람들이 늘어나니 점점 인구는 줄어갈수 밖에. 당연한 흐름이라고 본다."
+                }
+            ]
+        },
+
+  
+        {
+            "id" : 31,
+            "postTitle" : "전두환 전 대통령 별세",
+            "categoryId" : 4 ,       
+            "created" : "Nov 16, 2021",
+            "updated" : "Nov 16, 2021",
+            "hotPost" : false,
+            "userId" : 10,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#전대통령"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#사망"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#90세"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#애도"
+                }
+            ],
+            "titleImage" : "./img/post/latest/latest.01.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "지병을 앓아온 전 전 대통령은 이날 오전 8시40분쯤 서울 서대문구 연희동 자택에서 숨졌다. 그는 자택 내에서 쓰러져 오전 8시 55분께 경찰과 소방에 신고됐으며, 경찰은 오전 9시 12분께 사망 사실을 확인한 것으로 파악됐다.시신은 곧 신촌 세브란스병원으로 이송될 예정이다.앞서 육사11기 동기이자 12·12 군사 반란을 함께 한 노태우 전 대통령은 지난달 26일 별세했다. 노 전 대통령의 별세 후 한 달도 되지 않아 전 전 대통령도 세상을 떠났다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "Alexandra",
+                    "text" : "Thanks for watching If you like singers or groups please suggest us Have A Nice Day"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "Andrea",
+                    "text" : "Los mejores BTS!!!"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "Victor",
+                    "text" : "perfecto no como otros"
+                }
+            ]
+        },
+       
+        {
+            "id" : 32,
+            "postTitle" : "신규확진 3901명…위중증 환자 617명, 나흘째 최다",
+            "categoryId" : 4 ,       
+            "created" : "Nov 16, 2021",
+            "updated" : "Nov 16, 2021",
+            "hotPost" : false,
+            "userId" : 11,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Corona19"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Scare"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Critical"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#3000below"
+                }
+            ],
+            "titleImage" : "./img/post/latest/latest.02.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "26일에도 4000명에 가까운 신종 코로나바이러스 감염증(코로나19) 신규 확진자가 나왔다. 위중증 환자 수는 전날에 이어 600명대로 집계되며 나흘 연속 최다치를 기록했다.중앙방역대책본부는 이날 0시 기준으로 신규 확진자가 3901명 늘어 누적 확진자 수가 43만2901명이라고 밝혔다.신규 확진자 수는 전날(3938명)보다는 37명 줄었지만, 이틀 연속 3000명대 후반을 기록하며 확산세가 이어지고 있다. 지난주 목요일 확진자(발표일 기준 금요일인 19일) 3034명과 비교하면 867명 많다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "초코우유",
+                    "text" : "위드코로나가 안될거 같았어. 백신이 백퍼 막아주는거 아닌데 만나서 먹고 마시고 .. 마스크 제발 잘 쓰고 다니길."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "이세영",
+                    "text" : "위드코로나 망한 정책인데 따라하고 4천명 되면 일딴 정지 한다고 했는데 지켜보자 선거때문에 겨울 가장 위험 할 때 풀어 놓고 초등학교 담주 전면등교에 12월 송년회모임 시작하면 담달 7천명 가능 겨울방학때 놀러다니기 시작하면 1만명 쉽게 간다 위중증자 감당 할 수 있을지 차라리 봄에 일상회복 시작했으면 더 괜찮았을 텐데"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "진진두",
+                    "text" : "확진자 100명 이하에서 개 난리치더니 3,000명이 넘는데 K방역은 무엇을했나? 이젠 확진자 증가는 추세고 그래도 선방하고있다고 자랑하냐? 재난지원금은 퍼주고 장비나 의료진 환자 지원은 눈꼽."
+                }
+            ]
+        },
+        {
+            "id" : 33,
+            "postTitle" : "BTS, BTS, BTS 함성 속…AMA ‘대상’ 포함 3관왕 휩쓸다",        
+            "categoryId" : 4 ,       
+            "created" : "Nov 16, 2021",
+            "updated" : "Nov 16, 2021",
+            "hotPost" : false,
+            "userId" : 12,
+            "view" : 1,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Bts"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#AMA"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Artist"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#South Korea"
+                }
+            ],
+            "titleImage" : "./img/post/latest/latest.03.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "그룹 방탄소년단(BTS)이 미국 ‘2021 아메리칸 뮤직 어워즈’(AMA)에서 최고영예인 ‘올해의 아티스트’(아티스트 오브 더 이어)를 포함해 3관왕에 오르는 대기록을 썼다. 1974년 아메리칸 뮤직 어워즈가 생긴 이래 아시아 가수가 ‘올해의 아티스트’ 상을 받은 것은 처음이다.21일 오후 5시(현지시각) 미국 로스앤젤레스 마이크로소프트 시어터에서 열린 에이엠에이에서 방탄소년단은 대상 격인 ‘올해의 아티스트’를 포함해 ‘페이버릿 팝 듀오/그룹’ ‘페이버릿 팝 송’ 부문에서 수상했다. 방탄소년단은 후보에 오른 3개 부문 모두 수상했다.",          "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "Dan",
+                    "text" : "자랑스러운 방탄소년단 세계에 BTS의 음악과 포퍼먼스 그리고 우리나라를 마음껏 알리네요"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "Cameron",
+                    "text" : "Korean 4ever i mean bts 4ever"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "Blake",
+                    "text" : "But like bts v and Jimin and suga and Jungkook"
+                }
+                
+            ]
+        },
+        {"id" : 34,
+            "postTitle" : "블랙핑크 리사 코로나19 확진…다른 멤버 3명도 결과 대기 중",
+            "categoryId" : 4 ,       
+            "created" : "Nov 9, 2021",
+            "updated" : "Nov 9, 2021",
+            "hotPost" : false,
+            "userId" : 2,
+            "view" : 8,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Corona"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Lisa"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Positive"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Black pink"
+                }
+            ],
+            "titleImage" : "./img/post/latest/latest.04.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "그룹 블랙핑크의 리사가 25일 코로나19 확진 판정을 받았다.다른 멤버 3명은 밀접접촉자로 분류되지는 않았지만 PCR 검사를 진행했고, 결과를 기다리고 있는 중으로 알려졌다.YG엔터테인먼트는 당사는 우선 관련 내용을 관계자들에게 신속하고 정확하게 공유, 보건당국 지침 이상의 강도 높은 선제적 조치를 취했다며 앞으로도 소속 아티스트와 주변 스태프들의 건강을 최우선해 지원을 아끼지 않을 것이라고 밝혔다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "김은찬",
+                    "text" : "정말 안타깝네요. 우리나라를 대표하는 가수가 코로나에 걸렸다니 이건 정말 슬픈 일 인것 같습니다. 활동을 열심히 했다는 뜻인 것 같습니다. 코로나가 젊은 층에게는 별로 효과가 없어도 혹시 모르니 당분간은 몸조리를 잘 하며 쉬었으면 합니다. 다른 블랙핑크 멤버들도 안걸렸으면 좋겠지만 걸렸다면 무사히 완치하기를 바랍니다"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "This post brings me right back to the Cinque Terre! I was there last summer and absolutely loved it all! We stayed in Corniglia and I loved how quiet and authentic it felt up there!"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "거북이",
+                    "text" : "빨리 치유되길...."
+                }
+            ]
+        },
+
+        { "id" : 35,
+            "postTitle" : "신임 경찰 만여 명 권총·테이저건 사용 특별교육",
+            "categoryId" : 4 ,       
+            "created" : "Nov 9, 2021",
+            "updated" : "Nov 9, 2021",
+            "hotPost" : false,
+            "userId" : 2,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "Ppolice"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Violence"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#New weapons"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Upgrade"
+                }
+            ],
+            "titleImage" : "./img/post/latest/latest.06.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" :"최근 '층간소음 흉기 난동' 사건 부실대응으로 거센 비판을 받은 경찰이, 신임 경찰관들에게 무기 사용 특별 교육을 하기로 했습니다.경찰청은 오는 29일부터 내년 1월 말 사이 1·2년 차 신임 경찰관 만620명을 대상으로 특별 교육을 진행한다고 밝혔습니다.교육과정은 정신 교육 4시간과 물리력 행사 훈련 12시간이고, 특히 물리력 행사 훈련엔 테이저건과 권총 사격 훈련도 포함됩니다.또 지역 경찰·형사·교통·여성청소년 수사 등 현장 경찰관 7만 명을 대상으로 한 테이저건 특별 훈련도 이뤄질 예정입니다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "choi bk",
+                    "text" : "소 잃고 외양간 고치냐? 장난하는것도 아니고...군인은 휴전선 뚫리면 우째 연습하냐? 쩝쩝."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "이번의 충격적인 사건을 계기로 신임 경찰에 확실한 훈련을 진행하여 다시는 유사한 사고가 발생하지 않도록 해야 할 것입니다. 온 국민이 주목하고 있을 때에만이 아닌 항상 최선을 다해 훈련에 임해주시면 감사하겠습니다."
+                },
+                { 
+                    "id" : 3,
+                    "author" : "leeda",
+                    "text" : "키야~~~~~~~ 완벽하다 완벽해"
+                }
+            ]
+        },
+          { "id" : 36,
+            "postTitle" : "블랙핑크, how you like that 뮤비 10억뷰 돌파",
+            "categoryId" : 4 ,       
+            "created" : "Nov 9, 2021",
+            "updated" : "Nov 9, 2021",
+            "hotPost" : false,
+            "userId" : 4,
+            "view" : 10,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Black pink"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Music video"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Fifth-billion"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#How You Like That"
+                }
+            ],
+            "titleImage" : "./img/post/latest/latest.05.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "한편 블랙핑크의 'How You Like That' 뮤직비디오는 지난 12일 오전 11시 11분께 유튜브에서 조회수 10억회를 돌파했다. 지난해 6월 26일 공개된 지 약 505일만. 블랙핑크의 또 다른 메가히트곡 '뚜두뚜두(DDU-DU DDU-DU)' 뮤직비디오 10억뷰 달성 기간(514일)을 9일 단축시킨 기록이다.",
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "Javier Reyes",
+                    "text" : " No importa de que país sea lisa canta hermoso todos los blinks de latino américa lo entiende es hermoso su talento de lisa y de blakpink"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "Internationally adored for her great personality and character. She is not afraid to be open and she is always honest and true to herself. Get that self-love Lisa, true love begins from the inside"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "Lisa doesn't need to expose her body to be labeled sexy. She doesn't need to show more skin because her talent speaks louder. Her talent complements her entire being."
+                }
+            ]
+        },
+           {"id" : 37,
+            "postTitle" : "유라인'된 이미주,'후엠아이' MC 됐다…예능 열일 박차",
+            "categoryId" : 4 ,       
+            "created" : "Nov 9, 2021",
+            "updated" : "Nov 9, 2021",
+            "hotPost" : false,
+            "userId" : 5,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#MC"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Lee Mi-Joo"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Entertainment."
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Korea"
+                }
+            ],
+            "titleImage" : "./img/post/latest/latest.07.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "25일 스포티비뉴스 취재에 따르면 이미주는 채널S 새 오리지널 나를 찾는 시간-후엠아이 출연을 확정했다.후엠아이는 스타의 새로운 이면을 스타의 일상과 지인의 증언 전문가의 심리 분석 등을 통해 알아보는 프로그램이다. MBTI 등 전 세계적으로 유행하고 있는 '레이블링 게임'을 바탕으로 만들어진 최초의 방송 프로그램으로 기대를 모은다.이미주는 우리가 알던 스타들의 진짜 모습을 이끌어내는 후엠아이 MC를 맡아 예능 열일을 이어간다.",
+
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "참돔",
+                    "text" : "진짜 유재석은 상대방이 가지고 있는 능력을 최대화 시킬수 있는 재능이 있음. 다른 인간들이였으면 어떻게든 기죽이고 깔아뭉겔라고 했을듯."
+                },
+                { 
+                    "id" : 2,
+                    "author" : "리써니",
+                    "text" : "학창시절에도 자기관리 잘했네~ 첨엔 좀 오바하는것같아서 별로였는데 볼수록 넘치는 똘끼와 재능에 감탄함^^ 퀴즈풀때 너무 웃기고 재밌슴 미주 나오는건 무조건 봄~"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "mijoo? I happy to see mijoo in running man thank you jae suk oppa who chose Mijoo  as a new member in running man "
+                }
+            ]
+        },
+          { "id" : 38,
+            "postTitle" : "이러니 송혜교 갓혜교 하는 것..'지헤중' 국내외 반응 '압도적 1위'",
+            "categoryId" : 4 ,       
+            "created" : "Nov 9, 2021",
+            "updated" : "Nov 9, 2021",
+            "hotPost" : false,
+            "userId" : 2,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "K-drama"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Song Hye-Kyo"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Entertainment"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Korea"
+                }
+            ],
+            "titleImage" : "./img/post/latest/latest.08.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "SBS 금토드라마 ‘지금, 헤어지는 중입니다’(극본 제인/연출 이길복/크리에이터 글Line&강은경/제작 삼화네트웍스, UAA/이하 ‘지헤중’)는 ‘이별’이라 쓰고 ‘사랑’이라 읽는 달고 짜고 맵고 시고 쓴 이별 액츄얼리이다. 제인 작가의 짙은 멜로 감성, 이길복 감독의 눈부신 영상미, 송혜교(하영은 역)와 장기용(윤재국 역)의 섬세한 열연 및 역대급 멜로 케미스트리가 폭발적인 반응을 이끌고 있다.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ERKI",
+                    "text" : "I was there in September and totally amazed. I love all these coastal Italian villages, but that Cinque Terre is the pearl. My favorite was Manarola. Lovely photos also!"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "This post brings me right back to the Cinque Terre! I was there last summer and absolutely loved it all! We stayed in Corniglia and I loved how quiet and authentic it felt up there!"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "Hi,This is Brittany. I have read the article. And this article is very helpful.Thanks for the great post."
+                }
+            ]
+        },
+         {   "id" : 39,
+            "postTitle" : "강소라, 출산 후 부기가 덜 빠졌나..통통해진 얼굴",
+            "categoryId" : 4 ,       
+            "created" : "Nov 9, 2021",
+            "updated" : "Nov 9, 2021",
+            "hotPost" : false,
+            "userId" : 2,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Actress"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#Kang So-ra"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Entertainment"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Child birth"
+                }
+            ],
+            "titleImage" : "./img/post/latest/latest.09.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "25일 최근 출산한 강소라는 자신의 인스타그램을 통해 너무 너무 예쁜 집에 초대 받아 기분 좋은 날이라는 글과 함께 근황을 담은 두 장의 인증 사진을 게재했다.공개된 사진 속 강소라는 예쁜 창 밖 풍경을 배경으로 인증샷을 남기고 있는 모습.",
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ERKI",
+                    "text" : "I was there in September and totally amazed. I love all these coastal Italian villages, but that Cinque Terre is the pearl. My favorite was Manarola. Lovely photos also!"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "This post brings me right back to the Cinque Terre! I was there last summer and absolutely loved it all! We stayed in Corniglia and I loved how quiet and authentic it felt up there!"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "Hi,This is Brittany. I have read the article. And this article is very helpful.Thanks for the great post."
+                }
+            ]
+        },
+           { "id" : 40,
+            "postTitle" : "삼성 '20조 투자' 미국에 공장...이재용 마음 무겁다",
+            "categoryId" : 4 ,       
+            "created" : "Nov 9, 2021",
+            "updated" : "Nov 9, 2021",
+            "hotPost" : false,
+            "userId" : 2,
+            "view" : 4,
+            "tags" : [
+                {
+                    "id" : 1,
+                    "tagName" : "#Samsung"
+                },
+                {
+                    "id" : 2,
+                    "tagName" : "#The United States"
+                },
+                {
+                    "id" : 3,
+                    "tagName" : "#Lee Jaeyong"
+                },
+                {
+                    "id" : 4,
+                    "tagName" : "#Korea"
+                }
+            ],
+            "titleImage" : "./img/post/latest/latest.10.jpg",
+            "images" : [
+                { "id" : 1, "imageUrl" : "05.jpg" },
+                { "id" : 2, "imageUrl" : "06.jpg" },
+                { "id" : 3, "imageUrl" : "07.jpg" },
+                { "id" : 4, "imageUrl" : "08.jpg" },
+                { "id" : 5, "imageUrl" : "09.jpg" }
+            ],
+            "text" : "반도체 공급망을 둘러싼 미국과 중국 간의 패권 전쟁이 격화하는 가운데 삼성전자가 20조 원을 투자해 미국 내에 두 번째 첨단 반도체 공장을 짓는다고 발표했습니다.",
+
+            
+            "snsList" : [ 1,2,3,4 ],
+            "comments" : [
+                { 
+                    "id" : 1,
+                    "author" : "ERKI",
+                    "text" : "I was there in September and totally amazed. I love all these coastal Italian villages, but that Cinque Terre is the pearl. My favorite was Manarola. Lovely photos also!"
+                },
+                { 
+                    "id" : 2,
+                    "author" : "KATIE",
+                    "text" : "This post brings me right back to the Cinque Terre! I was there last summer and absolutely loved it all! We stayed in Corniglia and I loved how quiet and authentic it felt up there!"
+                },
+                { 
+                    "id" : 3,
+                    "author" : "BRITTANY",
+                    "text" : "Hi,This is Brittany. I have read the article. And this article is very helpful.Thanks for the great post."
+                }
+            ]
+        }
+    ]
+}
+                          
