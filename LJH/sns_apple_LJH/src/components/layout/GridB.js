@@ -1,59 +1,67 @@
-import React, { useEffect, useState } from 'react';
-import PostExcerpt from '../ui/grid/PostExcerpt';
-import PostText from '../ui/grid/PostText';
-import Title from '../ui/grid/Title';
-import GridADumb from '../ui/grida/GridADumb';
-import GridBsp from '../ui/gridb/GridBsp';
-
+import React, { useEffect, useState } from "react";
+import PostExcerpt from "../ui/grid/PostExcerpt";
+import PostText from "../ui/grid/PostText";
+import Title from "../ui/grid/Title";
+import GridADumb from "../ui/grida/GridADumb";
+import GridBsp from "../ui/gridb/GridBsp";
+import { Link } from "react-router-dom";
 
 function GridB() {
+  const [smallPost, setSmallPost] = useState([]);
 
-   const[ smallPost, setSmallPost ] = useState([])
-
-   useEffect(()=>{
-      fetch("http://localhost:3005/userlist")
-      .then (res=>{
-         return res.json()
+  useEffect(() => {
+    fetch("http://localhost:3005/userlist")
+      .then((res) => {
+        return res.json();
       })
-      .then(data=>{
-         setSmallPost(data)
-         console.log(data)
-      })
-   },[])
+      .then((data) => {
+        setSmallPost(data);
+        console.log(data);
+      });
+  }, []);
 
-    return ( 
-      
-      <div className="atbs-block atbs-block--fullwidth atbs-post-grid-b">
-            <div className="container">
-               <div className="post-grid-b__inner">
-                  <Title />
-                  <div className="row post-grid-b__wrap">
-                     <div className="col-md-8">
-                        <div className="post-horizontal-grid-b">
-                           <article className="post post--horizontal  post--horizontal-reverse ">
-                              <GridADumb />
-                              <div className="post__text-wrap">
-                                 <div className="post__text">
-                                    <PostText />
-                                    <PostExcerpt />
-                                 </div>
-                              </div>
-                           </article>
-                        </div>
-                     </div>
-                     <div className="col-md-4">
-                        <div className="post-horizontal-list-b">
-                           <ul className="post-horizontal-list clearfix">
-                           
-                                                            
-                           </ul>
-                        </div>
-                     </div>
+  return (
+    <div className="atbs-block atbs-block--fullwidth atbs-post-grid-b">
+      <div className="container">
+        <div className="post-grid-b__inner">
+          <Title />
+          <div className="row post-grid-b__wrap">
+            <div className="col-md-8">
+              <div className="post-horizontal-grid-b">
+                <article className="post post--horizontal  post--horizontal-reverse ">
+                  <div className="post__text">
+                    <div className="post__thumb">
+                      <div
+                        className="background-img"
+                        style={{
+                          background: `url('http://via.placeholder.com/470X650')`,
+                        }}
+                      ></div>
+                      <Link className="link-overlay" to="single-1.html"></Link>
+                    </div>
                   </div>
-               </div>
+                  <div className="post__text-wrap">
+                    <div className="post__text">
+                      <PostText />
+                      <div className="post__excerpt">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiumod tempor incididunt ut labore.
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
             </div>
-         </div>
-     );
+            <div className="col-md-4">
+              <div className="post-horizontal-list-b">
+                <ul className="post-horizontal-list clearfix"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default GridB ;
+export default GridB;
