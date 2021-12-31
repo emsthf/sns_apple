@@ -38,7 +38,6 @@ function GridList({id, categoryName}) {
                      
                      {
                         postByCategory.map(
-                          
                            post=>(
                            <GridListVt 
                               key = {post.id}
@@ -56,7 +55,6 @@ function GridList({id, categoryName}) {
                            />
                         )).slice(0,1)
                      }
-                     
                   </div>
                </div>
             </div>
