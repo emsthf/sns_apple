@@ -13,18 +13,16 @@ import javax.persistence.*;
 public class Category {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     private String name;
-    private int type;
 
     @ManyToOne
     @JoinColumn(name = "large_category_id")
     private LargeCategory largeCategory;
 
     @Builder
-    public Category(String name, int type, LargeCategory largeCategory) {
+    public Category(String name, LargeCategory largeCategory) {
         this.name = name;
-        this.type = type;
         this.largeCategory = largeCategory;
     }
 }

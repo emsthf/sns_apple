@@ -26,9 +26,8 @@ public class CategoryServiceImpl implements CategoryService{
         log.info("add Category.");
         return categoryRepository.save(
                 Category.builder()
-                        .name(categoryDto.getName())
-                        .type(categoryDto.getType())
                         .largeCategory(largeCategoryService.getLargeCateById(categoryDto.getLargeCategoryId()).get())
+                        .name(categoryDto.getName())
                         .build()
         );
     }
