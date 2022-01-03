@@ -7,13 +7,13 @@ function RespondCommnet() {
             <h3 id="reply-title" className="comment-reply-title">Leave a Reply <small><Link rel="nofollow" id="cancel-comment-reply-link" to="index.thml" style={{display: "none"}}>Cancel reply</Link></small></h3>
             <form action="#" method="post" id="commentform" className="comment-form" novalidate="">
                 <p className="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span className="required">*</span></p>
-                    <p className="comment-form-comment">
-                        <label for="comment">Comment</label>
-                        <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>
-                    </p>
+                <p className="comment-form-comment">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>
+                </p>
                 <p className="comment-form-author">
-                        <label for="author">Name <span className="required">*</span></label>
-                        <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"/>
+                    <label for="author">Name <span className="required">*</span></label>
+                    <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"/>
                 </p>
                 <p className="comment-form-email">
                     <label for="email">Email <span className="required">*</span></label>

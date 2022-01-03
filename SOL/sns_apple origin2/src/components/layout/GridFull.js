@@ -6,7 +6,6 @@ import StickyBar from '../ui/gridfull/StickyBar';
 
 function GridFull() {
    return ( 
-<>
       <div className="atbs-block atbs-block--fullwidth">
          <div className="container">
             <div className="row">
@@ -33,7 +32,6 @@ function GridFull() {
             </div>
          </div>
       </div>
-</>
    );
 }
 

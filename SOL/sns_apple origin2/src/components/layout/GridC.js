@@ -6,7 +6,6 @@ import TextDay from '../ui/gridc/TextDay';
 
 function GridC() {
    return ( 
-<>
       <div className="atbs-block atbs-block--fullwidth atbs-post-grid-c">
          <div className="container">
             <div className="post-grid-c__inner">
@@ -51,7 +50,6 @@ function GridC() {
             </div>
          </div>
       </div>
-</>
    );
 }
 

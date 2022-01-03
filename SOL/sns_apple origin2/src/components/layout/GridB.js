@@ -5,9 +5,7 @@ import Title from '../ui/grid/Title';
 import GridADumb from '../ui/grida/GridADumb';
 import GridBsp from '../ui/gridb/GridBsp';
 
-
 function GridB() {
-
    const[ smallPost, setSmallPost ] = useState([])
 
    useEffect(()=>{
@@ -19,7 +17,7 @@ function GridB() {
          setSmallPost(data)
          console.log(data)
       })
-   },[])
+   }, [])
 
    return ( 
       <div className="atbs-block atbs-block--fullwidth atbs-post-grid-b">

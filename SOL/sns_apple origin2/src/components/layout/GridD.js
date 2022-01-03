@@ -5,10 +5,8 @@ import PostMeta from '../ui/gridd/PostMeta';
 import PostSmalld from '../ui/gridd/PostSmalld';
 import PostTextd from '../ui/gridd/PostTextd';
 
-
 function GridD() {
-   return ( 
-<>       
+   return (   
       <div className="atbs-block atbs-block--fullwidth atbs-post-grid-d">
          <div className="container">
             <div className="post-grid-d__inner">
@@ -26,7 +24,6 @@ function GridD() {
             </div>
          </div>
       </div>
-</>
    );
 }
 

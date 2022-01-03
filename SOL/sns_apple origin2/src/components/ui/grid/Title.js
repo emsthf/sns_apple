@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-
 function Title({title, evenNumber}) {
     return ( 
         <div className={ evenNumber ? "block-heading block-takei-heading boxRight" : "block-heading block-takei-heading"}>

@@ -9,11 +9,7 @@ import SinglePostSmall from '../ui/single/SinglePostSmall';
 import SingleWrite from '../ui/single/SingleWrite';
 import AuthorDetail from '../ui/grid/AuthorDetail';
 
-
-
-
 function Single() {
-
    const { id } = useParams()
    const url = `http://localhost:3005/post/${id}`
 
@@ -56,7 +52,7 @@ function Single() {
                            <SingleWrite />
                            <Comment userId={postData.userId}/>   
                            <SinglePostSmall id = {id}/>
-                           <SinglePostLarge /> 
+                           <SinglePostLarge />
                         </div>
                      </div>
                   </div>

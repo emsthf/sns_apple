@@ -3,7 +3,6 @@ import axios from 'axios';
 import {Link, useLocation} from 'react-router-dom';
 
 function AuthorDetail({userId, id}) {
-
     const dir = useLocation()
 
     const [user, setUser] = useState({})

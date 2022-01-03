@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function StickySubscribe () {
    return ( 
       <div className="atbs-widget widget  atbs-subscribe">

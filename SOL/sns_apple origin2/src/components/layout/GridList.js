@@ -6,7 +6,6 @@ import GridListVt from '../ui/gridlist/GridListVt';
 import HotPost from '../ui/gridlist/HotPost';
 
 function GridList({id, categoryName}) {
-
    const [postByCategory, setPostByCategory] = useState([])
    const [hotPosts, setHotPosts] = useState([])
    const [evenNumber, setEvenNumber] = useState(false)
@@ -61,8 +60,6 @@ function GridList({id, categoryName}) {
       );
    }
    
-
-
    return (
       <div className="atbs-block atbs-block--fullwidth atbs-post-vertical-lists">
          <div className="container">

@@ -11,7 +11,7 @@ function StickyAboutMe() {
    useEffect(()=>{
       const url = `http://localhost:3005/post/${id}`
       axios.get(url)
-      .then(Response=>{
+      .then(Response => {
          console.log(Response)
          setPostData(Response.data)
       })

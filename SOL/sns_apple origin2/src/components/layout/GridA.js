@@ -5,7 +5,6 @@ import PostText from '../ui/grid/PostText';
 import GridAM from '../ui/grida/GridAM';
 import GridAS from '../ui/grida/GridAS';
 
-
 function GridA() {
    return ( 
       <div className="atbs-block atbs-block--fullwidth atbs-post-grid-a">
