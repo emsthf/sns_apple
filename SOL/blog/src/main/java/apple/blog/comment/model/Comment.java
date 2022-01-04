@@ -16,18 +16,16 @@ public class Comment extends UtilTimeSetter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String comment;
+    private String text;
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-    @ManyToOne
-    @JoinColumn(name = "post_id")
-    private Post post;
 
     @Builder
-    public Comment(String comment, User user, Post post) {
-        this.comment = comment;
+    public Comment(Long id, String text, User user) {
+        this.id = id;
+        this.text = text;
         this.user = user;
-        this.post = post;
     }
 }

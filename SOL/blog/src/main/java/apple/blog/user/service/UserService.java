@@ -9,6 +9,7 @@ import java.util.Optional;
 
 public interface UserService {
     User addUser(IUserDto iUserDto);
+    User editUser(IUserDto iUserDto);
     void addSnsByUser(String userName, String snsName);
     List<User> getAllUser();
     Optional<User> getUserById(Long id);

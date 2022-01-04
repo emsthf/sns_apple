@@ -24,6 +24,10 @@ public class UserController {
         return userService.addUser(iUserDto);
     }
 
+    @PutMapping("/edit")
+    public User edit(@RequestBody IUserDto iUserDto) {
+        return userService.editUser(iUserDto);
+    }
 //    @GetMapping("/getAll")
 //    public List<User> getAll() {
 //        return userService.getAllUser();

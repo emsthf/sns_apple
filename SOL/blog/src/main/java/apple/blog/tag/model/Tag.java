@@ -1,28 +1,26 @@
 package apple.blog.tag.model;
 
-import apple.blog.post.model.Post;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 @Data
 @NoArgsConstructor
-@Entity
 public class Tag {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @ManyToOne
-    @JoinColumn(name = "post_id")
-    private Post post;
 
     @Builder
-    public Tag(String name, Post post) {
+    public Tag(Long id, String name) {
+        this.id = id;
         this.name = name;
-        this.post = post;
     }
 }

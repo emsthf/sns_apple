@@ -1,6 +1,5 @@
 package apple.blog.post.controller;
 
-import apple.blog.comment.model.Comment;
 import apple.blog.post.dto.IPostDto;
 import apple.blog.post.model.Post;
 import apple.blog.post.service.PostService;
@@ -22,9 +21,19 @@ public class PostController {
         return postService.addPost(iPostDto);
     }
 
+    @PutMapping("/edit")
+    public Post edit(@RequestBody IPostDto iPostDto) {
+        return postService.editPost(iPostDto);
+    }
+
     @GetMapping("/getAll")
     public List<Post> getAll() {
         return postService.getAllPost();
+    }
+
+    @GetMapping("/getAllOrderByCreated")
+    public List<Post> getAllOrderByCreatedDesc() {
+        return postService.getAllOrderByCreatedDesc();
     }
 
     @GetMapping("/get/{id}")

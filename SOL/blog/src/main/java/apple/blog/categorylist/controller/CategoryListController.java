@@ -25,4 +25,13 @@ public class CategoryListController {
         return categoryListService.getAll();
     }
 
+    @GetMapping("/getAllByCategoryId/{id}")
+    public List<CategoryList> getAllCategoryId(@PathVariable Long id) {
+        return categoryListService.getAllByCategoryId(id);
+    }
+
+    @GetMapping("/getAllByLargeCategoryId/{id}")
+    public List<CategoryList> getAllLargeCategoryId(@PathVariable Long id) {
+        return categoryListService.getAllByLargeCategoryId(id);
+    }
 }

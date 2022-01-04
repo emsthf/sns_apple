@@ -7,10 +7,12 @@ import apple.blog.largeCategory.service.LargeCategoryService;
 import apple.blog.post.service.PostService;
 import apple.blog.smallCategory.service.CategoryService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Slf4j
 @RequiredArgsConstructor
 @Service
 public class CategoryListServiceImple implements CategoryListService{
@@ -22,7 +24,7 @@ public class CategoryListServiceImple implements CategoryListService{
 
     @Override
     public CategoryList addCategoryList(CategorListDto categorListDto) {
-
+        log.info("add CateList.");
         return categoryListRepository.save(
                 CategoryList.builder()
                         .category(categoryService.getCategoryById(categorListDto.getCategoryId()).get())
@@ -35,6 +37,17 @@ public class CategoryListServiceImple implements CategoryListService{
 
     @Override
     public List<CategoryList> getAll() {
+        log.info("get all CateList.");
         return categoryListRepository.findAll();
+    }
+
+    @Override
+    public List<CategoryList> getAllByCategoryId(Long categoryId) {
+        return categoryListRepository.findAllByCategoryId(categoryId);
+    }
+
+    @Override
+    public List<CategoryList> getAllByLargeCategoryId(Long largeCategoryId) {
+        return categoryListRepository.findAllByLargeCategoryId(largeCategoryId);
     }
 }

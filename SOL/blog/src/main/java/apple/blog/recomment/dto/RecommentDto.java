@@ -3,7 +3,8 @@ package apple.blog.recomment.dto;
 import lombok.Data;
 
 @Data
-public class IRecomment {
+public class RecommentDto {
     private Long id;
-    private Long commentId;
+    private String text;
+    private Long userId;
 }

@@ -20,6 +20,11 @@ public class CommentController {
         return commentService.addComment(iCommentDto);
     }
 
+    @PutMapping("/edit")
+    public Comment edit(@RequestBody ICommentDto iCommentDto) {
+        return commentService.editComment(iCommentDto);
+    }
+
     @GetMapping("/getAll")
     public List<Comment> getAll() {
         return commentService.getAllComment();
@@ -33,11 +38,6 @@ public class CommentController {
     @GetMapping("/getUserId/{id}")
     public List<Comment> getCommentByUserId(@PathVariable("id") Long id) {
         return commentService.getAllByUserId(id);
-    }
-
-    @GetMapping("/getAllByPostId/{postId}")
-    public List<Comment> getAllByPostId(@PathVariable Long postId) {
-        return commentService.getAllByPostId(postId);
     }
 
     @DeleteMapping("/del/{id}")

@@ -30,6 +30,7 @@ public class UserServiceImpl implements UserService {
     public User addUser(IUserDto iUserDto) {
         log.info("save User.");
         User user = User.builder()
+                .id(null)
                 .userId(iUserDto.getUserId())
                 .password(iUserDto.getPassword())
                 .location(iUserDto.getLocation())
@@ -40,6 +41,24 @@ public class UserServiceImpl implements UserService {
                 .build();
         userRepository.save(user);
         addSnsIdByUserId(user.getId(), iUserDto.getSnsListId());
+        return user;
+    }
+
+    @Override
+    public User editUser(IUserDto iUserDto) {
+        log.info("Eidt User. : {}", userRepository.findById(iUserDto.getId()).get());
+        User user = User.builder()
+                .id(iUserDto.getId())
+                .userId(iUserDto.getUserId())
+                .password(iUserDto.getPassword())
+                .location(iUserDto.getLocation())
+                .grade(gradeService.getGrade(iUserDto.getGrade()).get())
+                .profileImg(iUserDto.getProfileImg())
+                .userName(iUserDto.getUserName())
+                .snss(new ArrayList<>())
+                .build();
+//        user.setCreatDate(userRepository.findById(iUserDto.getId()).get().getCreatDate());
+        userRepository.save(user);
         return user;
     }
 

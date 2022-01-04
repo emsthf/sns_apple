@@ -6,9 +6,8 @@ import apple.blog.categorylist.model.CategoryList;
 import java.util.List;
 
 public interface CategoryListService {
-
     CategoryList addCategoryList(CategorListDto categorListDto);
     List<CategoryList> getAll();
-
-
+    List<CategoryList> getAllByCategoryId(Long categoryId);
+    List<CategoryList> getAllByLargeCategoryId(Long largeCategoryId);
 }

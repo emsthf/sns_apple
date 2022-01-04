@@ -1,7 +1,5 @@
 package apple.blog.tag.service;
 
-import apple.blog.post.service.PostService;
-import apple.blog.tag.dto.TagDto;
 import apple.blog.tag.model.Tag;
 import apple.blog.tag.repository.TagRepository;
 import lombok.RequiredArgsConstructor;
@@ -11,46 +9,45 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 @Slf4j
 @RequiredArgsConstructor
-@Service
-public class TagServiceImpl implements TagService{
+public class TagServiceImpl implements TagService {
 
     private final TagRepository tagRepository;
-    private final PostService postService;
 
     @Override
-    public Tag addTag(TagDto tagDto) {
+    public Tag addTag(Tag tag) {
         log.info("add Tag.");
-        return tagRepository.save(
-                Tag.builder()
-                    .name(tagDto.getName())
-                    .post(postService.getPostById(tagDto.getPostId()).get())
-                    .build()
-        );
+        return tagRepository.save(tag);
     }
 
     @Override
-    public List<Tag> getAllTag() {
+    public Tag editTag(Tag tag) {
+        log.info("edit Tag {}.", tagRepository.findById(tag.getId()).get());
+        Tag editTag = Tag.builder()
+                .name(tag.getName())
+                .id(tag.getId())
+                .build();
+        tagRepository.save(editTag);
+        return editTag;
+    }
+
+    @Override
+    public List<Tag> getAll() {
         log.info("get all Tags.");
         return tagRepository.findAll();
     }
 
     @Override
-    public List<Tag> getAllTagByPostId(Long postId) {
-        log.info("get Tags by Post Id {}.", postId);
-        return tagRepository.findAllByPostId(postId);
-    }
-
-    @Override
     public Optional<Tag> getTagById(Long id) {
-        log.info("get Tag by Id {}.", id);
+        log.info("get Tag by Tag id {}.", id);
         return Optional.ofNullable(tagRepository.findById(id).get());
     }
 
     @Override
     public void delTag(Long id) {
-        log.info("delete Tag by Id {}.", id);
+        log.info("delete Tag by Tag id {}.", id);
         tagRepository.deleteById(id);
     }
 }

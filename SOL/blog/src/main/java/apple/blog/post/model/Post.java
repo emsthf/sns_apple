@@ -1,8 +1,7 @@
 package apple.blog.post.model;
 
 import apple.blog.base.UtilTimeSetter;
-import apple.blog.comment.model.Comment;
-import apple.blog.tag.model.Tag;
+import apple.blog.commentlist.model.CommentList;
 import apple.blog.user.model.User;
 
 import lombok.Builder;
@@ -29,7 +28,8 @@ public class Post extends UtilTimeSetter {
     private User user;
 
     @Builder
-    public Post(String title, Long view, String titleImg, String content, User user) {
+    public Post(Long id, String title, Long view, String titleImg, String content, User user) {
+        this.id = id;
         this.title = title;
         this.view = view;
         this.titleImg = titleImg;

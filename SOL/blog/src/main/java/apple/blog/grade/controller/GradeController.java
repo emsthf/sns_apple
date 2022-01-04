@@ -19,6 +19,11 @@ public class GradeController {
         return gradeService.addGrade(grade);
     }
 
+    @PutMapping("/edit")
+    public Grade edit(@RequestBody Grade grade) {
+        return gradeService.editGrade(grade);
+    }
+
     @GetMapping("/getAll")
     public List<Grade> getAll() {
         return gradeService.getAllGrade();

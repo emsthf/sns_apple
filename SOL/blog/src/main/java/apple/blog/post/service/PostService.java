@@ -8,7 +8,9 @@ import java.util.Optional;
 
 public interface PostService {
     Post addPost(IPostDto iPostDtopost);
+    Post editPost(IPostDto iPostDto);
     List<Post> getAllPost();
+    List<Post> getAllOrderByCreatedDesc();
     Optional<Post> getPostById(Long id);
     List<Post> getPostByAuthId(Long id);
     void delPost(Long id);
