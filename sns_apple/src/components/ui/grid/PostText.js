@@ -10,12 +10,6 @@ function PostText () {
                 </div>
                 <AuthorDetail />
             </div>
-            
-            
-             
-                                 
-                             
-        
     );
 }
 

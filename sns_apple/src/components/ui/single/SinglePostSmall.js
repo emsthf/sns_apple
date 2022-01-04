@@ -35,13 +35,13 @@ function SinglePostSmall({id}) {
         <div className="posts-navigation single-entry-section everly-single-entry clearfix">
             {
                 prevData ?
-
+                
                 <div className="posts-navigation__prev">
                     <article className="post post--vertical ">
                         <div className="post__thumb">
-                            <a className="navigation-button" href="single-1.html">
+                            <Link className="navigation-button" to="single-1.html">
                                 <div className="background-img" style={{ background: `url('../.${prevData.titleImage}')`}}></div>
-                            </a>
+                            </Link>
                             <div className="post__meta ">
                                 <Link to={`/single/${id-1}`}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" fill="var(--color-white)" viewBox="0 0 32 17">
@@ -54,7 +54,7 @@ function SinglePostSmall({id}) {
                         <div className="post__text inverse-text">
                             <div className="post__text-wrap">
                                 <div className="post__text-inner">
-                                <h3 className="post__title"><a href="single-1.html">{prevData.postTitle}</a></h3>
+                                <h3 className="post__title"><Link to="single-1.html">{prevData.postTitle}</Link></h3>
                                 </div>
                             </div>
                         </div>
@@ -71,9 +71,9 @@ function SinglePostSmall({id}) {
                 <div className="posts-navigation__next">
                 <article className="post post--vertical ">
                     <div className="post__thumb">
-                        <a className="navigation-button" href="single-1.html">
+                        <Link className="navigation-button" to="single-1.html">
                             <div className="background-img" style={{ background: `url('../.${nexData.titleImage}')`}}></div>
-                        </a>
+                        </Link>
                         <div className="post__meta ">
                         <Link to={`/single/${parseInt(id) + 1}`}>
                             Next
@@ -87,7 +87,7 @@ function SinglePostSmall({id}) {
                     <div className="post__text inverse-text">
                         <div className="post__text-wrap">
                             <div className="post__text-inner">
-                            <h3 className="post__title"><a href="single-1.html">{nexData.postTitle}</a></h3>
+                            <h3 className="post__title"><Link to="single-1.html">{nexData.postTitle}</Link></h3>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ function SinglePostSmall({id}) {
             }
             
         </div>
-     );
+    );
 }
 
 export default SinglePostSmall;
