@@ -10,5 +10,4 @@ public interface CommentListService {
     List<CommentList> getAll();
     List<CommentList> getAllByPostId(Long postId);
     void delCommList(Long id);
-    void delCommListAll(Long postId);
 }

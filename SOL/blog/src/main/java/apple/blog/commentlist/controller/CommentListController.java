@@ -34,9 +34,4 @@ public class CommentListController {
     public void delCommList(@PathVariable Long id) {
         commentListService.delCommList(id);
     }
-
-    @DeleteMapping("/delAllByPostId/{postId}")
-    public void delAllCommListByPostId(@PathVariable Long postId) {
-        commentListService.delCommListAll(postId);
-    }
 }

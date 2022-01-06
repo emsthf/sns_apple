@@ -1,5 +1,6 @@
 package apple.blog.recommentlist.repository;
 
+import apple.blog.recomment.model.Recomment;
 import apple.blog.recommentlist.model.RecommentList;
 import org.springframework.data.jpa.repository.JpaRepository;
 

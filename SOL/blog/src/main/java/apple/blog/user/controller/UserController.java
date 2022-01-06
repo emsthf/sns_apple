@@ -2,6 +2,7 @@ package apple.blog.user.controller;
 
 import apple.blog.grade.service.GradeService;
 import apple.blog.user.dto.IUserDto;
+import apple.blog.user.dto.OUserDto;
 import apple.blog.user.model.User;
 import apple.blog.user.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -20,18 +21,14 @@ public class UserController {
     private final GradeService gradeService;
 
     @PostMapping("/add")
-    public User add(@RequestBody IUserDto iUserDto) {
-        return userService.addUser(iUserDto);
+    public void add(@RequestBody IUserDto iUserDto) {
+        userService.addUser(iUserDto);
     }
 
     @PutMapping("/edit")
-    public User edit(@RequestBody IUserDto iUserDto) {
-        return userService.editUser(iUserDto);
+    public void edit(@RequestBody IUserDto iUserDto) {
+        userService.editUser(iUserDto);
     }
-//    @GetMapping("/getAll")
-//    public List<User> getAll() {
-//        return userService.getAllUser();
-//    }
 
     @GetMapping("/getAll")
     public ResponseEntity< List<User> > getAll() {
@@ -39,7 +36,7 @@ public class UserController {
     }
 
     @GetMapping("/get/{id}")
-    public Optional<User> get(@PathVariable("id") Long id) {
+    public OUserDto get(@PathVariable("id") Long id) {
         return userService.getUserById(id);
     }
 

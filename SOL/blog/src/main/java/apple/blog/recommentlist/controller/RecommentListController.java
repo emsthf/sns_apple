@@ -29,4 +29,9 @@ public class RecommentListController {
     public List<RecommentList> getAllByCommentid(@PathVariable Long id) {
         return recommentListService.getAllByCommentId(id);
     }
+
+    @DeleteMapping("/del/{id}")
+    public void delRecomment(@PathVariable Long id) {
+        recommentListService.delRecommentList(id);
+    }
 }

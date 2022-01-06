@@ -10,4 +10,5 @@ public interface CategoryListService {
     List<CategoryList> getAll();
     List<CategoryList> getAllByCategoryId(Long categoryId);
     List<CategoryList> getAllByLargeCategoryId(Long largeCategoryId);
+    void delCateList(Long id);
 }

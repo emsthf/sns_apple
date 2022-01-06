@@ -4,6 +4,7 @@ import apple.blog.comment.service.CommentService;
 import apple.blog.recomment.dto.RecommentDto;
 import apple.blog.recomment.model.Recomment;
 import apple.blog.recomment.repository.RecommentRepository;
+import apple.blog.user.repository.UserRepository;
 import apple.blog.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +19,8 @@ import java.util.Optional;
 public class RecommentServiceImpl implements RecommentService {
 
     private final RecommentRepository recommentRepository;
-    private final UserService userService;
+    private final UserRepository userRepository;
+//    private final UserService userService;
 
     @Override
     public Recomment addRecomment(RecommentDto recommentDto) {
@@ -27,7 +29,8 @@ public class RecommentServiceImpl implements RecommentService {
                 Recomment.builder()
                         .id(null)
                         .text(recommentDto.getText())
-                        .user(userService.getUserById(recommentDto.getUserId()).get())
+                        .user(userRepository.findById(recommentDto.getUserId()).get())
+//                        .user(userService.getUserById(recommentDto.getUserId()).get())
                         .build()
         );
     }
@@ -38,7 +41,8 @@ public class RecommentServiceImpl implements RecommentService {
         Recomment recomment = Recomment.builder()
                 .id(recommentDto.getId())
                 .text(recommentDto.getText())
-                .user(userService.getUserById(recommentDto.getUserId()).get())
+                .user(userRepository.findById(recommentDto.getUserId()).get())
+//                .user(userService.getUserById(recommentDto.getUserId()).get())
                 .build();
         recommentRepository.save(recomment);
         return recomment;

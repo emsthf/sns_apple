@@ -34,4 +34,9 @@ public class CategoryListController {
     public List<CategoryList> getAllLargeCategoryId(@PathVariable Long id) {
         return categoryListService.getAllByLargeCategoryId(id);
     }
+
+    @DeleteMapping("/del/{id}")
+    public void delCateList(@PathVariable Long id) {
+        categoryListService.delCateList(id);
+    }
 }

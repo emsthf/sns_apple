@@ -1,12 +1,17 @@
 package apple.blog.post.service;
 
+import apple.blog.categorylist.model.CategoryList;
+import apple.blog.categorylist.repository.CategoryListRepository;
 import apple.blog.commentlist.model.CommentList;
 import apple.blog.commentlist.repository.CommentListRepository;
 import apple.blog.post.dto.IPostDto;
 import apple.blog.post.model.Post;
 import apple.blog.post.repository.PostRepository;
+import apple.blog.recommentlist.model.RecommentList;
+import apple.blog.recommentlist.repository.RecommentListRepository;
 import apple.blog.taglist.model.TagList;
 import apple.blog.taglist.repository.TagListRepository;
+import apple.blog.user.repository.UserRepository;
 import apple.blog.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,9 +27,12 @@ import java.util.Optional;
 public class PostServiceImpl implements PostService{
 
     private final PostRepository postRepository;
-    private final UserService userService;
+    private final UserRepository userRepository;
+//    private final UserService userService;
     private final CommentListRepository commentListRepository;
+    private final RecommentListRepository recommentListRepository;
     private final TagListRepository tagListRepository;
+    private final CategoryListRepository categoryListRepository;
 
     @Override
     public Post addPost(IPostDto iPostDto) {
@@ -34,7 +42,8 @@ public class PostServiceImpl implements PostService{
                 .content(iPostDto.getContent())
                 .title(iPostDto.getTitle())
                 .titleImg(iPostDto.getTitleImg())
-                .user(userService.getUserById(iPostDto.getUserId()).get())
+                .user(userRepository.findById(iPostDto.getUserId()).get())
+//                .user(userService.getUserById(iPostDto.getUserId()).get())
                 .view(0L)
                 .build()
         );
@@ -48,7 +57,8 @@ public class PostServiceImpl implements PostService{
                 .content(iPostDto.getContent())
                 .title(iPostDto.getTitle())
                 .titleImg(iPostDto.getTitleImg())
-                .user(userService.getUserById(iPostDto.getUserId()).get())
+                .user(userRepository.findById(iPostDto.getUserId()).get())
+//                .user(userService.getUserById(iPostDto.getUserId()).get())
                 .view(iPostDto.getView())
                 .build();
         postRepository.save(post);
@@ -82,15 +92,30 @@ public class PostServiceImpl implements PostService{
         log.info("delete Post by Id {} with comments.", id);
         try {
             // 포스트에 달린 댓글 지우기
-//            List<CommentList> commentLists = commentListRepository.findAllByPostId(id);
-//            commentListRepository.deleteAll(commentLists);
+            List<CommentList> commentLists = commentListRepository.findAllByPostId(id);
+            log.info("commentList DELETE {}", commentLists);
+            // 포스트에 달린 댓글을 지우기 전에 댓글에 달린 모든 대댓글 삭제
+            commentLists.stream().forEach(
+                    commentList -> {
+                        List<RecommentList> recommentLists = recommentListRepository.findAllByCommentId(commentList.getComment().getId());
+                        log.info("recommentList {}", recommentLists);
+                        recommentListRepository.deleteAll(recommentLists);
+                    }
+            );
+            log.info("commentList Delete {}", commentLists);
+            commentListRepository.deleteAll(commentLists);
+
             // 포스트에 달린 태그 지우기
             List<TagList> tagLists = tagListRepository.findAllByPostId(id);
             tagListRepository.deleteAll(tagLists);
-        } catch (Exception e) {
-            log.info("포스트 지우기 실패!!!!!!!! {}", e);
+
+            // 카테고리 리스트 지우기
+            List<CategoryList> categoryLists = categoryListRepository.findAllByPostId(id);
+            categoryListRepository.deleteAll(categoryLists);
+
+        } catch (Exception exception) {
+            log.error("포스트 지우기 실패!!!!!!!! {}", exception);
         }
         postRepository.deleteById(id);
     }
-
 }

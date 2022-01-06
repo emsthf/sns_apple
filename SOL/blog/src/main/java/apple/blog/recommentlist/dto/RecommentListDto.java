@@ -7,5 +7,4 @@ public class RecommentListDto {
     private Long id;
     private Long recommentId;
     private Long commentId;
-    private Long postId;
 }

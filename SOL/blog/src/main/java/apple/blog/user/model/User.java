@@ -20,29 +20,24 @@ public class User extends UtilTimeSetter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String userId;
-    private String password;
-    @Column(name = "name")
     private String userName;
+    private String password;
+    private String name;
     private String location;
     private String profileImg;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "grade_id")
     private Grade grade;
 
-    @ManyToMany(fetch = EAGER)
-    private Collection<Sns> snss = new ArrayList<>();
-
     @Builder
-    public User(Long id, String userId, String password, String userName, String location, String profileImg, Grade grade, Collection<Sns> snss) {
+    public User(Long id, String userName, String password, String name, String location, String profileImg, Grade grade) {
         this.id = id;
-        this.userId = userId;
-        this.password = password;
         this.userName = userName;
+        this.password = password;
+        this.name = name;
         this.location = location;
         this.profileImg = profileImg;
         this.grade = grade;
-        this.snss = snss;
     }
 }

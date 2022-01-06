@@ -3,6 +3,7 @@ package apple.blog.comment.service;
 import apple.blog.comment.dto.ICommentDto;
 import apple.blog.comment.model.Comment;
 import apple.blog.comment.repository.CommentRepository;
+import apple.blog.user.repository.UserRepository;
 import apple.blog.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,6 +18,7 @@ import java.util.Optional;
 public class CommentServiceImpl implements CommentService {
 
     private final CommentRepository commentRepository;
+    private final UserRepository userRepository;
     private final UserService userService;
 
     @Override
@@ -25,7 +27,8 @@ public class CommentServiceImpl implements CommentService {
         return commentRepository.save(Comment.builder()
                 .id(null)
                 .text(iCommentDto.getText())
-                .user(userService.getUserById(iCommentDto.getUserId()).get())
+                .user(userRepository.getById(iCommentDto.getUserId()))
+//                .user(userService.getUserById(iCommentDto.getUserId()).get())
                 .build()
         );
     }
@@ -36,7 +39,8 @@ public class CommentServiceImpl implements CommentService {
         Comment comment = Comment.builder()
                 .id(iCommentDto.getId())
                 .text(iCommentDto.getText())
-                .user(userService.getUserById(iCommentDto.getUserId()).get())
+                .user(userRepository.getById(iCommentDto.getUserId()))
+//                .user(userService.getUserById(iCommentDto.getUserId()).get())
                 .build();
         commentRepository.save(comment);
         return comment;

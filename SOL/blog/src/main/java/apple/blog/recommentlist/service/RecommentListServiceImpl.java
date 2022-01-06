@@ -21,7 +21,6 @@ public class RecommentListServiceImpl implements RecommentListService {
     private final RecommentListRepository recommentListRepository;
     private final CommentService commentService;
     private final RecommentService recommentService;
-    private final PostService postService;
 
     @Override
     public RecommentList addRecommentList(RecommentListDto recommentListDto) {
@@ -29,7 +28,6 @@ public class RecommentListServiceImpl implements RecommentListService {
                 RecommentList.builder()
                         .comment(commentService.getCommentById(recommentListDto.getCommentId()).get())
                         .recomment(recommentService.getRecommentById(recommentListDto.getRecommentId()).get())
-                        .post(postService.getPostById(recommentListDto.getPostId()).get())
                         .build()
         );
     }
@@ -42,5 +40,10 @@ public class RecommentListServiceImpl implements RecommentListService {
     @Override
     public List<RecommentList> getAllByCommentId(Long commentId) {
         return recommentListRepository.findAllByCommentId(commentId);
+    }
+
+    @Override
+    public void delRecommentList(Long id) {
+        recommentListRepository.deleteById(id);
     }
 }

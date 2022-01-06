@@ -9,4 +9,5 @@ public interface RecommentListService {
     RecommentList addRecommentList(RecommentListDto recommentListDto);
     List<RecommentList> getAll();
     List<RecommentList> getAllByCommentId(Long commentId);
+    void delRecommentList(Long id);
 }

@@ -50,4 +50,9 @@ public class CategoryListServiceImple implements CategoryListService{
     public List<CategoryList> getAllByLargeCategoryId(Long largeCategoryId) {
         return categoryListRepository.findAllByLargeCategoryId(largeCategoryId);
     }
+
+    @Override
+    public void delCateList(Long id) {
+        categoryListRepository.deleteById(id);
+    }
 }

@@ -18,7 +18,7 @@ public class RecommentList {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "recomment_id")
     private Recomment recomment;
 
@@ -26,14 +26,11 @@ public class RecommentList {
     @JoinColumn(name = "comment_id")
     private Comment comment;
 
-    @ManyToOne
-    @JoinColumn(name = "post_id")
-    private Post post;
 
     @Builder
-    public RecommentList(Recomment recomment, Comment comment, Post post) {
+    public RecommentList(Long id, Recomment recomment, Comment comment) {
+        this.id = id;
         this.recomment = recomment;
         this.comment = comment;
-        this.post = post;
     }
 }

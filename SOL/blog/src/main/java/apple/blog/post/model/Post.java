@@ -23,7 +23,7 @@ public class Post extends UtilTimeSetter {
     private String titleImg;
     private String content;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "author_id")
     private User user;
 

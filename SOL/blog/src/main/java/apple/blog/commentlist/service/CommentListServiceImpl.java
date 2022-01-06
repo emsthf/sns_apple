@@ -5,9 +5,13 @@ import apple.blog.commentlist.dto.CommentListDto;
 import apple.blog.commentlist.model.CommentList;
 import apple.blog.commentlist.repository.CommentListRepository;
 import apple.blog.post.service.PostService;
+import apple.blog.recomment.repository.RecommentRepository;
+import apple.blog.recommentlist.model.RecommentList;
+import apple.blog.recommentlist.repository.RecommentListRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -19,6 +23,8 @@ public class CommentListServiceImpl implements CommentListService {
     private final CommentListRepository commentListRepository;
     private final PostService postService;
     private final CommentService commentService;
+    private final RecommentRepository recommentRepository;
+    private final RecommentListRepository recommentListRepository;
 
     @Override
     public CommentList addCommList(CommentListDto commentListDto) {
@@ -45,15 +51,17 @@ public class CommentListServiceImpl implements CommentListService {
     }
 
     @Override
+    @Transactional(rollbackFor = {RuntimeException.class})
     public void delCommList(Long id) {
         log.info("delete Comm List {}.", id);
+        // 코멘트 리스트의 id로 해당 코멘트 리스트의 코멘트를 받는다
+        Long commentId = commentListRepository.findById(id).get().getComment().getId();
+        // 코멘트 id로 찾은 코멘트에 달린 리코멘트 전부 찾기
+        List<RecommentList> recommentLists = recommentListRepository.findAllByCommentId(commentId);
+        log.info("recommentList {}", recommentLists);
+        // 리코멘트에서 코멘트 id로 해당 코멘트에 달린 모든 리코멘트를 찾아서 지운다
+        recommentListRepository.deleteAll(recommentLists);
+        // 코멘트에 달린 리코멘트가 지워진 후, 코멘트 리스트를 지워서 코멘트도 함께 지운다
         commentListRepository.deleteById(id);
-    }
-
-    @Override
-    public void delCommListAll(Long postId) {   // 해당 포스트에 달린 모든 코멘트 삭제 메소드
-        log.info("delete Comm List by Post id {}.", postId);
-        List<CommentList> commentLists = commentListRepository.findAllByPostId(postId);   // 포스트 id로 코멘트 리스트를 검색해서
-        commentListRepository.deleteAll(commentLists);   // 검색된 코멘트 리스트 모두 삭제
     }
 }
