@@ -19,30 +19,38 @@ public class CommentServiceImpl implements CommentService {
 
     private final CommentRepository commentRepository;
     private final UserRepository userRepository;
-    private final UserService userService;
 
     @Override
     public Comment addComment(ICommentDto iCommentDto) {
         log.info("add Comment.");
-        return commentRepository.save(Comment.builder()
-                .id(null)
-                .text(iCommentDto.getText())
-                .user(userRepository.getById(iCommentDto.getUserId()))
-//                .user(userService.getUserById(iCommentDto.getUserId()).get())
-                .build()
-        );
+        Comment comment = new Comment();
+        try {
+            comment = commentRepository.save(Comment.builder()
+                    .id(null)
+                    .text(iCommentDto.getText())
+                    .user(userRepository.getById(iCommentDto.getUserId()))
+                    .build()
+            );
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return comment;
     }
 
     @Override
     public Comment editComment(ICommentDto iCommentDto) {
         log.info("edit Comment {}.", commentRepository.findById(iCommentDto.getId()).get());
-        Comment comment = Comment.builder()
-                .id(iCommentDto.getId())
-                .text(iCommentDto.getText())
-                .user(userRepository.getById(iCommentDto.getUserId()))
-//                .user(userService.getUserById(iCommentDto.getUserId()).get())
-                .build();
-        commentRepository.save(comment);
+        Comment comment = new Comment();
+        try {
+            comment = Comment.builder()
+                    .id(iCommentDto.getId())
+                    .text(iCommentDto.getText())
+                    .user(userRepository.getById(iCommentDto.getUserId()))
+                    .build();
+            commentRepository.save(comment);
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
         return comment;
     }
 

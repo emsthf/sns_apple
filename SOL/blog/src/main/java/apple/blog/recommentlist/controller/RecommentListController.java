@@ -16,8 +16,8 @@ public class RecommentListController {
     private final RecommentListService recommentListService;
 
     @PostMapping("/add")
-    public RecommentList addRecommentList(@RequestBody RecommentListDto recommentListDto) {
-        return recommentListService.addRecommentList(recommentListDto);
+    public void addRecommentList(@RequestBody RecommentListDto recommentListDto) {
+        recommentListService.addRecommentList(recommentListDto);
     }
 
     @GetMapping("/getAll")

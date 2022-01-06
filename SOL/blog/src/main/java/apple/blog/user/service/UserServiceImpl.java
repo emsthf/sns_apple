@@ -41,32 +41,41 @@ public class UserServiceImpl implements UserService {
     @Override
     public User addUser(IUserDto iUserDto) {
         log.info("save User.");
-        User user = User.builder()
-                .id(null)
-                .name(iUserDto.getName())
-                .password(iUserDto.getPassword())
-                .location(iUserDto.getLocation())
-                .grade(gradeService.getGrade(iUserDto.getGrade()).get())
-                .profileImg(iUserDto.getProfileImg())
-                .userName(iUserDto.getUserName())
-                .build();
-        userRepository.save(user);
+        User user = new User();
+        try {
+            user = User.builder()
+                    .id(null)
+                    .name(iUserDto.getName())
+                    .password(iUserDto.getPassword())
+                    .location(iUserDto.getLocation())
+                    .grade(gradeService.getGrade(iUserDto.getGrade()).get())
+                    .profileImg(iUserDto.getProfileImg())
+                    .userName(iUserDto.getUserName())
+                    .build();
+            userRepository.save(user);
+        } catch (Exception e) {
+            log.error("error : {}" ,e.getMessage());
+        }
         return user;
     }
 
     @Override
     public User editUser(IUserDto iUserDto) {
         log.info("Edit User. : {}", userRepository.findById(iUserDto.getId()).get());
-        User user = User.builder()
-                .id(iUserDto.getId())
-                .name(iUserDto.getName())
-                .password(iUserDto.getPassword())
-                .location(iUserDto.getLocation())
-                .grade(gradeService.getGrade(iUserDto.getGrade()).get())
-                .profileImg(iUserDto.getProfileImg())
-                .userName(iUserDto.getUserName())
-                .build();
-//        user.setCreatDate(userRepository.findById(iUserDto.getId()).get().getCreatDate());
+        User user = new User();
+        try {
+            user = User.builder()
+                    .id(iUserDto.getId())
+                    .name(iUserDto.getName())
+                    .password(iUserDto.getPassword())
+                    .location(iUserDto.getLocation())
+                    .grade(gradeService.getGrade(iUserDto.getGrade()).get())
+                    .profileImg(iUserDto.getProfileImg())
+                    .userName(iUserDto.getUserName())
+                    .build();
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
         userRepository.save(user);
         return user;
     }
@@ -74,23 +83,36 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> getAllUser() {
         log.info("get all User.");
-        return userRepository.findAll();
+        List<User> userList = new ArrayList<>();
+        try {
+            userList = userRepository.findAll();
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return userList;
     }
 
     @Override
     public OUserDto getUserById(Long id) {
         log.info("get User by Id {}.", id);
-        User user = userRepository.findById(id).get();
+        User user = new User();
+        OUserDto oUserDto = new OUserDto();
+        try {
+            user = userRepository.findById(id).get();
 
-        OUserDto oUserDto = OUserDto.builder()
-                .createDate(user.getCreateDate())
-                .location(user.getLocation())
-                .modifiedDate(user.getModifiedDate())
-                .name(user.getName())
-                .password(user.getPassword())
-                .profileImg(user.getProfileImg())
-                .userName(user.getUserName())
-                .build();
+            oUserDto = OUserDto.builder()
+                    .createDate(user.getCreateDate())
+                    .location(user.getLocation())
+                    .modifiedDate(user.getModifiedDate())
+                    .name(user.getName())
+                    .password(user.getPassword())
+                    .profileImg(user.getProfileImg())
+                    .userName(user.getUserName())
+                    .build();
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+
         return oUserDto;
     }
 
@@ -114,7 +136,7 @@ public class UserServiceImpl implements UserService {
             List<Post> posts = postRepository.findAllByUserId(id);
             postRepository.deleteAll(posts);
         } catch (Exception exception) {
-            log.error("유저의 SNS 지우기 실패!!!!!! {}.", exception);
+            log.error("유저의 SNS 지우기 실패!!!!!! {}.", exception.getMessage());
         }
         userRepository.deleteById(id);
     }

@@ -16,13 +16,13 @@ public class TagController {
     private final TagService tagService;
 
     @PostMapping("/add")
-    public Tag addTag(@RequestBody Tag tag) {
-        return tagService.addTag(tag);
+    public void addTag(@RequestBody Tag tag) {
+        tagService.addTag(tag);
     }
 
     @PutMapping("/edit")
-    public Tag edit(@RequestBody Tag tag) {
-        return tagService.editTag(tag);
+    public void edit(@RequestBody Tag tag) {
+        tagService.editTag(tag);
     }
 
     @GetMapping("/getAll")

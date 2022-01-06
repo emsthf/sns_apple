@@ -16,8 +16,8 @@ public class LargeCategoryController {
     private final LargeCategoryService largeCategoryService;
 
     @PostMapping("/add")
-    public LargeCategory addLargeCate(@RequestBody LargeCategory largeCategory) {
-        return largeCategoryService.addLargeCate(largeCategory);
+    public void addLargeCate(@RequestBody LargeCategory largeCategory) {
+        largeCategoryService.addLargeCate(largeCategory);
     }
 
     @GetMapping("/getAll")

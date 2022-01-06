@@ -11,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -24,26 +25,52 @@ public class RecommentListServiceImpl implements RecommentListService {
 
     @Override
     public RecommentList addRecommentList(RecommentListDto recommentListDto) {
-        return recommentListRepository.save(
-                RecommentList.builder()
-                        .comment(commentService.getCommentById(recommentListDto.getCommentId()).get())
-                        .recomment(recommentService.getRecommentById(recommentListDto.getRecommentId()).get())
-                        .build()
-        );
+        log.info("리코멘트 리스트 추가.");
+        RecommentList recommentList = new RecommentList();
+        try {
+            recommentList = recommentListRepository.save(
+                    RecommentList.builder()
+                            .comment(commentService.getCommentById(recommentListDto.getCommentId()).get())
+                            .recomment(recommentService.getRecommentById(recommentListDto.getRecommentId()).get())
+                            .build()
+            );
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return recommentList;
     }
 
     @Override
     public List<RecommentList> getAll() {
-        return recommentListRepository.findAll();
+        log.info("리코멘트 리스트 전부 불러오기.");
+        List<RecommentList> recommentLists = new ArrayList<>();
+        try {
+            recommentLists = recommentListRepository.findAll();
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return recommentLists;
     }
 
     @Override
     public List<RecommentList> getAllByCommentId(Long commentId) {
-        return recommentListRepository.findAllByCommentId(commentId);
+        log.info("코멘트 id로 리코멘트 리스트 찾기");
+        List<RecommentList> recommentLists = new ArrayList<>();
+        try {
+            recommentLists = recommentListRepository.findAllByCommentId(commentId);
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return recommentLists;
     }
 
     @Override
     public void delRecommentList(Long id) {
-        recommentListRepository.deleteById(id);
+        log.info("리코멘트 리스트 지우기.");
+        try {
+            recommentListRepository.deleteById(id);
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
     }
 }

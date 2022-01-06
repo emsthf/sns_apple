@@ -16,8 +16,8 @@ public class CommentListController {
     private final CommentListService commentListService;
 
     @PostMapping("/add")
-    public CommentList add(@RequestBody CommentListDto commentListDto) {
-        return commentListService.addCommList(commentListDto);
+    public void add(@RequestBody CommentListDto commentListDto) {
+        commentListService.addCommList(commentListDto);
     }
 
     @GetMapping("/getAll")

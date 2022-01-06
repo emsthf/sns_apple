@@ -4,6 +4,7 @@ import apple.blog.categorylist.dto.CategorListDto;
 import apple.blog.categorylist.model.CategoryList;
 import apple.blog.categorylist.repository.CategoryListRepository;
 import apple.blog.largeCategory.service.LargeCategoryService;
+import apple.blog.post.repository.PostRepository;
 import apple.blog.post.service.PostService;
 import apple.blog.smallCategory.service.CategoryService;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +21,7 @@ public class CategoryListServiceImple implements CategoryListService{
     private final CategoryListRepository categoryListRepository;
     private final CategoryService categoryService;
     private final LargeCategoryService largeCategoryService;
-    private final PostService postService;
+    private final PostRepository postRepository;
 
     @Override
     public CategoryList addCategoryList(CategorListDto categorListDto) {
@@ -30,7 +31,7 @@ public class CategoryListServiceImple implements CategoryListService{
                         .category(categoryService.getCategoryById(categorListDto.getCategoryId()).get())
                         .id(null)
                         .largeCategory(largeCategoryService.getLargeCateById(categorListDto.getLargeCategoryId()).get())
-                        .post(postService.getPostById(categorListDto.getPostId()).get())
+                        .post(postRepository.findById(categorListDto.getPostId()).get())
                         .build()
         );
     }

@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,35 +19,57 @@ import java.util.Optional;
 public class CategoryServiceImpl implements CategoryService{
 
     private final CategoryRepository categoryRepository;
-    private final PostService postService;
     private final LargeCategoryService largeCategoryService;
 
     @Override
     public Category addCategory(CategoryDto categoryDto) {
         log.info("add Category.");
-        return categoryRepository.save(
-                Category.builder()
-                        .largeCategory(largeCategoryService.getLargeCateById(categoryDto.getLargeCategoryId()).get())
-                        .name(categoryDto.getName())
-                        .build()
-        );
+        Category category = new Category();
+        try {
+            category = categoryRepository.save(
+                    Category.builder()
+                            .largeCategory(largeCategoryService.getLargeCateById(categoryDto.getLargeCategoryId()).get())
+                            .name(categoryDto.getName())
+                            .build()
+            );
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+
+        return category;
     }
 
     @Override
     public List<Category> getAllCategory() {
         log.info("get all Category.");
-        return categoryRepository.findAll();
+        List<Category> categories = new ArrayList<>();
+        try {
+            categories = categoryRepository.findAll();
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return categories;
     }
 
     @Override
     public Optional<Category> getCategoryById(Long id) {
         log.info("get Category by Id {}.", id);
-        return Optional.ofNullable(categoryRepository.findById(id).get());
+        Optional<Category> category = Optional.empty();
+        try {
+            category = Optional.ofNullable(categoryRepository.findById(id).get());
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return category;
     }
 
     @Override
     public void delCategory(Long id) {
         log.info("delete Category by id {}.", id);
-        categoryRepository.deleteById(id);
+        try {
+            categoryRepository.deleteById(id);
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
     }
 }

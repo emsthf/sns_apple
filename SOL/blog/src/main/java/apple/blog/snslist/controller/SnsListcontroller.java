@@ -1,7 +1,7 @@
 package apple.blog.snslist.controller;
 
+import apple.blog.snslist.dto.OSnsListDto;
 import apple.blog.snslist.dto.SnsListDto;
-import apple.blog.snslist.model.SnsList;
 import apple.blog.snslist.service.SnsListService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -16,18 +16,18 @@ public class SnsListcontroller {
     private final SnsListService snsListService;
 
     @PostMapping("/add")
-    public SnsList add(@RequestBody SnsListDto snsListDto) {
-        return snsListService.addSnsList(snsListDto);
+    public void add(@RequestBody SnsListDto snsListDto) {
+        snsListService.addSnsList(snsListDto);
     }
 
     @PutMapping("/edit")
-    public SnsList edit(@RequestBody SnsListDto snsListDto) {
-        return snsListService.editSnsList(snsListDto);
+    public void edit(@RequestBody SnsListDto snsListDto) {
+        snsListService.editSnsList(snsListDto);
     }
 
-    @GetMapping("/getAll")
-    public List<SnsList> getAll() {
-        return snsListService.getAll();
+    @GetMapping("/getAll/{userId}")
+    public List<OSnsListDto> getAll(@PathVariable Long userId) {
+        return snsListService.getAll(userId);
     }
 
     @DeleteMapping("/del/{id}")

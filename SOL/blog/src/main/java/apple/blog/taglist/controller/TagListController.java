@@ -1,6 +1,5 @@
 package apple.blog.taglist.controller;
 
-import apple.blog.tag.model.Tag;
 import apple.blog.taglist.dto.TagListDto;
 import apple.blog.taglist.model.TagList;
 import apple.blog.taglist.service.TagListService;
@@ -17,8 +16,8 @@ public class TagListController {
     private final TagListService tagListService;
 
     @PostMapping("/add")
-    public TagList addTagList(@RequestBody TagListDto tagListDto) {
-        return tagListService.addTagList(tagListDto);
+    public void addTagList(@RequestBody TagListDto tagListDto) {
+        tagListService.addTagList(tagListDto);
     }
 
     @GetMapping("/getAll")
