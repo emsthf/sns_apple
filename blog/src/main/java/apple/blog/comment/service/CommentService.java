@@ -8,8 +8,9 @@ import java.util.Optional;
 
 public interface CommentService {
     Comment addComment(ICommentDto iCommentDto);
+    Comment editComment(ICommentDto iCommentDto);
     List<Comment> getAllComment();
     Optional<Comment> getCommentById(Long id);
-    List<Comment> getCommentByUserId(Long id);
+    List<Comment> getAllByUserId(Long UserId);
     void delComment(Long id);
 }

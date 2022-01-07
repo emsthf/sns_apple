@@ -16,8 +16,8 @@ public class SnsController {
     private final SnsService snsService;
 
     @PostMapping("/add")
-    public Sns add(@RequestBody Sns sns) {
-        return snsService.addSns(sns);
+    public void add(@RequestBody Sns sns) {
+        snsService.addSns(sns);
     }
 
     @GetMapping("/getAll")

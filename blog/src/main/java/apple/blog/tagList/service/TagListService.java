@@ -1,12 +1,14 @@
-package apple.blog.tagList.service;
+package apple.blog.taglist.service;
 
-import apple.blog.tagList.model.TagList;
+import apple.blog.taglist.dto.TagListDto;
+import apple.blog.taglist.model.TagList;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface TagListService {
-    TagList addTagList(TagList tagList);
-    List<TagList> getAllTagList();
-    Optional<TagList> getTagListById(Long id);
+    TagList addTagList(TagListDto tagListDto);
+    List<TagList> getAll();
+    List<TagList> getAllTagByPostId(Long postId);
+    void delTagList(Long id);
+    void delAllByPostId(Long postId);
 }

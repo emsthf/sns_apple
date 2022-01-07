@@ -1,12 +1,16 @@
 package apple.blog.comment.model;
 
 import apple.blog.base.UtilTimeSetter;
+import apple.blog.post.model.Post;
+import apple.blog.recommentlist.model.RecommentList;
 import apple.blog.user.model.User;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -15,18 +19,17 @@ public class Comment extends UtilTimeSetter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String comment;
-    @ManyToOne
+    private String text;
+
+    @ManyToOne(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "user_id")
     private User user;
 
-    public User getUser() {
-        return user;
-    }
-
     @Builder
-    public Comment(String comment, User user) {
-        this.comment = comment;
+    public Comment(Long id, String text, User user) {
+        this.id = id;
+        this.text = text;
         this.user = user;
+
     }
 }

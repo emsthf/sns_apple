@@ -1,4 +1,4 @@
-package apple.blog.tagList.model;
+package apple.blog.taglist.model;
 
 import apple.blog.post.model.Post;
 import apple.blog.tag.model.Tag;
@@ -12,28 +12,22 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 public class TagList {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @ManyToOne
     @JoinColumn(name = "tag_id")
     private Tag tag;
+
     @ManyToOne
     @JoinColumn(name = "post_id")
     private Post post;
 
     @Builder
-    public TagList(Tag tag, Post post) {
+    public TagList(Long id, Tag tag, Post post) {
+        this.id = id;
         this.tag = tag;
         this.post = post;
-    }
-
-    public Post getPost() {
-        return post;
-    }
-
-    public Tag getTag() {
-        return tag;
     }
 }

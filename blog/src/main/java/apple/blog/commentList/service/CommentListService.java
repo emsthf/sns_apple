@@ -1,13 +1,13 @@
-package apple.blog.commentList.service;
+package apple.blog.commentlist.service;
 
-import apple.blog.commentList.model.CommentList;
+import apple.blog.commentlist.dto.CommentListDto;
+import apple.blog.commentlist.model.CommentList;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface CommentListService {
-    CommentList addCommentList(CommentList commentList);
-    List<CommentList> getAllCommentList();
-    Optional<CommentList> getCommentListById(Long id);
-    void delCommentList(Long id);
+    CommentList addCommList(CommentListDto commentListDto);
+    List<CommentList> getAll();
+    List<CommentList> getAllByPostId(Long postId);
+    void delCommList(Long id);
 }

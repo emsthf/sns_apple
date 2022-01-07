@@ -1,50 +1,42 @@
-package apple.blog.snsList.controller;
+package apple.blog.snslist.controller;
 
-import apple.blog.sns.service.SnsService;
-import apple.blog.snsList.dto.ISnsList;
-import apple.blog.snsList.model.SnsList;
-import apple.blog.snsList.service.SnsListService;
-import apple.blog.user.service.UserService;
+import apple.blog.snslist.dto.OSnsListDto;
+import apple.blog.snslist.dto.SnsListDto;
+import apple.blog.snslist.service.SnsListService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
-@RequiredArgsConstructor
 @RestController
-@CrossOrigin
-@RequestMapping("/snsList")
-public class SnsListController {
+@RequiredArgsConstructor
+@RequestMapping("/snslist")
+public class SnsListcontroller {
 
     private final SnsListService snsListService;
-    private final SnsService snsService;
-    private final UserService userService;
-
-    @GetMapping("/getAll")
-    public List<SnsList> getAll() {
-        return snsListService.getAllSnsList();
-    }
-
-    @GetMapping("/get/{id}")
-    public Optional<SnsList> get(@PathVariable("id") Long id) {
-        return snsListService.getSnsListById(id);
-    }
 
     @PostMapping("/add")
-    public SnsList add(@RequestBody ISnsList iSnsList) {
-        return snsListService.addSnsList(
-                new SnsList(
-                        snsService.getSnsById(iSnsList.getSnsId()).get(),
-                        userService.getUserById(iSnsList.getUserId()).get()
-                )
-        );
+    public void add(@RequestBody SnsListDto snsListDto) {
+        snsListService.addSnsList(snsListDto);
+    }
+
+    @PutMapping("/edit")
+    public void edit(@RequestBody SnsListDto snsListDto) {
+        snsListService.editSnsList(snsListDto);
+    }
+
+    @GetMapping("/getAll/{userId}")
+    public List<OSnsListDto> getAll(@PathVariable Long userId) {
+        return snsListService.getAll(userId);
     }
 
     @DeleteMapping("/del/{id}")
-    public void del(@PathVariable("id") Long id) {
+    public void delSnsList(@PathVariable Long id) {
         snsListService.delSnsList(id);
     }
 
+    @DeleteMapping("/delAllByUserId/{id}")
+    public boolean delAllByUserId(@PathVariable Long id){
+        return snsListService.delAllByUserId(id);
+    }
 }

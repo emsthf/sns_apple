@@ -1,7 +1,7 @@
 package apple.blog.recomment.controller;
 
 import apple.blog.comment.service.CommentService;
-import apple.blog.recomment.dto.IRecomment;
+import apple.blog.recomment.dto.RecommentDto;
 import apple.blog.recomment.model.Recomment;
 import apple.blog.recomment.service.RecommentService;
 import lombok.RequiredArgsConstructor;
@@ -15,15 +15,15 @@ import java.util.List;
 public class RecommentController {
 
     private final RecommentService recommentService;
-    private final CommentService commentService;
 
     @PostMapping("/add")
-    public Recomment add(@RequestBody IRecomment iRecomment) {
-        return recommentService.addRecomment(
-                new Recomment(
-                        commentService.getCommentById(iRecomment.getCommentId()).get()
-                )
-        );
+    public Recomment add(@RequestBody RecommentDto recommentDto) {
+        return recommentService.addRecomment(recommentDto);
+    }
+
+    @PutMapping("/edit")
+    public Recomment edit(@RequestBody RecommentDto recommentDto) {
+        return recommentService.editRecomment(recommentDto);
     }
 
     @GetMapping("/getAll")

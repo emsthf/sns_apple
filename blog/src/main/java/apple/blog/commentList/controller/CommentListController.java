@@ -1,47 +1,37 @@
-package apple.blog.commentList.controller;
+package apple.blog.commentlist.controller;
 
-import apple.blog.comment.service.CommentService;
-import apple.blog.commentList.dto.ICommentList;
-import apple.blog.commentList.model.CommentList;
-import apple.blog.commentList.service.CommentListService;
-import apple.blog.post.service.PostService;
+import apple.blog.commentlist.dto.CommentListDto;
+import apple.blog.commentlist.model.CommentList;
+import apple.blog.commentlist.service.CommentListService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequiredArgsConstructor
 @RestController
-@RequestMapping("/commentList")
+@RequiredArgsConstructor
+@RequestMapping("/commlist")
 public class CommentListController {
 
     private final CommentListService commentListService;
-    private final PostService postService;
-    private final CommentService commentService;
 
     @PostMapping("/add")
-    public CommentList add(@RequestBody ICommentList iCommentList) {
-        return commentListService.addCommentList(
-                new CommentList(
-                        postService.getPostById(iCommentList.getPostId()).get(),
-                        commentService.getCommentById(iCommentList.getCommentId()).get()
-                )
-        );
+    public void add(@RequestBody CommentListDto commentListDto) {
+        commentListService.addCommList(commentListDto);
     }
 
     @GetMapping("/getAll")
     public List<CommentList> getAll() {
-        return commentListService.getAllCommentList();
+        return commentListService.getAll();
     }
 
-    @GetMapping("/get/{id}")
-    public CommentList get(@PathVariable("id") Long id) {
-        return commentListService.getCommentListById(id).get();
+    @GetMapping("/getAllByPostId/{id}")
+    public List<CommentList> getAllByPostId(@PathVariable Long id) {
+        return commentListService.getAllByPostId(id);
     }
 
     @DeleteMapping("/del/{id}")
-    public void del(@PathVariable("id") Long id) {
-        commentListService.delCommentList(id);
+    public void delCommList(@PathVariable Long id) {
+        commentListService.delCommList(id);
     }
 }

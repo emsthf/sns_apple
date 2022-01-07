@@ -1,6 +1,7 @@
 package apple.blog.post.controller;
 
 import apple.blog.post.dto.IPostDto;
+import apple.blog.post.dto.OPostDto;
 import apple.blog.post.model.Post;
 import apple.blog.post.service.PostService;
 import lombok.RequiredArgsConstructor;
@@ -17,8 +18,13 @@ public class PostController {
     private final PostService postService;
 
     @PostMapping("/add")
-    public Post add(@RequestBody IPostDto iPostDto) {
-        return postService.addPost(iPostDto);
+    public void add(@RequestBody IPostDto iPostDto) {
+        postService.addPost(iPostDto);
+    }
+
+    @PutMapping("/edit")
+    public void edit(@RequestBody IPostDto iPostDto) {
+        postService.editPost(iPostDto);
     }
 
     @GetMapping("/getAll")
@@ -26,8 +32,13 @@ public class PostController {
         return postService.getAllPost();
     }
 
+    @GetMapping("/getAllOrderByCreated")
+    public List<Post> getAllOrderByCreatedDesc() {
+        return postService.getAllOrderByCreatedDesc();
+    }
+
     @GetMapping("/get/{id}")
-    public Optional<Post> get(@PathVariable("id") Long id) {
+    public OPostDto get(@PathVariable("id") Long id) {
         return postService.getPostById(id);
     }
 

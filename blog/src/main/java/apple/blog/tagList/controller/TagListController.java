@@ -1,46 +1,42 @@
-package apple.blog.tagList.controller;
+package apple.blog.taglist.controller;
 
-import apple.blog.post.model.Post;
-import apple.blog.post.service.PostService;
-import apple.blog.tag.model.Tag;
-import apple.blog.tag.service.TagService;
-import apple.blog.tagList.dto.ITagList;
-import apple.blog.tagList.model.TagList;
-import apple.blog.tagList.service.TagListService;
+import apple.blog.taglist.dto.TagListDto;
+import apple.blog.taglist.model.TagList;
+import apple.blog.taglist.service.TagListService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
-@RequiredArgsConstructor
 @RestController
-@RequestMapping("/tagList")
+@RequiredArgsConstructor
+@RequestMapping("/taglist")
 public class TagListController {
 
     private final TagListService tagListService;
-    private final TagService tagService;
-    private final PostService postService;
 
     @PostMapping("/add")
-    public TagList add(@RequestBody ITagList iTagList){
-        Long inputTId = iTagList.getTagId();
-        Tag inputTag = tagService.getTagById(inputTId).get();
-        Long inputPId = iTagList.getPostId();
-        Post inputPost = postService.getPostById(inputPId).get();
+    public void addTagList(@RequestBody TagListDto tagListDto) {
+        tagListService.addTagList(tagListDto);
+    }
 
-        TagList inputTagList = new TagList(
-                inputTag,
-                inputPost
-        );
-        return tagListService.addTagList(inputTagList);
-    }
     @GetMapping("/getAll")
-    public List<TagList> getAll(){
-        return tagListService.getAllTagList();
+    public List<TagList> getAll() {
+        return tagListService.getAll();
     }
-    @GetMapping("/get/{id}")
-    public Optional<TagList> get(@PathVariable("id") Long id){
-        return tagListService.getTagListById(id);
+
+    @GetMapping("/getTagByPostId/{id}")
+    public List<TagList> getAllTagByPostId(@PathVariable Long id) {
+        return tagListService.getAllTagByPostId(id);
+    }
+
+    @DeleteMapping("/del/{id}")
+    public void del(@PathVariable Long id) {
+        tagListService.delTagList(id);
+    }
+
+    @DeleteMapping("/delAllByPostId/{postId}")
+    public void delAllByPostId(@PathVariable Long postId) {
+        tagListService.delAllByPostId(postId);
     }
 }

@@ -8,30 +8,35 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@RequiredArgsConstructor
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/tag")
 public class TagController {
 
     private final TagService tagService;
 
     @PostMapping("/add")
-    public Tag add(@RequestBody Tag tag){
-        return tagService.addTag(tag);
+    public void addTag(@RequestBody Tag tag) {
+        tagService.addTag(tag);
+    }
+
+    @PutMapping("/edit")
+    public void edit(@RequestBody Tag tag) {
+        tagService.editTag(tag);
     }
 
     @GetMapping("/getAll")
-    public List<Tag> getAll(){
-        return tagService.getAllTag();
+    public List<Tag> getAll() {
+        return tagService.getAll();
     }
 
-    @GetMapping("/get/{id}")
-    public Optional<Tag> get(@PathVariable("id") Long id){
+    @GetMapping("/getTag/{id}")
+    public Optional<Tag> getTagById(@PathVariable Long id) {
         return tagService.getTagById(id);
     }
 
     @DeleteMapping("/del/{id}")
-    public void del(@PathVariable("id") Long id){
+    public void delTag(@PathVariable Long id) {
         tagService.delTag(id);
     }
 }

@@ -16,8 +16,13 @@ public class CommentController {
     private final CommentService commentService;
 
     @PostMapping("/add")
-    public Comment add(@RequestBody ICommentDto iCommentDto) {
-        return commentService.addComment(iCommentDto);
+    public void add(@RequestBody ICommentDto iCommentDto) {
+        commentService.addComment(iCommentDto);
+    }
+
+    @PutMapping("/edit")
+    public void edit(@RequestBody ICommentDto iCommentDto) {
+        commentService.editComment(iCommentDto);
     }
 
     @GetMapping("/getAll")
@@ -32,7 +37,7 @@ public class CommentController {
 
     @GetMapping("/getUserId/{id}")
     public List<Comment> getCommentByUserId(@PathVariable("id") Long id) {
-        return commentService.getCommentByUserId(id);
+        return commentService.getAllByUserId(id);
     }
 
     @DeleteMapping("/del/{id}")

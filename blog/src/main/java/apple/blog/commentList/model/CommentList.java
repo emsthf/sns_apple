@@ -1,4 +1,4 @@
-package apple.blog.commentList.model;
+package apple.blog.commentlist.model;
 
 import apple.blog.comment.model.Comment;
 import apple.blog.post.model.Post;
@@ -15,23 +15,18 @@ public class CommentList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @ManyToOne
+
+    @ManyToOne(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "post_id")
     private Post post;
-    @ManyToOne
+
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "comment_id")
     private Comment comment;
 
-    public Comment getComment() {
-        return comment;
-    }
-
-    public Post getPost() {
-        return post;
-    }
-
     @Builder
-    public CommentList(Post post, Comment comment) {
+    public CommentList(Long id, Post post, Comment comment) {
+        this.id = id;
         this.post = post;
         this.comment = comment;
     }

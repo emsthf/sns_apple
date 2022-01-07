@@ -23,6 +23,17 @@ public class GradeServiceImpl implements GradeService {
     }
 
     @Override
+    public Grade editGrade(Grade grade) {
+        log.info("edit Grade {}.", gradeRepository.findById(grade.getId()).get());
+        Grade editGrade = Grade.builder()
+                .id(grade.getId())
+                .name(grade.getName())
+                .build();
+        gradeRepository.save(editGrade);
+        return editGrade;
+    }
+
+    @Override
     public List<Grade> getAllGrade() {
         log.info("get all Grade.");
         return gradeRepository.findAll();

@@ -1,5 +1,7 @@
 package apple.blog.user.service;
 
+import apple.blog.user.dto.IUserDto;
+import apple.blog.user.dto.OUserDto;
 import apple.blog.user.model.User;
 
 import javax.servlet.http.HttpServletRequest;
@@ -7,9 +9,9 @@ import java.util.List;
 import java.util.Optional;
 
 public interface UserService {
-    User addUser(User user);
+    User addUser(IUserDto iUserDto);
+    User editUser(IUserDto iUserDto);
     List<User> getAllUser();
-    Optional<User> getUserById(Long id);
+    OUserDto getUserById(Long id);
     void delUser(Long id);
-    User updateUser(HttpServletRequest request);   // 수정 추상 메소드
 }

@@ -3,7 +3,7 @@ package apple.blog.comment.service;
 import apple.blog.comment.dto.ICommentDto;
 import apple.blog.comment.model.Comment;
 import apple.blog.comment.repository.CommentRepository;
-import apple.blog.user.service.UserService;
+import apple.blog.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -17,16 +17,40 @@ import java.util.Optional;
 public class CommentServiceImpl implements CommentService {
 
     private final CommentRepository commentRepository;
-    private final UserService userService;
+    private final UserRepository userRepository;
 
     @Override
     public Comment addComment(ICommentDto iCommentDto) {
         log.info("add Comment.");
-        return commentRepository.save(Comment.builder()
-                .comment(iCommentDto.getComment())
-                .user(userService.getUserById(iCommentDto.getUserId()).get())
-                .build()
-        );
+        Comment comment = new Comment();
+        try {
+            comment = commentRepository.save(Comment.builder()
+                    .id(null)
+                    .text(iCommentDto.getText())
+                    .user(userRepository.getById(iCommentDto.getUserId()))
+                    .build()
+            );
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return comment;
+    }
+
+    @Override
+    public Comment editComment(ICommentDto iCommentDto) {
+        log.info("edit Comment {}.", commentRepository.findById(iCommentDto.getId()).get());
+        Comment comment = new Comment();
+        try {
+            comment = Comment.builder()
+                    .id(iCommentDto.getId())
+                    .text(iCommentDto.getText())
+                    .user(userRepository.getById(iCommentDto.getUserId()))
+                    .build();
+            commentRepository.save(comment);
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return comment;
     }
 
     @Override
@@ -42,7 +66,7 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    public List<Comment> getCommentByUserId(Long id) {
+    public List<Comment> getAllByUserId(Long id) {
         return commentRepository.findAllByUserId(id);
     }
 

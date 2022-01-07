@@ -7,6 +7,7 @@ import java.util.Optional;
 
 public interface GradeService {
     Grade addGrade(Grade grade);
+    Grade editGrade(Grade grade);
     List<Grade> getAllGrade();
     Optional<Grade> getGrade(Long id);
     void delGrade(Long id);
