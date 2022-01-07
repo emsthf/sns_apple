@@ -1,6 +1,5 @@
 package apple.blog.user.controller;
 
-import apple.blog.grade.service.GradeService;
 import apple.blog.user.dto.IUserDto;
 import apple.blog.user.dto.OUserDto;
 import apple.blog.user.model.User;
@@ -17,16 +16,23 @@ import java.util.List;
 public class UserController {
 
     private final UserService userService;
-    private final GradeService gradeService;
 
     @PostMapping("/add")
-    public void add(@RequestBody IUserDto iUserDto) {
-        userService.addUser(iUserDto);
+    public String add(@RequestBody IUserDto iUserDto) {
+        if (userService.addUser(iUserDto) == 1) {
+            return "Success";
+        } else {
+            return "Fail";
+        }
     }
 
     @PutMapping("/edit")
-    public void edit(@RequestBody IUserDto iUserDto) {
-        userService.editUser(iUserDto);
+    public String edit(@RequestBody IUserDto iUserDto) {
+        if(userService.editUser(iUserDto) == 1) {
+            return "Success";
+        } else {
+            return "Fail";
+        }
     }
 
     @GetMapping("/getAll")

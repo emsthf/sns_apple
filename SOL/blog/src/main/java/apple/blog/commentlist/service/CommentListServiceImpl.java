@@ -75,7 +75,6 @@ public class CommentListServiceImpl implements CommentListService {
             Long commentId = commentListRepository.findById(id).get().getComment().getId();
             // 코멘트 id로 찾은 코멘트에 달린 리코멘트 전부 찾기
             List<RecommentList> recommentLists = recommentListRepository.findAllByCommentId(commentId);
-            log.info("recommentList {}", recommentLists);
             // 리코멘트에서 코멘트 id로 해당 코멘트에 달린 모든 리코멘트를 찾아서 지운다
             recommentListRepository.deleteAll(recommentLists);
             // 코멘트에 달린 리코멘트가 지워진 후, 코멘트 리스트를 지워서 코멘트도 함께 지운다

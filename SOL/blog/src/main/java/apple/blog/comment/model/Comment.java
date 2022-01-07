@@ -1,6 +1,7 @@
 package apple.blog.comment.model;
 
 import apple.blog.base.UtilTimeSetter;
+import apple.blog.commentlist.model.CommentList;
 import apple.blog.post.model.Post;
 import apple.blog.recommentlist.model.RecommentList;
 import apple.blog.user.model.User;
@@ -24,6 +25,9 @@ public class Comment extends UtilTimeSetter {
     @ManyToOne(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "user_id")
     private User user;
+//
+//    @OneToMany(mappedBy = "comment", cascade = CascadeType.REMOVE)
+//    private List<CommentList> commentLists = new ArrayList<>();
 
     @Builder
     public Comment(Long id, String text, User user) {

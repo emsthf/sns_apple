@@ -18,13 +18,21 @@ public class PostController {
     private final PostService postService;
 
     @PostMapping("/add")
-    public void add(@RequestBody IPostDto iPostDto) {
-        postService.addPost(iPostDto);
+    public String add(@RequestBody IPostDto iPostDto) {
+        if (postService.addPost(iPostDto) == 1) {
+            return "Success";
+        } else {
+            return "Fail";
+        }
     }
 
     @PutMapping("/edit")
-    public void edit(@RequestBody IPostDto iPostDto) {
-        postService.editPost(iPostDto);
+    public String edit(@RequestBody IPostDto iPostDto) {
+        if (postService.editPost(iPostDto) == 1) {
+            return "Success";
+        } else {
+            return "Fail";
+        }
     }
 
     @GetMapping("/getAll")

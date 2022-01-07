@@ -34,7 +34,7 @@ public class PostServiceImpl implements PostService{
     private final CategoryListRepository categoryListRepository;
 
     @Override
-    public Post addPost(IPostDto iPostDto) {
+    public int addPost(IPostDto iPostDto) {
         log.info("add Post.");
         Post post = new Post();
         try {
@@ -47,14 +47,15 @@ public class PostServiceImpl implements PostService{
                     .view(0L)
                     .build()
             );
+            return 1;
         } catch (Exception e) {
             log.error("error : {}", e.getMessage());
+            return 0;
         }
-        return post;
     }
 
     @Override
-    public Post editPost(IPostDto iPostDto) {
+    public int editPost(IPostDto iPostDto) {
         log.info("edit Post. {}", postRepository.findById(iPostDto.getId()).get());
         Post post = new Post();
         try {
@@ -67,10 +68,11 @@ public class PostServiceImpl implements PostService{
                     .view(iPostDto.getView())
                     .build();
             postRepository.save(post);
+            return 1;
         } catch (Exception e) {
             log.error("error : {}", e.getMessage());
+            return 0;
         }
-        return post;
     }
 
     @Override

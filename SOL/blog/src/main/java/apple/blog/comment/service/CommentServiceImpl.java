@@ -4,7 +4,6 @@ import apple.blog.comment.dto.ICommentDto;
 import apple.blog.comment.model.Comment;
 import apple.blog.comment.repository.CommentRepository;
 import apple.blog.user.repository.UserRepository;
-import apple.blog.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

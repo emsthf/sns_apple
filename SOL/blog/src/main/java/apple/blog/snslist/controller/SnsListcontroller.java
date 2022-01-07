@@ -34,4 +34,9 @@ public class SnsListcontroller {
     public void delSnsList(@PathVariable Long id) {
         snsListService.delSnsList(id);
     }
+
+    @DeleteMapping("/delAllByUserId/{id}")
+    public boolean delAllByUserId(@PathVariable Long id){
+        return snsListService.delAllByUserId(id);
+    }
 }

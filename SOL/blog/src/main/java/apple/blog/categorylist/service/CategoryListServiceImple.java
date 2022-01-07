@@ -11,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -26,34 +27,65 @@ public class CategoryListServiceImple implements CategoryListService{
     @Override
     public CategoryList addCategoryList(CategorListDto categorListDto) {
         log.info("add CateList.");
-        return categoryListRepository.save(
-                CategoryList.builder()
-                        .category(categoryService.getCategoryById(categorListDto.getCategoryId()).get())
-                        .id(null)
-                        .largeCategory(largeCategoryService.getLargeCateById(categorListDto.getLargeCategoryId()).get())
-                        .post(postRepository.findById(categorListDto.getPostId()).get())
-                        .build()
-        );
+        CategoryList categoryList = new CategoryList();
+        try {
+            categoryList = categoryListRepository.save(
+                    CategoryList.builder()
+                            .category(categoryService.getCategoryById(categorListDto.getCategoryId()).get())
+                            .id(null)
+                            .largeCategory(largeCategoryService.getLargeCateById(categorListDto.getLargeCategoryId()).get())
+                            .post(postRepository.findById(categorListDto.getPostId()).get())
+                            .build()
+            );
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return categoryList;
     }
 
     @Override
     public List<CategoryList> getAll() {
         log.info("get all CateList.");
-        return categoryListRepository.findAll();
+        List<CategoryList> categoryLists = new ArrayList<>();
+        try {
+            categoryLists = categoryListRepository.findAll();
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return categoryLists;
     }
 
     @Override
     public List<CategoryList> getAllByCategoryId(Long categoryId) {
-        return categoryListRepository.findAllByCategoryId(categoryId);
+        log.info("Get All Category List by Category Id {}.",categoryId);
+        List<CategoryList> categoryLists = new ArrayList<>();
+        try {
+            categoryLists = categoryListRepository.findAllByCategoryId(categoryId);
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
+        return categoryLists;
     }
 
     @Override
     public List<CategoryList> getAllByLargeCategoryId(Long largeCategoryId) {
-        return categoryListRepository.findAllByLargeCategoryId(largeCategoryId);
+        log.info("Get All Category List by large Category Id {}.",largeCategoryId);
+        List<CategoryList> categoryLists = new ArrayList<>();
+        try {
+            categoryLists = categoryListRepository.findAllByLargeCategoryId(largeCategoryId);
+        } catch (Exception e) {
+            log.error("error : {}" ,e.getMessage());
+        }
+        return categoryLists;
     }
 
     @Override
     public void delCateList(Long id) {
-        categoryListRepository.deleteById(id);
+        log.info("Delete Category List by Id{}.", id);
+        try {
+            categoryListRepository.deleteById(id);
+        } catch (Exception e) {
+            log.error("error : {}", e.getMessage());
+        }
     }
 }

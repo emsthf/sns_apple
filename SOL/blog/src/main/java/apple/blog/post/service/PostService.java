@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Optional;
 
 public interface PostService {
-    Post addPost(IPostDto iPostDtopost);
-    Post editPost(IPostDto iPostDto);
+    int addPost(IPostDto iPostDtopost);
+    int editPost(IPostDto iPostDto);
     List<Post> getAllPost();
     List<Post> getAllOrderByCreatedDesc();
     OPostDto getPostById(Long id);

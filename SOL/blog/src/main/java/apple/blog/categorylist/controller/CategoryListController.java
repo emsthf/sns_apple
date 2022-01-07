@@ -16,8 +16,8 @@ public class CategoryListController {
     private final CategoryListService categoryListService;
 
     @PostMapping("/add")
-    public CategoryList addCateList(@RequestBody CategorListDto categorListDto){
-        return categoryListService.addCategoryList(categorListDto);
+    public void addCateList(@RequestBody CategorListDto categorListDto){
+        categoryListService.addCategoryList(categorListDto);
     }
 
     @GetMapping("/getAll")

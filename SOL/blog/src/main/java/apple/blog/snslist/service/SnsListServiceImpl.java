@@ -92,4 +92,16 @@ public class SnsListServiceImpl implements SnsListService {
             log.error("error : {}", e.getMessage());
         }
     }
+
+    @Override
+    public boolean delAllByUserId(Long userId) {
+        try {
+            snsListRepository.deleteAll(snsListRepository.findAllByUserId(userId));
+            return true;
+        } catch (Exception e) {
+            log.error(e.getMessage());
+            return false;
+        }
+
+    }
 }

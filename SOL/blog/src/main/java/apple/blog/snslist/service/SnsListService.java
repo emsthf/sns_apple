@@ -11,4 +11,5 @@ public interface SnsListService {
     SnsList editSnsList(SnsListDto snsListDto);
     List<OSnsListDto> getAll(Long userId);
     void delSnsList(Long id);
+    boolean delAllByUserId(Long userId);
 }

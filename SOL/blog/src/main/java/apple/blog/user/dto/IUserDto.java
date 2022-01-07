@@ -1,7 +1,6 @@
 package apple.blog.user.dto;
 
 import lombok.Data;
-import javax.persistence.Column;
 
 @Data
 public class IUserDto {

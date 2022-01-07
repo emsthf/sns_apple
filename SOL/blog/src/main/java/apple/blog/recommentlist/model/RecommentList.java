@@ -22,10 +22,9 @@ public class RecommentList {
     @JoinColumn(name = "recomment_id")
     private Recomment recomment;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "comment_id")
     private Comment comment;
-
 
     @Builder
     public RecommentList(Long id, Recomment recomment, Comment comment) {
