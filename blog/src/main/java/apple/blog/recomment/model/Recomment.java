@@ -23,9 +23,9 @@ public class Recomment extends UtilTimeSetter {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-
-    @OneToMany(mappedBy = "recomment")
-    private CommentList commentList;
+//
+//    @OneToMany(mappedBy = "recomment")
+//    private CommentList commentList;
 
     @Builder
     public Recomment(Long id, String text, User user) {

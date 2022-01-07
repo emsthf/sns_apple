@@ -23,6 +23,8 @@ import apple.blog.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpServerErrorException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
@@ -47,7 +49,7 @@ public class UserServiceImpl implements UserService {
     private final RecommentListRepository recommentListRepository;
 
     @Override
-    public User addUser(IUserDto iUserDto) {
+    public int addUser(IUserDto iUserDto) {
         log.info("save User.");
         User user = new User();
         try {
@@ -61,10 +63,11 @@ public class UserServiceImpl implements UserService {
                     .userName(iUserDto.getUserName())
                     .build();
             userRepository.save(user);
+            return 1;
         } catch (Exception e) {
             log.error("error : {}" ,e.getMessage());
+            return 0;
         }
-        return user;
     }
 
     @Override
